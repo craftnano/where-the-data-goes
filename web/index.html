@@ -93,7 +93,7 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
     <div class="head">
       <div>
         <h1>Where the Data Goes</h1>
-        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll to zoom, Home to reset.</p>
+        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll or double-click to zoom, Home to reset.</p>
       </div>
       <span class="badge" id="badge">Synthetic data, awaiting crawl</span>
     </div>
@@ -589,6 +589,17 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
   el.addEventListener('pointerup', function (ev) { if (drag && moved < 6 && !drag.pan) follow(pickAt(ev.clientX, ev.clientY)); if (drag && moved < 6) { cam.vTheta = cam.vPhi = 0; } drag = null; });
   window.addEventListener('keydown', function (ev) { if (ev.key === 'Home') { cam.target.set(0, 62, 0); cam.theta = 0.6; cam.phi = 1.22; cam.r = 700; } });
   el.addEventListener('wheel', function (ev) { ev.preventDefault(); cam.lastTouch = performance.now(); cam.r = Math.min(1500, Math.max(14, cam.r * (1 + ev.deltaY * 0.0012))); }, { passive: false });
+  el.addEventListener('dblclick', function (ev) {
+    ev.preventDefault();
+    cam.lastTouch = performance.now();
+    var id = pickAt(ev.clientX, ev.clientY);
+    if (id != null && L && L.pos && L.pos[id]) {
+      cam.target.copy(L.pos[id]);
+      cam.r = Math.max(14, cam.r * 0.4);  // zoom in on the clicked node
+    } else {
+      cam.r = Math.max(14, cam.r * 0.55); // zoom in on empty space
+    }
+  });
   var ray = new THREE.Raycaster(), ptr = new THREE.Vector2(), tip = document.getElementById('tip');
   function pickAt(x, y) {
     if (!G) return null;
