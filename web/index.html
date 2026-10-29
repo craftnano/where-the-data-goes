@@ -772,7 +772,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
       cam.target.addScaledVector(right, -dx * k).addScaledVector(up, dy * k);
     } else {
       var dTh = -dx * 0.005, dPh = -dy * 0.004;
-      cam.theta += dTh; cam.phi = Math.min(1.5, Math.max(0.15, cam.phi + dPh));
+      cam.theta += dTh; cam.phi = Math.min(2.8, Math.max(0.15, cam.phi + dPh));
       cam.vTheta = dTh; cam.vPhi = dPh;
     }
   });
@@ -918,7 +918,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     requestAnimationFrame(frame);
     var dt = Math.min(0.05, (now - last) / 1000); last = now;
     if (!drag) {
-      cam.theta += cam.vTheta; cam.phi = Math.min(1.5, Math.max(0.15, cam.phi + cam.vPhi)); cam.vTheta *= 0.92; cam.vPhi *= 0.92;
+      cam.theta += cam.vTheta; cam.phi = Math.min(2.8, Math.max(0.15, cam.phi + cam.vPhi)); cam.vTheta *= 0.92; cam.vPhi *= 0.92;
       if (motion && now - cam.lastTouch > 8000) cam.theta += 0.00028;
     }
     if (G && G.flow) { G.stripe.offset.x -= dt * 0.9; G.stripeIn.offset.x -= dt * 0.9; }
