@@ -320,7 +320,32 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
     d.edges.forEach(function (e) { indeg[e.to]++; out[e.from].push(e); inn[e.to].push(e); });
     var pos = new Array(n), ang = new Array(n);
     var L0 = d.nodes.filter(function (x) { return x.level === 0 || isCloud(x); }), L1 = d.nodes.filter(function (x) { return x.level === 1 && !isCloud(x); });
-    L0.forEach(function (x, i) { var a = (i / Math.max(L0.length, 1)) * Math.PI * 2 + 0.4; ang[x.id] = a; pos[x.id] = new THREE.Vector3(Math.cos(a) * 46, 0, Math.sin(a) * 46); });
+    // Place hyperscalers on an even ring, but pin the top three (by incoming
+    // edge count) to 0°, 120°, 240° so AWS, Google Cloud, and Microsoft Azure
+    // sit opposite each other — otherwise they often cluster and their flows
+    // can't be compared visually.
+    var L0_byLoad = L0.slice().sort(function (a, b) { return (indeg[b.id] || 0) - (indeg[a.id] || 0); });
+    var N0 = L0_byLoad.length;
+    var slot0 = new Array(N0);
+    if (N0 >= 3) {
+      var third = Math.floor(N0 / 3);
+      slot0[0] = 0;
+      slot0[1] = third;
+      slot0[2] = 2 * third;
+      var taken = {}; taken[0] = taken[third] = taken[2 * third] = true;
+      var kk = 1;
+      for (var j0 = 3; j0 < N0; j0++) {
+        while (taken[kk]) kk++;
+        slot0[j0] = kk; taken[kk] = true; kk++;
+      }
+    } else {
+      for (var j0 = 0; j0 < N0; j0++) slot0[j0] = j0;
+    }
+    L0_byLoad.forEach(function (x, i) {
+      var a = (slot0[i] / Math.max(N0, 1)) * Math.PI * 2 + 0.4;
+      ang[x.id] = a;
+      pos[x.id] = new THREE.Vector3(Math.cos(a) * 46, 0, Math.sin(a) * 46);
+    });
     var catOrder = ['hosting', 'security', 'communications', 'support', 'other', 'analytics', 'payments', 'ai_inference'];
     L1.sort(function (a, b) { return catOrder.indexOf(a.cat || 'other') - catOrder.indexOf(b.cat || 'other'); });
     L1.forEach(function (x, i) { var a = (i / Math.max(L1.length, 1)) * Math.PI * 2; ang[x.id] = a; var r = 100 + (R() - 0.5) * 24; pos[x.id] = new THREE.Vector3(Math.cos(a) * r, 0, Math.sin(a) * r); });
