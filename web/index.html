@@ -56,12 +56,10 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
 .controls input[type="checkbox"] { accent-color: var(--fg); }
 .controls input[type="range"] { width: 160px; accent-color: var(--fg); }
 .controls select { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 4px 6px; }
-.controls button, .controls .file {
+.controls button {
   font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer;
 }
-.controls button:focus-visible, .controls .file:focus-within { outline: 2px solid var(--fg); outline-offset: 2px; }
-.controls .file { position: relative; }
-.controls .file input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.controls button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 .controls #search-wrap { position: relative; }
 .controls #search { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 4px 8px; width: 190px; }
 .controls #search:focus { outline: 2px solid var(--fg); outline-offset: 2px; }
@@ -130,7 +128,6 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
           <option value="both">both</option>
         </select></label>
         <button type="button" id="reset">Clear selection</button>
-        <span class="file"><input type="file" id="file" accept="application/json,.json"><label for="file">Load dataset JSON</label></span>
       </div>
       <div class="legend" id="legend"></div>
     </div>
@@ -693,10 +690,6 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
   ['nasdaq100', 'sp100', 'cloud100', 'other'].forEach(function (k) { var box = document.getElementById('seed-' + k); state.seedsOn[k] = box.checked; box.addEventListener('change', function (ev) { state.seedsOn[k] = ev.target.checked; applyYear(); }); });
   var yearEl = document.getElementById('year'), yearV = document.getElementById('yearv');
   yearEl.addEventListener('input', function () { state.year = +yearEl.value; yearV.textContent = yearEl.value; applyYear(); });
-  document.getElementById('file').addEventListener('change', function (ev) {
-    var f = ev.target.files && ev.target.files[0]; if (!f) return;
-    var rd = new FileReader(); rd.onload = function () { try { data = normalize(JSON.parse(rd.result)); state.selected = null; state.trail = []; build(data); } catch (err) { document.getElementById('badge').textContent = 'Could not read that file: ' + err.message; } }; rd.readAsText(f);
-  });
   window.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') select(null); });
 
   // ---------- search ----------
@@ -821,9 +814,9 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
   state.scope = document.getElementById('scope').value; state.dir = document.getElementById('dir').value; state.year = +yearEl.value; yearV.textContent = yearEl.value;
   resize(); build(data); requestAnimationFrame(frame);
   // Auto-load graph.json from the same directory. Falls back silently to the
-  // synthetic dataset if fetch fails — e.g. opened from file:// where CORS
-  // blocks local fetches, in which case the "Load dataset JSON" picker is the
-  // way in. On a web deploy (Netlify, etc.) this just works.
+  // synthetic dataset if fetch fails — e.g. opened from file:// where browsers
+  // block local fetches. For a web deploy (Netlify, etc.) this just works.
+  // (To view locally without a server, run `python -m http.server` in web/.)
   fetch('./graph.json', { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function (json) { data = normalize(json); state.selected = null; state.trail = []; build(data); })

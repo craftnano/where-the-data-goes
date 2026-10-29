@@ -71,6 +71,6 @@ For a batch-run report (disclosure breakdown per seed set, Haiku-vs-Sonnet hit r
 
 ## Viewing the prototype
 
-`web/index.html` is a self-contained three.js prototype. On any web host (Netlify, GitHub Pages, `python -m http.server web`, etc.) it auto-fetches `./graph.json` on load. When opened directly from `file://` the browser blocks the fetch for security, so use the "Load dataset JSON" picker that remains in the toolbar for that case.
+`web/index.html` is a self-contained three.js prototype. It auto-fetches `./graph.json` from the same directory on load, so any web host serves it with no build step. To view locally, serve the `web/` folder (e.g. `python3 -m http.server --directory web 8000` → open `http://localhost:8000/`); browsers block `fetch()` from `file://` URLs, so double-clicking the HTML won't load the dataset.
 
 For a Netlify deploy, point the site at this repo with publish directory `web/` and no build command — `web/index.html` and `web/graph.json` are the two files it serves.
