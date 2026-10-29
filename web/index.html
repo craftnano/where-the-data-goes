@@ -42,6 +42,7 @@ body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--fo
 h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; }
 .sub { margin: 6px 0 0; font-family: var(--font-label); font-size: 0.86rem; color: var(--fg-soft); max-width: 48ch; }
 .sub + .sub { margin-top: 8px; }
+.sub-lede { font-size: 0.98rem; color: var(--fg); margin-top: 10px; }
 .sub a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
 .sub a:hover { color: #ffffff; }
 .badge {
@@ -155,7 +156,8 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     <div class="head">
       <div>
         <h1>Where the Data Goes</h1>
-        <p class="sub">A sub-processor is a third party that processes personal data on behalf of another company. European privacy law requires these relationships to be published. This visualization draws every disclosure the research pipeline could find. Click a company to see the vendors it names. Click a vendor to follow where its data goes next.</p>
+        <p class="sub sub-lede">This rendering shows the network of sub-processor relationships across the major tech and corporate ecosystems.</p>
+        <p class="sub">A sub-processor is a third party that processes personal data on behalf of another company. European privacy law requires these relationships to be published, so what you see here is drawn from public disclosures by the companies named. Click a company to see the vendors it names. Click a vendor to follow where its data goes next.</p>
         <p class="sub">What you see is only the slice of vendors that handle personal data. Companies have many other third parties that do not appear here. <a href="#about" id="about-inline">Read more on methodology.</a></p>
         <p class="sub">Drag to turn. Shift-drag to move. Scroll or double-click to zoom. Press Home to reset.</p>
       </div>
