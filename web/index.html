@@ -120,7 +120,7 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
       </div>
       <div class="legend" id="legend"></div>
     </div>
-    <p class="hint">Ground floor: cloud providers. Middle: companies and the services they lean on. Upstairs: foundation model providers. Noodle thickness is how many companies' data flows through it; colour is what it is used for.</p>
+    <p class="hint">Ground floor: hyperscalers. Upstairs: foundation model providers. Everything in between is the companies that publish lists and the vendors they lean on. Noodle thickness is how many companies' data flows through it; colour is what it is used for.</p>
   </div>
 </div>
 <div id="tip" hidden></div>
@@ -410,10 +410,11 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
     var curves = d.edges.map(function (e, k) { return noodle(L.pos[e.from], L.pos[e.to], Math.log10(weights[k] + 1) * 2.5); });
 
     // faint floor discs for the middle and upper tiers; the ground is the tray itself
-    var floorR = [110, 300, 170], floorName = ['Cloud providers', 'Companies and the services they rely on', 'Foundation model providers'];
+    var floorR = [110, 300, 170], floorName = ['Hyperscalers', '', 'Foundation model providers'];
     [0, 1, 2].forEach(function (t) {
       var disc = new THREE.Mesh(new THREE.CircleGeometry(floorR[t], 96), new THREE.MeshBasicMaterial({ color: lin(T.fg), transparent: true, opacity: t === 0 ? 0.06 : 0.035, depthWrite: false, side: THREE.DoubleSide }));
       disc.rotation.x = -Math.PI / 2; disc.position.y = L.floorY[t] - 2.5; group.add(disc);
+      if (!floorName[t]) return;  // Skip caption for unlabeled floors (middle ring has no honest one-liner).
       var cap = document.createElement('div'); cap.className = 'lbl floor'; cap.textContent = floorName[t]; document.body.appendChild(cap);
       labels.push({ el: cap, base: true, floor: { y: L.floorY[t] - 2, r: floorR[t] + 8 } });
     });
