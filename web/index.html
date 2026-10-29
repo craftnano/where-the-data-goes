@@ -42,7 +42,7 @@ body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--fo
 h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; }
 .sub { margin: 6px 0 0; font-family: var(--font-label); font-size: 0.86rem; color: var(--fg-soft); max-width: 48ch; }
 .sub + .sub { margin-top: 8px; }
-.sub-lede { font-size: 0.98rem; color: var(--fg); margin-top: 10px; }
+.sub-lede { font-size: 0.98rem; color: var(--fg-soft); margin-top: 10px; }
 .sub a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
 .sub a:hover { color: #ffffff; }
 .badge {
@@ -99,6 +99,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
 #about .about-panel {
   position: absolute; top: 0; right: 0; width: min(620px, 100%);
   height: 100vh; height: 100dvh;
+  box-sizing: border-box;
   background: var(--bg); border-left: 1px solid var(--rule);
   padding: 40px 44px 120px;
   overflow-y: auto; overscroll-behavior: contain;
