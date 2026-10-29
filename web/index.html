@@ -86,7 +86,7 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
   font-family: var(--font-label); font-size: 0.78rem; color: var(--fg); letter-spacing: 0.02em;
   text-shadow: 0 0 6px var(--bg), 0 0 3px var(--bg), 0 1px 2px var(--bg-deep);
 }
-.lbl.sel { font-weight: 600; font-size: 1.0rem; color: #ffffff; text-shadow: 0 0 10px var(--bg), 0 0 5px var(--bg), 0 1px 2px var(--bg-deep); }
+.lbl.sel { font-weight: 600; font-size: 1.05rem; color: #f5b84c; text-shadow: 0 0 12px rgba(245,184,76,0.35), 0 0 6px var(--bg), 0 0 3px var(--bg), 0 1px 2px var(--bg-deep); }
 .lbl.dest { color: #ffffff; font-weight: 500; font-size: 0.9rem; text-shadow: 0 0 10px var(--bg), 0 0 5px var(--bg), 0 1px 2px var(--bg-deep); }
 /* While a company is selected, dim every other floating label so the chain pops. */
 body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointer-events: none; }
@@ -666,7 +666,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
       var white = new THREE.Color('#ffffff'), swell = new THREE.Matrix4(), sv = new THREE.Vector3(), sq = new THREE.Quaternion(), sp = new THREE.Vector3();
       for (var j2 = 0; j2 < d.nodes.length; j2++) {
         if (!state.vis[j2]) { G.blobs.setMatrixAt(j2, zeroM); continue; }
-        if (ch.n[j2] != null && ch.n[j2] <= 1) { G.blobs.setColorAt(j2, G.baseColors[j2].clone().lerp(lin('#ffffff'), 0.22)); G.mats[j2].decompose(sp, sq, sv); sv.multiplyScalar(j2 === id ? 1.5 : 1.2); swell.compose(sp, sq, sv); G.blobs.setMatrixAt(j2, swell); }
+        if (ch.n[j2] != null && ch.n[j2] <= 1) { G.blobs.setColorAt(j2, G.baseColors[j2].clone().lerp(lin(j2 === id ? '#f5b84c' : '#ffffff'), j2 === id ? 0.55 : 0.22)); G.mats[j2].decompose(sp, sq, sv); sv.multiplyScalar(j2 === id ? 1.5 : 1.2); swell.compose(sp, sq, sv); G.blobs.setMatrixAt(j2, swell); }
         else if (ch.n[j2] === 2) { G.blobs.setColorAt(j2, ghost.clone().lerp(G.baseColors[j2], 0.45)); G.blobs.setMatrixAt(j2, G.mats[j2]); }
         else { G.blobs.setColorAt(j2, ghost); G.blobs.setMatrixAt(j2, G.mats[j2]); }
       }
