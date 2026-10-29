@@ -351,7 +351,26 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
       tier[x.id] = isCloud(x) ? 0 : isAI(x) ? 2 : 1;
     });
     var floorY = [0, 62, 136];
-    pos.forEach(function (p, i) { if (!p) p = pos[i] = new THREE.Vector3(); p.y = floorY[tier[i]] + (R() - 0.5) * 3; if (tier[i] === 2) { p.x *= 0.8; p.z *= 0.8; } });
+    // Tier-2 nodes (foundation model providers) sit on an even ring on the top
+    // floor instead of inheriting an angle from their shared infrastructure.
+    // Otherwise OpenAI and Anthropic — which both lean on AWS/Azure/GCP — end
+    // up stacked on top of each other and you can't compare their flows.
+    var tier2Ids = [];
+    for (var i2 = 0; i2 < n; i2++) if (tier[i2] === 2) tier2Ids.push(i2);
+    tier2Ids.sort(function (a, b) {
+      return String(d.nodes[a].name || '').toLowerCase().localeCompare(String(d.nodes[b].name || '').toLowerCase());
+    });
+    var tier2R = 130;
+    tier2Ids.forEach(function (id, i) {
+      var a = (i / Math.max(tier2Ids.length, 1)) * Math.PI * 2 + 0.5;
+      pos[id] = pos[id] || new THREE.Vector3();
+      pos[id].x = Math.cos(a) * tier2R;
+      pos[id].z = Math.sin(a) * tier2R;
+    });
+    pos.forEach(function (p, i) {
+      if (!p) p = pos[i] = new THREE.Vector3();
+      p.y = floorY[tier[i]] + (R() - 0.5) * 3;
+    });
     return { pos: pos, indeg: indeg, out: out, inn: inn, tier: tier, floorY: floorY };
   }
 
