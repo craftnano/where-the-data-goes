@@ -1,0 +1,13 @@
+{
+  "run_id": "run-20261029T060739Z",
+  "started_at": "2026-10-29T06:07:39.333313+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Vanta"
+  ],
+  "failures": {},
+  "total_cost_usd": 0.048501,
+  "aborted": false
+}

@@ -3533,6 +3533,36 @@
       ]
     },
     {
+      "id": "xai",
+      "name": "xAI",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "exa",
+      "name": "Exa",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "baseten",
+      "name": "Baseten",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "coreweave",
+      "name": "CoreWeave",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "amazon-web-services-inc-and-its-subprocessors-listed-at-https-aws-amazon-com-compliance-third-party-access",
       "name": "Amazon Web Services, Inc. and its subprocessors listed at https://aws.amazon.com/compliance/third-party-access/",
       "kind": "sub-processor",
@@ -4467,6 +4497,96 @@
       "seed_sets": []
     },
     {
+      "id": "braintrust",
+      "name": "Braintrust",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "browserbase",
+      "name": "Browserbase",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "cube-dev",
+      "name": "Cube Dev",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "langsmith",
+      "name": "Langsmith",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "mezmo",
+      "name": "Mezmo",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "planetscale",
+      "name": "Planetscale",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "raindrop-ai",
+      "name": "Raindrop.ai",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "serpapi",
+      "name": "SerpApi",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "serper",
+      "name": "Serper",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "smartlead",
+      "name": "Smartlead",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "verisoul",
+      "name": "Verisoul",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "zenrows",
+      "name": "Zenrows",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "aws-control-plane",
       "name": "AWS (Control Plane)",
       "kind": "sub-processor",
@@ -4549,12 +4669,6 @@
     {
       "id": "daily",
       "name": "Daily",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "exa",
-      "name": "Exa",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -4658,20 +4772,8 @@
       "industry": "Voice / AI comms"
     },
     {
-      "id": "baseten",
-      "name": "Baseten",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "brave",
       "name": "Brave",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "browserbase",
-      "name": "Browserbase",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -4911,6 +5013,54 @@
       ]
     },
     {
+      "id": "auth0-inc-okta-inc",
+      "name": "Auth0, Inc. (Okta, Inc.)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "procurri",
+      "name": "Procurri",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "sendgrid-twilio",
+      "name": "SendGrid (Twilio)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "snowflake-inc",
+      "name": "Snowflake,Inc.",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "sparkpost-messagebird",
+      "name": "Sparkpost (MessageBird)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "strategic-business-systems-sbs",
+      "name": "Strategic Business Systems (SBS)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "usercentrics",
+      "name": "Usercentrics",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "zoho-corporation-us",
+      "name": "Zoho Corporation (US)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "collibra",
       "name": "Collibra",
       "kind": "seed",
@@ -5083,6 +5233,115 @@
       ]
     },
     {
+      "id": "asana",
+      "name": "Asana",
+      "kind": "seed",
+      "seed_sets": [
+        "other"
+      ],
+      "industry": "Productivity"
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "pylon",
+      "name": "Pylon",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "kind": "seed",
+      "seed_sets": [
+        "cloud100_2025"
+      ]
+    },
+    {
+      "id": "sigma",
+      "name": "Sigma",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "trustpilot",
+      "name": "Trustpilot",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "cinder",
+      "name": "Cinder",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "bytedance",
+      "name": "ByteDance",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "creatify",
+      "name": "Creatify",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "fal",
+      "name": "Fal",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "hive",
+      "name": "Hive",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "kling",
+      "name": "Kling",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "kind": "seed",
+      "seed_sets": [
+        "cloud100_2025"
+      ]
+    },
+    {
+      "id": "sync",
+      "name": "Sync",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "plain",
+      "name": "Plain",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "reality-defender",
+      "name": "Reality Defender",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "evenup",
       "name": "EvenUp",
       "kind": "seed",
@@ -5143,6 +5402,81 @@
       "seed_sets": []
     },
     {
+      "id": "oracle-cloud-infrastructure",
+      "name": "Oracle Cloud Infrastructure",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "kind": "seed",
+      "seed_sets": [
+        "other"
+      ],
+      "industry": "Productivity"
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "lambda-labs",
+      "name": "Lambda Labs",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "crusoe",
+      "name": "Crusoe",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "vultr",
+      "name": "Vultr",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "fluidstack",
+      "name": "Fluidstack",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "tensorwave",
+      "name": "TensorWave",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "iren",
+      "name": "IREN",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "gmi",
+      "name": "GMI",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "era4",
+      "name": "Era4",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "alto-logica",
       "name": "Alto Logica",
       "kind": "sub-processor",
@@ -5193,12 +5527,6 @@
     {
       "id": "wmbe-payrolling-inc-dba-tcwglobal",
       "name": "WMBE Payrolling Inc (dba TCWGlobal)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "cohere",
-      "name": "Cohere",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -5285,12 +5613,6 @@
       "seed_sets": [
         "cloud100_2025"
       ]
-    },
-    {
-      "id": "coreweave",
-      "name": "CoreWeave",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "dyspatch-sendwithus",
@@ -5491,12 +5813,6 @@
       "seed_sets": []
     },
     {
-      "id": "planetscale",
-      "name": "PlanetScale",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "google-l-l-c",
       "name": "Google L.L.C.",
       "kind": "sub-processor",
@@ -5659,6 +5975,63 @@
       "seed_sets": [
         "cloud100_2025"
       ]
+    },
+    {
+      "id": "api2pdf",
+      "name": "API2PDF",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "birdie",
+      "name": "Birdie",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "certifier",
+      "name": "Certifier",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "langfuse",
+      "name": "Langfuse",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "pluno",
+      "name": "Pluno",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "qdrant",
+      "name": "Qdrant",
+      "kind": "seed",
+      "seed_sets": [
+        "other"
+      ],
+      "industry": "Vector DB"
+    },
+    {
+      "id": "tray-io",
+      "name": "Tray.io",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "warmly-ai",
+      "name": "Warmly.ai",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "workramp",
+      "name": "Workramp",
+      "kind": "sub-processor",
+      "seed_sets": []
     },
     {
       "id": "mercor",
@@ -5834,12 +6207,6 @@
       "seed_sets": []
     },
     {
-      "id": "xai",
-      "name": "xAI",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "teleperformance",
       "name": "Teleperformance",
       "kind": "sub-processor",
@@ -5938,12 +6305,6 @@
       "seed_sets": []
     },
     {
-      "id": "oracle-cloud-infrastructure",
-      "name": "Oracle Cloud Infrastructure",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "cinder-technologies",
       "name": "Cinder Technologies",
       "kind": "sub-processor",
@@ -5970,12 +6331,72 @@
       ]
     },
     {
+      "id": "elastic-co",
+      "name": "Elastic.co",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "tray-ai",
+      "name": "Tray.ai",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "anthropic-claude",
+      "name": "Anthropic Claude",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "perplexity-ai",
       "name": "Perplexity AI",
       "kind": "seed",
       "seed_sets": [
         "cloud100_2025"
       ]
+    },
+    {
+      "id": "airbyte",
+      "name": "Airbyte",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "datafold",
+      "name": "Datafold",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "loops-so",
+      "name": "Loops.so",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "merge",
+      "name": "Merge",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "omni-analytics",
+      "name": "Omni Analytics",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "pipedream",
+      "name": "Pipedream",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "polytomic",
+      "name": "Polytomic",
+      "kind": "sub-processor",
+      "seed_sets": []
     },
     {
       "id": "personio",
@@ -5992,6 +6413,36 @@
       "seed_sets": [
         "cloud100_2025"
       ]
+    },
+    {
+      "id": "microsoft-azure-openai-service",
+      "name": "Microsoft Azure OpenAI Service",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "google-gemini-enterprise-platform",
+      "name": "Google Gemini Enterprise Platform",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "daytona",
+      "name": "Daytona",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "hevo-data",
+      "name": "Hevo Data",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "gigaml",
+      "name": "GigaML",
+      "kind": "sub-processor",
+      "seed_sets": []
     },
     {
       "id": "ramp",
@@ -6025,14 +6476,6 @@
     {
       "id": "rippling",
       "name": "Rippling",
-      "kind": "seed",
-      "seed_sets": [
-        "cloud100_2025"
-      ]
-    },
-    {
-      "id": "runway",
-      "name": "Runway",
       "kind": "seed",
       "seed_sets": [
         "cloud100_2025"
@@ -6431,6 +6874,90 @@
       "seed_sets": []
     },
     {
+      "id": "5c-ai-group",
+      "name": "5C AI Group",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "applied-digital",
+      "name": "Applied Digital",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "clusterpower",
+      "name": "ClusterPower",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "crusoe-cloud",
+      "name": "Crusoe Cloud",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "hypertec",
+      "name": "Hypertec",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "massed-compute",
+      "name": "Massed Compute",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "northern-data-group",
+      "name": "Northern Data Group",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "oracle-cloud",
+      "name": "Oracle Cloud",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "ori-industries",
+      "name": "Ori Industries",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "voltage-park",
+      "name": "Voltage Park",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "krea-ai",
+      "name": "Krea AI",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "international-business-machines-ibm",
+      "name": "International Business Machines (IBM)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "vanta",
       "name": "Vanta",
       "kind": "seed",
@@ -6447,6 +6974,105 @@
     {
       "id": "chameleon-intelligent-tech",
       "name": "Chameleon Intelligent Tech",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "svix",
+      "name": "svix",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "coefficient-io",
+      "name": "Coefficient.io",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "dagster-labs",
+      "name": "Dagster Labs",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "qlik",
+      "name": "Qlik",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "secoda-co",
+      "name": "Secoda.co",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "heap",
+      "name": "Heap",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "statsig",
+      "name": "Statsig",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "langchain-using-langsmith-product",
+      "name": "Langchain (using Langsmith product)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "e2b",
+      "name": "e2b",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "kernel-sh",
+      "name": "kernel.sh",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "hatchet-run",
+      "name": "Hatchet.run",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "reducto-ai",
+      "name": "reducto.ai",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "lakera",
+      "name": "Lakera",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "finch",
+      "name": "Finch",
+      "kind": "seed",
+      "seed_sets": [
+        "other"
+      ],
+      "industry": "Fintech / banking"
+    },
+    {
+      "id": "merge-dev",
+      "name": "Merge.dev",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "oneschema",
+      "name": "OneSchema",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -6477,15 +7103,6 @@
       "name": "Anrok",
       "kind": "sub-processor",
       "seed_sets": []
-    },
-    {
-      "id": "asana",
-      "name": "Asana",
-      "kind": "seed",
-      "seed_sets": [
-        "other"
-      ],
-      "industry": "Productivity"
     },
     {
       "id": "census-sutro-labs-inc",
@@ -6536,12 +7153,6 @@
       "seed_sets": []
     },
     {
-      "id": "statsig",
-      "name": "StatSig",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "stigg",
       "name": "Stigg",
       "kind": "sub-processor",
@@ -6576,14 +7187,6 @@
       "name": "Typeform SL",
       "kind": "sub-processor",
       "seed_sets": []
-    },
-    {
-      "id": "zapier",
-      "name": "Zapier",
-      "kind": "seed",
-      "seed_sets": [
-        "cloud100_2025"
-      ]
     },
     {
       "id": "zoom-zoom-video-communications-inc",
@@ -7993,32 +8596,14 @@
       "seed_sets": []
     },
     {
-      "id": "tray-io",
-      "name": "Tray.io",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "vimeo",
       "name": "Vimeo",
       "kind": "sub-processor",
       "seed_sets": []
     },
     {
-      "id": "pylon",
-      "name": "Pylon",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "railway",
       "name": "Railway",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "digitalocean",
-      "name": "DigitalOcean",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -8030,12 +8615,6 @@
         "other"
       ],
       "industry": "HR / people"
-    },
-    {
-      "id": "anthropic-claude",
-      "name": "Anthropic/Claude",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "llamaindex-optional",
@@ -8152,12 +8731,6 @@
       "seed_sets": []
     },
     {
-      "id": "merge",
-      "name": "Merge",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "national-payment-corporation-npc",
       "name": "National Payment Corporation (NPC)",
       "kind": "sub-processor",
@@ -8221,12 +8794,6 @@
       "industry": "Vector DB"
     },
     {
-      "id": "google-gemini",
-      "name": "Google Gemini",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "morphllm",
       "name": "MorphLLM",
       "kind": "sub-processor",
@@ -8235,12 +8802,6 @@
     {
       "id": "voyageai",
       "name": "VoyageAI",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "posthog",
-      "name": "PostHog",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -8350,12 +8911,6 @@
       "seed_sets": []
     },
     {
-      "id": "plain",
-      "name": "Plain",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "render",
       "name": "Render",
       "kind": "sub-processor",
@@ -8458,12 +9013,6 @@
       "seed_sets": []
     },
     {
-      "id": "heap",
-      "name": "Heap",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "microsoft-azure-various-services",
       "name": "Microsoft (Azure - various services)",
       "kind": "sub-processor",
@@ -8527,12 +9076,6 @@
       "industry": "Design"
     },
     {
-      "id": "openrouter",
-      "name": "OpenRouter",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "apple-id",
       "name": "Apple ID",
       "kind": "sub-processor",
@@ -8547,12 +9090,6 @@
     {
       "id": "andromeda",
       "name": "Andromeda",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "braintrust",
-      "name": "Braintrust",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -8779,15 +9316,6 @@
       "seed_sets": []
     },
     {
-      "id": "finch",
-      "name": "Finch",
-      "kind": "seed",
-      "seed_sets": [
-        "other"
-      ],
-      "industry": "Fintech / banking"
-    },
-    {
       "id": "framer",
       "name": "Framer",
       "kind": "seed",
@@ -8932,12 +9460,6 @@
       "seed_sets": []
     },
     {
-      "id": "sendgrid-twilio",
-      "name": "(Sendgrid) Twilio",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "lago",
       "name": "Lago",
       "kind": "sub-processor",
@@ -8979,12 +9501,6 @@
     {
       "id": "microsoft-365-azure-openai-services",
       "name": "Microsoft [365 + Azure OpenAI Services]",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "reducto-ai",
-      "name": "Reducto AI",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -9064,12 +9580,6 @@
       "seed_sets": []
     },
     {
-      "id": "serpapi",
-      "name": "SerpApi",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "paragon",
       "name": "Paragon",
       "kind": "sub-processor",
@@ -9130,23 +9640,8 @@
       "industry": "AI apps / agents"
     },
     {
-      "id": "linear",
-      "name": "Linear",
-      "kind": "seed",
-      "seed_sets": [
-        "other"
-      ],
-      "industry": "Productivity"
-    },
-    {
       "id": "the-pierre-computer-company",
       "name": "The Pierre Computer Company",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "hevo-data",
-      "name": "Hevo Data",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -9283,12 +9778,6 @@
       "seed_sets": []
     },
     {
-      "id": "oracle-cloud",
-      "name": "Oracle Cloud",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "andromeda-cluster",
       "name": "Andromeda Cluster",
       "kind": "sub-processor",
@@ -9321,18 +9810,6 @@
     {
       "id": "hyperbolic-labs",
       "name": "Hyperbolic Labs",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "lambda-labs",
-      "name": "Lambda Labs",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "massed-compute",
-      "name": "Massed Compute",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -9526,15 +10003,6 @@
       "seed_sets": []
     },
     {
-      "id": "qdrant",
-      "name": "Qdrant",
-      "kind": "seed",
-      "seed_sets": [
-        "other"
-      ],
-      "industry": "Vector DB"
-    },
-    {
       "id": "attio",
       "name": "Attio",
       "kind": "sub-processor",
@@ -9555,12 +10023,6 @@
     {
       "id": "gcp-google",
       "name": "GCP (Google)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "loops-so",
-      "name": "Loops.so",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -9745,12 +10207,6 @@
       "seed_sets": []
     },
     {
-      "id": "airbyte",
-      "name": "Airbyte",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "wispr-ai",
       "name": "Wispr AI",
       "kind": "sub-processor",
@@ -9812,12 +10268,6 @@
         "other"
       ],
       "industry": "AI apps / agents"
-    },
-    {
-      "id": "daytona",
-      "name": "Daytona",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "elastic-cloud",
@@ -9963,12 +10413,6 @@
     {
       "id": "scuba-analytics-inc",
       "name": "Scuba Analytics, Inc. *",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "snowflake-inc",
-      "name": "Snowflake, Inc. *",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -18069,264 +18513,546 @@
       "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud infrastructure",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "amazon-web-services",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Infrastructure",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Infrastructure",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "cloudflare",
       "purpose_category": "hosting",
       "purpose_text": "Traffic Routing (CDN)",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "stripe",
       "purpose_category": "payments",
       "purpose_text": "Billing",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "workos",
       "purpose_category": "security",
       "purpose_text": "Security, Single Sign-On",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "intercom",
       "purpose_category": "support",
       "purpose_text": "User support",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "nutun",
       "purpose_category": "support",
       "purpose_text": "User support",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "boldr",
       "purpose_category": "support",
       "purpose_text": "User support",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "twilio",
       "purpose_category": "communications",
       "purpose_text": "Analytics, email/SMS communications",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "iterable",
       "purpose_category": "communications",
       "purpose_text": "Email communications",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "functional-software-dba-sentry",
       "purpose_category": "support",
       "purpose_text": "Error Handling, User Support",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "sift",
       "purpose_category": "security",
       "purpose_text": "Fraud and abuse detection",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "arkose-labs",
       "purpose_category": "security",
       "purpose_text": "Fraud and abuse detection",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "brave-search",
       "purpose_category": "other",
       "purpose_text": "Web Search",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "elevenlabs",
       "purpose_category": "ai_inference",
       "purpose_text": "Text to speech",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "palantir-federal-cloud-service-pfcs",
       "purpose_category": "other",
       "purpose_text": "FedRAMP Cloud",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "turbopuffer",
       "purpose_category": "other",
       "purpose_text": "Web Search",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "persona",
       "purpose_category": "security",
       "purpose_text": "Fraud and abuse detection, identity verification",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "yoti",
       "purpose_category": "security",
       "purpose_text": "Fraud and abuse detection, identity verification",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "intuition-machines-inc-hcaptcha",
       "purpose_category": "security",
       "purpose_text": "Fraud and abuse detection",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
     },
     {
       "from": "anthropic",
       "to": "parallel-web-systems",
       "purpose_category": "other",
       "purpose_text": "Web Search",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta-hosted Anthropic Trust Center subprocessors page; 22 entries"
+    },
+    {
+      "from": "cursor",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "xai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "google-gemini",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "exa",
+      "purpose_category": "other",
+      "purpose_text": "Web Search",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Logging and monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "databricks",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Analytics Database and Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "vercel",
+      "purpose_category": "hosting",
+      "purpose_text": "Web Hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "microsoft-azure",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "baseten",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "cloudflare",
+      "purpose_category": "analytics",
+      "purpose_text": "Cloud monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "google-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "together-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "workos",
+      "purpose_category": "security",
+      "purpose_text": "SSO/SCIM provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "meta-platforms",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "nebius",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "typesafe-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
+    },
+    {
+      "from": "cursor",
+      "to": "coreweave",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Cursor Trust Center subprocessors page (trust.cursor.com), 20 entries; referenced from the Cursor DPA."
     },
     {
       "from": "appsflyer",
@@ -21149,6 +21875,32 @@
       ]
     },
     {
+      "from": "checkout-com",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Storage Platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; Checkout Technology Ltd. (own subsidiary) omitted."
+    },
+    {
+      "from": "checkout-com",
+      "to": "google-cloud",
+      "purpose_category": "other",
+      "purpose_text": "BigQuery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; Checkout Technology Ltd. (own subsidiary) omitted."
+    },
+    {
       "from": "checkr",
       "to": "ada",
       "purpose_category": "support",
@@ -21951,6 +22703,435 @@
       "seed_sets": [
         "cloud100_2025"
       ]
+    },
+    {
+      "from": "clay",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "amplitude",
+      "purpose_category": "analytics",
+      "purpose_text": "Data analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM provider/hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "braintrust",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM Operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "datadog",
+      "purpose_category": "security",
+      "purpose_text": "APM and security",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "segment",
+      "purpose_category": "analytics",
+      "purpose_text": "Data analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "snowflake",
+      "purpose_category": "analytics",
+      "purpose_text": "Data analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "clickhouse",
+      "purpose_category": "hosting",
+      "purpose_text": "Database",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "browserbase",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM Operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "cohere",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "cube-dev",
+      "purpose_category": "analytics",
+      "purpose_text": "Data analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM provider/hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "fivetran",
+      "purpose_category": "other",
+      "purpose_text": "Data ETL",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "google-gemini",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM provider/hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "grafana",
+      "purpose_category": "analytics",
+      "purpose_text": "Logging and metrics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "intercom",
+      "purpose_category": "support",
+      "purpose_text": "Customer support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "langsmith",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM logging and tracing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "mezmo",
+      "purpose_category": "analytics",
+      "purpose_text": "Logging and metrics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "mistral",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM provider/hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM provider/hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "planetscale",
+      "purpose_category": "unnamed",
+      "purpose_text": "",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "parallel-web-systems",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "postmark",
+      "purpose_category": "communications",
+      "purpose_text": "Email service provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "raindrop-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "sentry",
+      "purpose_category": "analytics",
+      "purpose_text": "Error logging",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "serpapi",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "serper",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "smartlead",
+      "purpose_category": "communications",
+      "purpose_text": "Email sequencer",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "slack",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "turbopuffer",
+      "purpose_category": "hosting",
+      "purpose_text": "Vector Database",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "verisoul",
+      "purpose_category": "security",
+      "purpose_text": "Fraud Detection",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "workos",
+      "purpose_category": "security",
+      "purpose_text": "Authentication support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
+    },
+    {
+      "from": "clay",
+      "to": "zenrows",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM operations",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page; excluded Clay's own subsidiary CLAY LABS UK LTD"
     },
     {
       "from": "clickhouse",
@@ -23405,6 +24586,266 @@
       ]
     },
     {
+      "from": "cohesity",
+      "to": "amazon-web-services",
+      "purpose_category": "support",
+      "purpose_text": "Hosting Customer Content; SaaS and related tools; Technical support functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "auth0-inc-okta-inc",
+      "purpose_category": "security",
+      "purpose_text": "Multi-factor user authentication",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "datadog",
+      "purpose_category": "other",
+      "purpose_text": "SaaS application log analysis",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "elastic",
+      "purpose_category": "analytics",
+      "purpose_text": "Search and Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "fullstory",
+      "purpose_category": "other",
+      "purpose_text": "User activity and behaviour within the Service",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Software analytics; Technical support tools; Generative artificial intelligence services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "intercom",
+      "purpose_category": "other",
+      "purpose_text": "SaaS infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "microsoft-azure",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Hosting Customer Content; Email and related applications; SaaS and related tools; Technical support functionality; Generative artificial intelligence services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "mixpanel",
+      "purpose_category": "other",
+      "purpose_text": "SaaS infrastructure; SaaS UI analysis",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "mongodb",
+      "purpose_category": "analytics",
+      "purpose_text": "Data Storage; SaaS analytics database",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "oracle-america",
+      "purpose_category": "analytics",
+      "purpose_text": "Hosting of Service Analytics Data",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "pagerduty",
+      "purpose_category": "analytics",
+      "purpose_text": "Service monitoring and alerts",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "procurri",
+      "purpose_category": "other",
+      "purpose_text": "Disk Erasure and Asset; Recovery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "salesforce",
+      "purpose_category": "security",
+      "purpose_text": "Customer relationship management; Software entitlement management; Support portal; User authentication",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "sendgrid-twilio",
+      "purpose_category": "communications",
+      "purpose_text": "Email notification tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "snowflake-inc",
+      "purpose_category": "analytics",
+      "purpose_text": "SaaS analytics data warehouse",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "sparkpost-messagebird",
+      "purpose_category": "communications",
+      "purpose_text": "Customer Relationship Management; Email processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "strategic-business-systems-sbs",
+      "purpose_category": "other",
+      "purpose_text": "Execution of commands which process customer's data in accordance with their agreement",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "usercentrics",
+      "purpose_category": "other",
+      "purpose_text": "Consent Management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
+      "from": "cohesity",
+      "to": "zoho-corporation-us",
+      "purpose_category": "communications",
+      "purpose_text": "Optional subscription notification tool for application uptime monitoring; Customer Relations Management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "PDF from my.cohesity.com (linked from cohesity.com/agreements); affiliates omitted. Trust center URL failed."
+    },
+    {
       "from": "collibra",
       "to": "amazon-web-services-inc-aws",
       "purpose_category": "hosting",
@@ -24213,36 +25654,455 @@
       "to": "amazon-web-services",
       "purpose_category": "security",
       "purpose_text": "Infrastructure Hosting Note: Subprocessor location is dependent on your specific deployment selection.",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Conveyor-powered trust center; list last updated October 14, 2025."
     },
     {
       "from": "dbt-labs",
       "to": "google-cloud",
       "purpose_category": "security",
       "purpose_text": "Infrastructure Hosting Note: Subprocessor location is dependent on your specific deployment selection.",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Conveyor-powered trust center; list last updated October 14, 2025."
     },
     {
       "from": "dbt-labs",
       "to": "microsoft-azure",
       "purpose_category": "security",
       "purpose_text": "Infrastructure Hosting Note: Subprocessor location is dependent on your specific deployment selection.",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Conveyor-powered trust center; list last updated October 14, 2025."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Cloud infrastructure, security, data storage & LLM Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud infrastructure & data storage",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "microsoft-azure",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Cloud infrastructure, data storage & LLM Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "asana",
+      "purpose_category": "other",
+      "purpose_text": "Collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "slack",
+      "purpose_category": "other",
+      "purpose_text": "Collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "zendesk",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "posthog",
+      "purpose_category": "analytics",
+      "purpose_text": "Cloud monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "pylon",
+      "purpose_category": "support",
+      "purpose_text": "Customer support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "stripe",
+      "purpose_category": "payments",
+      "purpose_text": "Payments",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "zapier",
+      "purpose_category": "other",
+      "purpose_text": "Collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "sigma",
+      "purpose_category": "analytics",
+      "purpose_text": "Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "trustpilot",
+      "purpose_category": "analytics",
+      "purpose_text": "Reviews",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "cinder",
+      "purpose_category": "other",
+      "purpose_text": "Moderation",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "twilio",
+      "purpose_category": "communications",
+      "purpose_text": "Communications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "fivetran",
+      "purpose_category": "other",
+      "purpose_text": "Data processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "xai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "bytedance",
+      "purpose_category": "other",
+      "purpose_text": "Generation and processing of synthetic media content",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "creatify",
+      "purpose_category": "other",
+      "purpose_text": "Generation and processing of synthetic media content",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "fal",
+      "purpose_category": "other",
+      "purpose_text": "Generation and processing of synthetic media content",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "hive",
+      "purpose_category": "other",
+      "purpose_text": "AI Safety",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "kling",
+      "purpose_category": "other",
+      "purpose_text": "Generation and processing of synthetic media content",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "runway",
+      "purpose_category": "other",
+      "purpose_text": "Generation and processing of synthetic media content",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "sync",
+      "purpose_category": "other",
+      "purpose_text": "Generation and processing of synthetic media content",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "mongodb",
+      "purpose_category": "other",
+      "purpose_text": "Engineering",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "plain",
+      "purpose_category": "support",
+      "purpose_text": "Customer support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "databricks",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "reality-defender",
+      "purpose_category": "other",
+      "purpose_text": "Safety Detections",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "tailscale",
+      "purpose_category": "other",
+      "purpose_text": "Networking",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
+    },
+    {
+      "from": "elevenlabs",
+      "to": "hex",
+      "purpose_category": "analytics",
+      "purpose_text": "Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center (compliance.elevenlabs.io) Subprocessors tab, 33 results; affiliates entry omitted. Purpose = category label shown by the name, or the description where no category is shown."
     },
     {
       "from": "fal-ai",
@@ -24423,6 +26283,266 @@
       "seed_sets": [
         "cloud100_2025"
       ]
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud infrastructure and service provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "google-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud infrastructure and service provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "oracle-cloud-infrastructure",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud infrastructure and service provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "cloudflare",
+      "purpose_category": "hosting",
+      "purpose_text": "Content delivery network provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "vercel",
+      "purpose_category": "hosting",
+      "purpose_text": "Frontend hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "pylon",
+      "purpose_category": "support",
+      "purpose_text": "Customer support platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "linear",
+      "purpose_category": "support",
+      "purpose_text": "Internal support collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "discord",
+      "purpose_category": "other",
+      "purpose_text": "Communication services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "slack",
+      "purpose_category": "other",
+      "purpose_text": "Collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "lambda-labs",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "crusoe",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "vultr",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "coreweave",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "digitalocean",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "fluidstack",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "tensorwave",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "iren",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "gmi",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "era4",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
+    },
+    {
+      "from": "fireworks-ai",
+      "to": "alibaba-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Infrastructure Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted trust center subprocessors page; 20 entries"
     },
     {
       "from": "fivetran",
@@ -25331,6 +27451,18 @@
       "purpose_text": "Customer support provider for ticketing management",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ]
+    },
+    {
+      "from": "gusto",
+      "to": "unnamed-sub-processor",
+      "purpose_category": "unnamed",
+      "purpose_text": "(categories_only disclosure)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
@@ -26631,6 +28763,357 @@
       "seed_sets": [
         "cloud100_2025"
       ]
+    },
+    {
+      "from": "maintainx",
+      "to": "amplitude",
+      "purpose_category": "analytics",
+      "purpose_text": "Data Analytics, Product, Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Data Analytics, Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "okta",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "anthropic",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "api2pdf",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "appcues",
+      "purpose_category": "other",
+      "purpose_text": "Marketing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "birdie",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "certifier",
+      "purpose_category": "other",
+      "purpose_text": "Training Certification",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "databricks",
+      "purpose_category": "hosting",
+      "purpose_text": "Data storage and processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "gainsight",
+      "purpose_category": "other",
+      "purpose_text": "Customer Success",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "google-workspace",
+      "purpose_category": "analytics",
+      "purpose_text": "Data Analytics, Hosting, Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "hubspot",
+      "purpose_category": "other",
+      "purpose_text": "Product & Marketing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "intercom",
+      "purpose_category": "support",
+      "purpose_text": "Customer Success, Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "langfuse",
+      "purpose_category": "analytics",
+      "purpose_text": "Data Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "onesignal",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "pluno",
+      "purpose_category": "support",
+      "purpose_text": "Customer support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "openai",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "qdrant",
+      "purpose_category": "hosting",
+      "purpose_text": "Data storage and processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "segment",
+      "purpose_category": "analytics",
+      "purpose_text": "Data Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "stripe",
+      "purpose_category": "other",
+      "purpose_text": "Finance",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "tray-io",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "twilio",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "warmly-ai",
+      "purpose_category": "other",
+      "purpose_text": "Sales",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "workato",
+      "purpose_category": "other",
+      "purpose_text": "Product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "workramp",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
+    },
+    {
+      "from": "maintainx",
+      "to": "zendesk",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-powered trust center content rendered at getmaintainx.com/maintainx-sub-processors (27 subprocessors)"
     },
     {
       "from": "mercor",
@@ -28097,6 +30580,656 @@
       ]
     },
     {
+      "from": "pendo",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Hosting infrastructure services, (optional) AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "pendo",
+      "to": "amazon-web-services",
+      "purpose_category": "communications",
+      "purpose_text": "Email routing, legacy CDN",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "pendo",
+      "to": "openai",
+      "purpose_category": "other",
+      "purpose_text": "(Optional) AI functionality in product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "pendo",
+      "to": "elastic-co",
+      "purpose_category": "analytics",
+      "purpose_text": "Logging and query solution",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "pendo",
+      "to": "microsoft-azure",
+      "purpose_category": "other",
+      "purpose_text": "(Optional) AI functionality in product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "pendo",
+      "to": "tray-ai",
+      "purpose_category": "other",
+      "purpose_text": "Workflow automation and systems integration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "pendo",
+      "to": "langchain",
+      "purpose_category": "other",
+      "purpose_text": "(Recommended Optional) AI agent development infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "pendo",
+      "to": "anthropic-claude",
+      "purpose_category": "other",
+      "purpose_text": "(Optional) AI functionality in product",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Trust Center subprocessors page; 8 entries listed."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "airbyte",
+      "purpose_category": "other",
+      "purpose_text": "Data integration and movement",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "amazon-bedrock",
+      "purpose_category": "other",
+      "purpose_text": "Artificial intelligence research and deployment",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "amazon-web-services",
+      "purpose_category": "security",
+      "purpose_text": "Cloud infrastructure and security",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Artificial intelligence research and deployment, including AI models like Claude",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "cloudflare",
+      "purpose_category": "security",
+      "purpose_text": "Edge network and security infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "datafold",
+      "purpose_category": "analytics",
+      "purpose_text": "Data quality monitoring tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "elevenlabs",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Text-to-speech services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "fivetran",
+      "purpose_category": "other",
+      "purpose_text": "Data integration and movement",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Artificial intelligence research and deployment, including AI models like Gemini",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "hex",
+      "purpose_category": "other",
+      "purpose_text": "Business intelligence tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "loops-so",
+      "purpose_category": "communications",
+      "purpose_text": "Email marketing and automation platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "merge",
+      "purpose_category": "other",
+      "purpose_text": "Third Party connectors for Perplexity AI platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "metronome",
+      "purpose_category": "payments",
+      "purpose_text": "Payment processing platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "microsoft-azure",
+      "purpose_category": "other",
+      "purpose_text": "Cloud computing services including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) offerings.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "OpenAI is an artificial intelligence (AI) research and deployment tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "omni-analytics",
+      "purpose_category": "other",
+      "purpose_text": "Data warehouse business intelligence tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "pipedream",
+      "purpose_category": "other",
+      "purpose_text": "Third Party connectors for Perplexity AI platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "polytomic",
+      "purpose_category": "other",
+      "purpose_text": "Data Integration and Movement",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "stripe",
+      "purpose_category": "payments",
+      "purpose_text": "Payment processing platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "xai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Artificial intelligence research and deployment, including AI models like Grok",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "snowflake",
+      "purpose_category": "analytics",
+      "purpose_text": "Cloud data warehouse and analytics platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Cloud monitoring and observability platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "perplexity-ai",
+      "to": "clickhouse",
+      "purpose_category": "analytics",
+      "purpose_text": "Reporting and analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors page, 23 entries; purpose is the description line shown on the page."
+    },
+    {
+      "from": "postman",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Service Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "cloudinary",
+      "purpose_category": "hosting",
+      "purpose_text": "Image Hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "clickhouse",
+      "purpose_category": "analytics",
+      "purpose_text": "Database Infrastructure Host for observability, performance, and product insights\nAlso used to support Agent Mode",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "microsoft-azure-openai-service",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Features powered by AI and Machine Learning",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "openai",
+      "purpose_category": "other",
+      "purpose_text": "AI research and deployment",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "anthropic",
+      "purpose_category": "other",
+      "purpose_text": "AI research and deployment",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "amazon-bedrock",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI/LLM models for research & development",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "google-gemini-enterprise-platform",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI/LLM models for research & development",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "daytona",
+      "purpose_category": "other",
+      "purpose_text": "Sandbox for testing AI-generated code",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "atlassian",
+      "purpose_category": "analytics",
+      "purpose_text": "Used for internal issue tracking and ticketing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "slack",
+      "purpose_category": "communications",
+      "purpose_text": "Internal communications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "twilio-sendgrid",
+      "purpose_category": "communications",
+      "purpose_text": "Customer email communications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "hevo-data",
+      "purpose_category": "support",
+      "purpose_text": "Supports data integration across systems",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "zendesk",
+      "purpose_category": "communications",
+      "purpose_text": "Customer support ticketing and communications platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "salesforce",
+      "purpose_category": "support",
+      "purpose_text": "Customer relationship and support management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "gong",
+      "purpose_category": "communications",
+      "purpose_text": "Customer success communications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "gigaml",
+      "purpose_category": "communications",
+      "purpose_text": "Customer success communications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "gainsight",
+      "purpose_category": "communications",
+      "purpose_text": "Customer success communications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
+      "from": "postman",
+      "to": "sentry",
+      "purpose_category": "analytics",
+      "purpose_text": "Application performance monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Main Postman Services list (current as of June 2026) from the page served at the /jp/ URL, which rendered the content; the /legal/sub-processors/ page showed only 'Loading contract...'. Astro AI sub-processors (separate product list: AWS, Anthropic, WorkOS, Langfuse, Clickhouse) and Postman affiliates are excluded."
+    },
+    {
       "from": "ramp",
       "to": "modal",
       "purpose_category": "other",
@@ -28551,6 +31684,188 @@
       "seed_sets": [
         "cloud100_2025"
       ]
+    },
+    {
+      "from": "sierra",
+      "to": "amazon-web-services",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Data storage, cloud hosting, and AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "microsoft-azure",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "deepgram",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "baseten-labs",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "modal-labs",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "together-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "eleven-labs",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "twilio",
+      "purpose_category": "communications",
+      "purpose_text": "Telecommunications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "cloudflare",
+      "purpose_category": "hosting",
+      "purpose_text": "Content Delivery Network and Edge web serving",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
+    },
+    {
+      "from": "sierra",
+      "to": "workos",
+      "purpose_category": "security",
+      "purpose_text": "Authentication and identity management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta-hosted Sierra Trust Center subprocessors page; 14 entries, publicly readable."
     },
     {
       "from": "snyk",
@@ -29741,52 +33056,953 @@
       ]
     },
     {
+      "from": "together-ai",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "google-workspace",
+      "purpose_category": "communications",
+      "purpose_text": "Email, collaboration, and file storage",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "okta",
+      "purpose_category": "security",
+      "purpose_text": "User authentication services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "stripe",
+      "purpose_category": "payments",
+      "purpose_text": "Payment processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "5c-ai-group",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "applied-digital",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "clusterpower",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "crusoe-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "hypertec",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "iren",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "massed-compute",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "northern-data-group",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "oracle-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud hosting provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "ori-industries",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "voltage-park",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "vultr",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "pylon",
+      "purpose_category": "support",
+      "purpose_text": "Customer support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "salesforce",
+      "purpose_category": "other",
+      "purpose_text": "Customer relationship management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "slack",
+      "purpose_category": "communications",
+      "purpose_text": "Messaging and collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "zoom",
+      "purpose_category": "other",
+      "purpose_text": "Video conferencing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "amplitude",
+      "purpose_category": "analytics",
+      "purpose_text": "Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "calendly",
+      "purpose_category": "other",
+      "purpose_text": "Scheduling automation",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "cloudflare",
+      "purpose_category": "security",
+      "purpose_text": "Content delivery and processing, security, abuse prevention and DNS services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "docusign",
+      "purpose_category": "other",
+      "purpose_text": "Contract administration and signature tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "dropbox",
+      "purpose_category": "other",
+      "purpose_text": "Contract administration and signature tool and file sharing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "gong",
+      "purpose_category": "other",
+      "purpose_text": "Revenue intelligence platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "mongodb",
+      "purpose_category": "hosting",
+      "purpose_text": "Managed database services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "openrouter",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI model routing and aggregation",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "perplexity-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "snowflake",
+      "purpose_category": "other",
+      "purpose_text": "Data warehousing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "twilio",
+      "purpose_category": "communications",
+      "purpose_text": "Analytics; email/SMS communications,including transactional, broadcast, and marketing messaging",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "krea-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "LLM services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
+      "from": "together-ai",
+      "to": "international-business-machines-ibm",
+      "purpose_category": "hosting",
+      "purpose_text": "Hosting and cloud infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta trust center subprocessors tab, 35 entries"
+    },
+    {
       "from": "vanta",
       "to": "amazon-web-services",
       "purpose_category": "hosting",
       "purpose_text": "Infrastructure Hosting",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
     },
     {
       "from": "vanta",
       "to": "mongo-db",
       "purpose_category": "hosting",
       "purpose_text": "Database Hosting",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
     },
     {
       "from": "vanta",
       "to": "chameleon-intelligent-tech",
       "purpose_category": "communications",
       "purpose_text": "Application notifications",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
     },
     {
       "from": "vanta",
       "to": "cloudflare",
       "purpose_category": "hosting",
       "purpose_text": "Hosting and Content Delivery",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
       "source": "live",
       "seed_sets": [
         "cloud100_2025"
-      ]
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "confluent",
+      "purpose_category": "other",
+      "purpose_text": "Platform Data Streaming",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Logging & Monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "courier",
+      "purpose_category": "communications",
+      "purpose_text": "Customer Notification Delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "svix",
+      "purpose_category": "other",
+      "purpose_text": "Webhook Delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "snowflake",
+      "purpose_category": "other",
+      "purpose_text": "Data Warehouse",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "sigma",
+      "purpose_category": "analytics",
+      "purpose_text": "BI Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "coefficient-io",
+      "purpose_category": "analytics",
+      "purpose_text": "Analytics & Reporting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "dagster-labs",
+      "purpose_category": "other",
+      "purpose_text": "Data pipeline orchestration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "fivetran",
+      "purpose_category": "analytics",
+      "purpose_text": "Logging & Monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "qlik",
+      "purpose_category": "analytics",
+      "purpose_text": "Analytics support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "polytomic",
+      "purpose_category": "other",
+      "purpose_text": "Data Integration and Streaming",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "secoda-co",
+      "purpose_category": "other",
+      "purpose_text": "Data Cataloging and Analysis",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "tableau",
+      "purpose_category": "other",
+      "purpose_text": "Data Visualization Platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "heap",
+      "purpose_category": "analytics",
+      "purpose_text": "Application Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "statsig",
+      "purpose_category": "analytics",
+      "purpose_text": "Product Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "openai",
+      "purpose_category": "other",
+      "purpose_text": "Application AI Functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "anthropic",
+      "purpose_category": "other",
+      "purpose_text": "Application AI Functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "google-cloud",
+      "purpose_category": "other",
+      "purpose_text": "Application AI Functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "cohere",
+      "purpose_category": "analytics",
+      "purpose_text": "Monitoring and Evaluation of AI Product Features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "langchain-using-langsmith-product",
+      "purpose_category": "analytics",
+      "purpose_text": "Monitoring and Evaluation of AI product Features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "browserbase",
+      "purpose_category": "other",
+      "purpose_text": "Application AI Functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "microsoft-azure",
+      "purpose_category": "other",
+      "purpose_text": "Application AI Functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "e2b",
+      "purpose_category": "other",
+      "purpose_text": "Application AI Functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "kernel-sh",
+      "purpose_category": "other",
+      "purpose_text": "Application AI Functionality",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "hatchet-run",
+      "purpose_category": "other",
+      "purpose_text": "Workflow Orchestration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "reducto-ai",
+      "purpose_category": "other",
+      "purpose_text": "Document Parsing Tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "lakera",
+      "purpose_category": "security",
+      "purpose_text": "AI Security",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "intercom",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support Tool",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "salesforce",
+      "purpose_category": "other",
+      "purpose_text": "Subscription Management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "zapier",
+      "purpose_category": "other",
+      "purpose_text": "Workflow Automation",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "finch",
+      "purpose_category": "other",
+      "purpose_text": "HR Platform Integration Tool (customer optional)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "merge-dev",
+      "purpose_category": "other",
+      "purpose_text": "Platform Integration Tool (customer optional)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "oneschema",
+      "purpose_category": "other",
+      "purpose_text": "CSV Importer (customer optional)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
+    },
+    {
+      "from": "vanta",
+      "to": "workos",
+      "purpose_category": "other",
+      "purpose_text": "SCIM integration (customer optional)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "note": "Vanta's own Trust Center subprocessors page (client-rendered); 43 listed, 5 Vanta affiliates excluded."
     },
     {
       "from": "webflow",
@@ -45367,6 +49583,76 @@
       "note": "Writer's own affiliates row (\"Writer, Inc. affiliates\") omitted. Page says Last Updated October 14, 2026. Multi-location cells are joined with commas."
     },
     {
+      "from": "automattic",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Storage and backup of data",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "product_scope": "Automattic services (site owners' visitors data and MailPoet customers)",
+      "note": "The page covers services for site visitors and MailPoet customers. Its location column is headed \"Corporate headquarters\"."
+    },
+    {
+      "from": "automattic",
+      "to": "anthropic",
+      "purpose_category": "other",
+      "purpose_text": "Powering AI features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "product_scope": "Automattic services (site owners' visitors data and MailPoet customers)",
+      "note": "The page covers services for site visitors and MailPoet customers. Its location column is headed \"Corporate headquarters\"."
+    },
+    {
+      "from": "automattic",
+      "to": "google-cloud",
+      "purpose_category": "other",
+      "purpose_text": "Powering AI features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "product_scope": "Automattic services (site owners' visitors data and MailPoet customers)",
+      "note": "The page covers services for site visitors and MailPoet customers. Its location column is headed \"Corporate headquarters\"."
+    },
+    {
+      "from": "automattic",
+      "to": "linode",
+      "purpose_category": "other",
+      "purpose_text": "Hosts MailPoet accounts",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "product_scope": "Automattic services (site owners' visitors data and MailPoet customers)",
+      "note": "The page covers services for site visitors and MailPoet customers. Its location column is headed \"Corporate headquarters\"."
+    },
+    {
+      "from": "automattic",
+      "to": "openai",
+      "purpose_category": "other",
+      "purpose_text": "Powering AI features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "product_scope": "Automattic services (site owners' visitors data and MailPoet customers)",
+      "note": "The page covers services for site visitors and MailPoet customers. Its location column is headed \"Corporate headquarters\"."
+    },
+    {
       "from": "adobe",
       "to": "microsoft-azure",
       "purpose_category": "hosting",
@@ -46389,286 +50675,6 @@
       "seed_sets": [
         "other"
       ]
-    },
-    {
-      "from": "cursor",
-      "to": "amazon-web-services",
-      "purpose_category": "hosting",
-      "purpose_text": "Cloud Infrastructure Provider \u2014 Primary cloud hosting provider for Cursor's infrastructure. Our infrastructure is primarily hosted on AWS US region with some latency critical services in Europe and Singapore.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "xai",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Infrastructure, services, and support",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "fireworks-ai",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving AI models.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "anthropic",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "openai",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "google-gemini",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via Vertex API.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "exa",
-      "purpose_category": "other",
-      "purpose_text": "Web Search \u2014 Web search API provider for retrieving web content and search results.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "datadog",
-      "purpose_category": "analytics",
-      "purpose_text": "Logging and monitoring \u2014 Application logging and monitoring.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "databricks",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Analytics Database and Inference Provider \u2014 Data platform provider for storing and processing analytics data, and inference infrastructure provider for hosting and serving AI models.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "vercel",
-      "purpose_category": "hosting",
-      "purpose_text": "Web Hosting \u2014 Web hosting and compute services provider.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "microsoft-azure",
-      "purpose_category": "hosting",
-      "purpose_text": "Cloud Infrastructure Provider \u2014 Some secondary infrastructure is hosted on Microsoft Azure.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "baseten",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving AI models.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "cloudflare",
-      "purpose_category": "security",
-      "purpose_text": "Cloud monitoring \u2014 CDN, reverse proxy, network security, and Zero Trust tunneling provider.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "google-cloud",
-      "purpose_category": "hosting",
-      "purpose_text": "Cloud Infrastructure Provider \u2014 Cloud hosting provider",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "together-ai",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Our custom models are hosted with Together. We have a zero data retention agreement with Together.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "workos",
-      "purpose_category": "security",
-      "purpose_text": "SSO/SCIM provider \u2014 Enterprise authentication and SSO/SCIM provider.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "meta-platforms",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "nebius",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving first party AI models.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "typesafe-ai",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
-    },
-    {
-      "from": "cursor",
-      "to": "coreweave",
-      "purpose_category": "ai_inference",
-      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving first party AI models.",
-      "purpose_paraphrased": false,
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "manual",
-      "seed_sets": [
-        "cloud100_2025"
-      ],
-      "source_url": "https://trust.cursor.com/subprocessors"
     },
     {
       "from": "microsoft-azure",
