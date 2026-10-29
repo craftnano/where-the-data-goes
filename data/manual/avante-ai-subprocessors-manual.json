@@ -1,0 +1,24 @@
+{
+  "company": "Avante AI",
+  "source_url": null,
+  "fetched_at": "2026-10-28",
+  "observation_date": "2026-10-28",
+  "discovery_method": "manual",
+  "paraphrased": true,
+  "note": "Direct submission by Avante AI; purpose text is a short paraphrase, not a verbatim DPA line. Auth0 is folded into Okta, Azure into Microsoft Azure, GCP into Google Cloud, Google Vertex into Google Vertex AI by the alias table at export time.",
+  "entries": [
+    {"name": "Snowflake",        "purpose": "Data warehousing for analytics and reporting",   "location": "", "category": "analytics"},
+    {"name": "Microsoft Azure",  "purpose": "Cloud hosting infrastructure",                   "location": "", "category": "hosting"},
+    {"name": "Google Cloud",     "purpose": "Cloud hosting infrastructure",                   "location": "", "category": "hosting"},
+    {"name": "Anthropic",        "purpose": "Large-language-model inference provider",        "location": "", "category": "ai"},
+    {"name": "Google Vertex AI", "purpose": "Model hosting and ML platform",                  "location": "", "category": "ai"},
+    {"name": "Auth0",            "purpose": "Authentication and identity management",         "location": "", "category": "security"},
+    {"name": "Azure OpenAI",     "purpose": "Hosted OpenAI model inference via Microsoft",    "location": "", "category": "ai"},
+    {"name": "Pinecone",         "purpose": "Vector database for embeddings and retrieval",   "location": "", "category": "hosting"},
+    {"name": "Cloudflare",       "purpose": "CDN, DNS, and edge security",                    "location": "", "category": "hosting"},
+    {"name": "Datadog",          "purpose": "Infrastructure and application monitoring",      "location": "", "category": "analytics"},
+    {"name": "PostHog",          "purpose": "Product analytics, session replay, feature flags","location": "", "category": "analytics"},
+    {"name": "Stedi",            "purpose": "Healthcare EDI and clearinghouse APIs",          "location": "", "category": "ancillary"},
+    {"name": "Resend",           "purpose": "Transactional email delivery",                   "location": "", "category": "communications"}
+  ]
+}

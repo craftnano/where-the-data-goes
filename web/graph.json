@@ -9952,6 +9952,27 @@
       "seed_sets": []
     },
     {
+      "id": "avante-ai",
+      "name": "Avante AI",
+      "kind": "seed",
+      "seed_sets": [
+        "other"
+      ],
+      "industry": "AI apps / agents"
+    },
+    {
+      "id": "stedi",
+      "name": "Stedi",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "tomtom-north-america",
       "name": "TomTom North America",
       "kind": "sub-processor",
@@ -46211,6 +46232,175 @@
         "sp100"
       ],
       "source_url": "https://www.adobe.com/privacy/sub-processors.html"
+    },
+    {
+      "from": "avante-ai",
+      "to": "snowflake",
+      "purpose_category": "analytics",
+      "purpose_text": "Data warehousing for analytics and reporting",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "microsoft-azure",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud hosting infrastructure",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "google-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud hosting infrastructure",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Large-language-model inference provider",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "google-vertex-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Model hosting and ML platform",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "okta",
+      "purpose_category": "security",
+      "purpose_text": "Authentication and identity management",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "azure-openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Hosted OpenAI model inference via Microsoft",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "pinecone",
+      "purpose_category": "hosting",
+      "purpose_text": "Vector database for embeddings and retrieval",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "cloudflare",
+      "purpose_category": "hosting",
+      "purpose_text": "CDN, DNS, and edge security",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Infrastructure and application monitoring",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "posthog",
+      "purpose_category": "analytics",
+      "purpose_text": "Product analytics, session replay, feature flags",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "stedi",
+      "purpose_category": "other",
+      "purpose_text": "Healthcare EDI and clearinghouse APIs",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
+    },
+    {
+      "from": "avante-ai",
+      "to": "resend",
+      "purpose_category": "communications",
+      "purpose_text": "Transactional email delivery",
+      "purpose_paraphrased": true,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "other"
+      ]
     },
     {
       "from": "microsoft-azure",
