@@ -1657,10 +1657,12 @@
       "seed_sets": []
     },
     {
-      "id": "together-computer",
-      "name": "Together Computer",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "id": "together-ai",
+      "name": "Together AI",
+      "kind": "seed",
+      "seed_sets": [
+        "cloud100_2025"
+      ]
     },
     {
       "id": "vonage-business",
@@ -3523,8 +3525,8 @@
       "seed_sets": []
     },
     {
-      "id": "anysphere",
-      "name": "Anysphere",
+      "id": "cursor",
+      "name": "Cursor",
       "kind": "seed",
       "seed_sets": [
         "cloud100_2025"
@@ -6009,14 +6011,6 @@
       "industry": "AI infra"
     },
     {
-      "id": "together-ai",
-      "name": "Together AI",
-      "kind": "seed",
-      "seed_sets": [
-        "cloud100_2025"
-      ]
-    },
-    {
       "id": "astronomer",
       "name": "Astronomer",
       "kind": "sub-processor",
@@ -6648,12 +6642,6 @@
     {
       "id": "liveblocks",
       "name": "Liveblocks",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "meta",
-      "name": "Meta",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -9973,6 +9961,12 @@
       "seed_sets": []
     },
     {
+      "id": "spacexai",
+      "name": "SpaceXAI",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
       "id": "tomtom-north-america",
       "name": "TomTom North America",
       "kind": "sub-processor",
@@ -9987,12 +9981,6 @@
     {
       "id": "snowflake-inc",
       "name": "Snowflake, Inc. *",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "spacexai",
-      "name": "SpaceXAI",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -13772,7 +13760,7 @@
     },
     {
       "from": "datadog",
-      "to": "together-computer",
+      "to": "together-ai",
       "purpose_category": "ai_inference",
       "purpose_text": "AI services",
       "first_seen": "2026-10-28",
@@ -17299,7 +17287,7 @@
     {
       "from": "airtable",
       "to": "amazon-web-services",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -17311,7 +17299,7 @@
     {
       "from": "airtable",
       "to": "anthropic",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -17335,7 +17323,7 @@
     {
       "from": "airtable",
       "to": "google-cloud",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -17347,7 +17335,7 @@
     {
       "from": "airtable",
       "to": "international-business-machines-corporation-ibm",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -17359,7 +17347,7 @@
     {
       "from": "airtable",
       "to": "openai",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -17875,7 +17863,7 @@
     {
       "from": "alphasense",
       "to": "cerebras",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Training and inference tasks for large-scale AI models",
       "first_seen": "2026-10-15",
       "last_seen": "2026-10-15",
@@ -20083,7 +20071,7 @@
     {
       "from": "carta",
       "to": "fireworks-ai",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI Model Inference and Fine Tuning",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -24619,7 +24607,7 @@
     {
       "from": "fivetran",
       "to": "baseten-labs",
-      "purpose_category": "hosting",
+      "purpose_category": "ai_inference",
       "purpose_text": "Inference infrastructure provider for hosting and serving AI models",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -24643,7 +24631,7 @@
     {
       "from": "fivetran",
       "to": "fireworks-ai",
-      "purpose_category": "hosting",
+      "purpose_category": "ai_inference",
       "purpose_text": "Inference infrastructure provider for hosting and serving AI models",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -24882,7 +24870,7 @@
     },
     {
       "from": "glean",
-      "to": "anysphere",
+      "to": "cursor",
       "purpose_category": "ai_inference",
       "purpose_text": "LLM Provider (SpaceXAI Services)",
       "first_seen": "2026-10-28",
@@ -25520,7 +25508,7 @@
       "from": "hibob",
       "to": "amazon-web-services",
       "purpose_category": "hosting",
-      "purpose_text": "Utilization of AI models hosted on AWS",
+      "purpose_text": "Cloud computing and storage provider",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
       "source": "live",
@@ -25617,6 +25605,18 @@
       "to": "openai",
       "purpose_category": "ai_inference",
       "purpose_text": "Generative AI used for structuring payroll values into accounting-ready journal entries",
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "live",
+      "seed_sets": [
+        "cloud100_2025"
+      ]
+    },
+    {
+      "from": "hibob",
+      "to": "amazon-web-services",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Utilization of AI models hosted on AWS",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
       "source": "live",
@@ -28327,7 +28327,7 @@
     {
       "from": "runway",
       "to": "runware",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Model inference (only if certain features used)",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -28339,7 +28339,7 @@
     {
       "from": "runway",
       "to": "freepik-company-s-l-u",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Upscaling and model inference (only if certain features used)",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -28375,7 +28375,7 @@
     {
       "from": "runway",
       "to": "fal-features-labels",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Model inference (only if certain features used)",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -30654,7 +30654,7 @@
     },
     {
       "from": "zapier",
-      "to": "meta",
+      "to": "meta-platforms",
       "purpose_category": "other",
       "purpose_text": "Artificial intelligence provider",
       "first_seen": "2026-10-28",
@@ -32740,7 +32740,7 @@
     {
       "from": "johnson-johnson",
       "to": "open-ai",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Generic AI model queries per customer request (analyzed anonymized data only \u2013 no learning mode)",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -32753,7 +32753,7 @@
     {
       "from": "johnson-johnson",
       "to": "anthropic",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Generic AI model queries per customer request (analyzed anonymized data only \u2013 no learning mode)",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
@@ -36450,7 +36450,7 @@
     {
       "from": "daily-co",
       "to": "modal",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Model inference",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -36852,7 +36852,7 @@
     },
     {
       "from": "decagon",
-      "to": "together-computer",
+      "to": "together-ai",
       "purpose_category": "ai_inference",
       "purpose_text": "LLM Model Finetuning",
       "first_seen": "2026-10-29",
@@ -38503,7 +38503,7 @@
     {
       "from": "figma",
       "to": "anthropic",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38516,7 +38516,7 @@
     {
       "from": "figma",
       "to": "amazon-web-services",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38529,7 +38529,7 @@
     {
       "from": "figma",
       "to": "cerebras-systems",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38542,7 +38542,7 @@
     {
       "from": "figma",
       "to": "fireworks-ai",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38555,7 +38555,7 @@
     {
       "from": "figma",
       "to": "google-llc-vertex",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38568,7 +38568,7 @@
     {
       "from": "figma",
       "to": "jasper-ai",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38581,164 +38581,8 @@
     {
       "from": "figma",
       "to": "microsoft-azure",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "quiverai",
-      "purpose_category": "other",
-      "purpose_text": "AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "recraft",
-      "purpose_category": "other",
-      "purpose_text": "AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "bria-artificial-intelligence",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "byteplus-sdn-bhd",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "create-without-limits-technologies-inc-dba-enhancor",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "eleven-labs",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "features-labels-inc-fal",
-      "purpose_category": "hosting",
-      "purpose_text": "Platform hosting; Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "freepik",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "google-cloud",
-      "purpose_category": "other",
-      "purpose_text": "AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "kling-ai-pte",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "lightricks",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
-      "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
-      "source": "live",
-      "seed_sets": [
-        "other"
-      ],
-      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
-    },
-    {
-      "from": "figma",
-      "to": "luma-ai",
-      "purpose_category": "other",
-      "purpose_text": "Selectable AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
       "source": "live",
@@ -38762,8 +38606,164 @@
     },
     {
       "from": "figma",
+      "to": "quiverai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "recraft",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "bria-artificial-intelligence",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "byteplus-sdn-bhd",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "create-without-limits-technologies-inc-dba-enhancor",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "eleven-labs",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "features-labels-inc-fal",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Platform hosting; Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "freepik",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "kling-ai-pte",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "lightricks",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
+      "to": "luma-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Selectable AI model provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ],
+      "note": "Live page, last updated Oct 23, 2026; rows from all tables (hosting, AI, Weave AI, support). Figma's own entities excluded. Same vendor may appear in several rows."
+    },
+    {
+      "from": "figma",
       "to": "replicate",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Selectable AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38776,7 +38776,7 @@
     {
       "from": "figma",
       "to": "runway-ai",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Selectable AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -38789,7 +38789,7 @@
     {
       "from": "figma",
       "to": "world-labs-technologies",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "Selectable AI model provider",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -43877,7 +43877,7 @@
     {
       "from": "replit",
       "to": "anthropic",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI models",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -44059,7 +44059,7 @@
     {
       "from": "replit",
       "to": "google-cloud",
-      "purpose_category": "analytics",
+      "purpose_category": "ai_inference",
       "purpose_text": "Cloud Infrastructure for our apps and services, AI models; analytics and customer interactions",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -44241,7 +44241,7 @@
     {
       "from": "replit",
       "to": "openai",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI models",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -44254,7 +44254,7 @@
     {
       "from": "replit",
       "to": "openrouter",
-      "purpose_category": "other",
+      "purpose_category": "ai_inference",
       "purpose_text": "AI model selection for Integrations",
       "first_seen": "2026-10-29",
       "last_seen": "2026-10-29",
@@ -46401,6 +46401,286 @@
       "seed_sets": [
         "other"
       ]
+    },
+    {
+      "from": "cursor",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Infrastructure Provider \u2014 Primary cloud hosting provider for Cursor's infrastructure. Our infrastructure is primarily hosted on AWS US region with some latency critical services in Europe and Singapore.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "spacexai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Infrastructure, services, and support",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving AI models.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "google-gemini",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via Vertex API.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "exa",
+      "purpose_category": "other",
+      "purpose_text": "Web Search \u2014 Web search API provider for retrieving web content and search results.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Logging and monitoring \u2014 Application logging and monitoring.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "databricks",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Analytics Database and Inference Provider \u2014 Data platform provider for storing and processing analytics data, and inference infrastructure provider for hosting and serving AI models.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "vercel",
+      "purpose_category": "hosting",
+      "purpose_text": "Web Hosting \u2014 Web hosting and compute services provider.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "microsoft-azure",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Infrastructure Provider \u2014 Some secondary infrastructure is hosted on Microsoft Azure.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "baseten",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving AI models.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "cloudflare",
+      "purpose_category": "security",
+      "purpose_text": "Cloud monitoring \u2014 CDN, reverse proxy, network security, and Zero Trust tunneling provider.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "google-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud Infrastructure Provider \u2014 Cloud hosting provider",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "together-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Our custom models are hosted with Together. We have a zero data retention agreement with Together.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "workos",
+      "purpose_category": "security",
+      "purpose_text": "SSO/SCIM provider \u2014 Enterprise authentication and SSO/SCIM provider.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "meta-platforms",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "nebius",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving first party AI models.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "typesafe-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Provider of proprietary AI models via API.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
+    },
+    {
+      "from": "cursor",
+      "to": "coreweave",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Inference Provider \u2014 Inference infrastructure provider for hosting and serving first party AI models.",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "source": "manual",
+      "seed_sets": [
+        "cloud100_2025"
+      ],
+      "source_url": "https://trust.cursor.com/subprocessors"
     },
     {
       "from": "microsoft-azure",

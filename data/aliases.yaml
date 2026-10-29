@@ -101,6 +101,22 @@ Fireworks AI:
   - Fireworks AI, Inc.
   - Fireworks.ai
 
+Cursor:
+  - Anysphere
+  - Anysphere Inc.
+  - Cursor
+
+Together AI:
+  - Together
+  - Together AI
+  - Together Computer
+
+# Not folded into Microsoft Azure — Meta Platforms is a seed in its own right
+# in Nasdaq / S&P. Keep "Meta" (bare) and "Meta Platforms" collapsed to one node.
+Meta Platforms:
+  - Meta
+  - Meta Platforms
+
 Amazon Bedrock:
   - Amazon Bedrock
   - Amazon (Bedrock)

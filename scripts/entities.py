@@ -19,6 +19,8 @@ _CATEGORY_RULES: list[tuple[str, list[str]]] = [
         "speech-to-text", "speech to text", "text-to-speech", "text to speech",
         "transcription", "voice ai", "openai", "anthropic", "ai service",
         "ai speech", "voice assistant", "machine learning", "ai inference",
+        "inference provider", "inference infrastructure", "ai model", "ai models",
+        "model hosting", "model inference", "model provider", "proprietary ai",
     ]),
     ("payments", [
         "payment", "billing", "invoic", "card process", "stripe", "paypal", "braintree",
