@@ -5834,8 +5834,8 @@
       "seed_sets": []
     },
     {
-      "id": "x-ai",
-      "name": "X.AI",
+      "id": "xai",
+      "name": "xAI",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -8323,12 +8323,6 @@
       "seed_sets": []
     },
     {
-      "id": "xai",
-      "name": "xAI *",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "daily-co",
       "name": "Daily.co",
       "kind": "seed",
@@ -9957,12 +9951,6 @@
     {
       "id": "resend",
       "name": "Resend",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "spacexai",
-      "name": "SpaceXAI",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -27462,7 +27450,7 @@
     },
     {
       "from": "notion",
-      "to": "x-ai",
+      "to": "xai",
       "purpose_category": "ai_inference",
       "purpose_text": "Service provider for hosting large language models and embeddings.",
       "first_seen": "2026-10-28",
@@ -28410,7 +28398,7 @@
     },
     {
       "from": "runway",
-      "to": "x-ai",
+      "to": "xai",
       "purpose_category": "other",
       "purpose_text": "Processing for generation of outputs (only if certain features used)",
       "first_seen": "2026-10-28",
@@ -46418,7 +46406,7 @@
     },
     {
       "from": "cursor",
-      "to": "spacexai",
+      "to": "xai",
       "purpose_category": "ai_inference",
       "purpose_text": "Inference Provider \u2014 Infrastructure, services, and support",
       "purpose_paraphrased": false,
@@ -46909,7 +46897,7 @@
     },
     {
       "from": "microsoft-azure",
-      "to": "spacexai",
+      "to": "xai",
       "purpose_category": "ai_inference",
       "purpose_text": "Microsoft Online Services \u2014 AI model provider",
       "purpose_paraphrased": false,
