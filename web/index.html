@@ -60,6 +60,9 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
   font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer;
 }
 .controls button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.controls .zoom-widget { display: inline-flex; gap: 0; }
+.controls .zoom-widget button { padding: 5px 10px; min-width: 32px; }
+.controls .zoom-widget button + button { border-left: 0; }
 .controls #search-wrap { position: relative; }
 .controls #search { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 4px 8px; width: 190px; }
 .controls #search:focus { outline: 2px solid var(--fg); outline-offset: 2px; }
@@ -128,6 +131,11 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
           <option value="both">both</option>
         </select></label>
         <button type="button" id="reset">Clear selection</button>
+        <span class="zoom-widget">
+          <button type="button" id="zoom-out" title="Zoom out" aria-label="Zoom out">−</button>
+          <button type="button" id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+          <button type="button" id="reset-view" title="Reset the camera (same as pressing Home)">reset view</button>
+        </span>
       </div>
       <div class="legend" id="legend"></div>
     </div>
@@ -651,7 +659,11 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     }
   });
   el.addEventListener('pointerup', function (ev) { if (drag && moved < 6 && !drag.pan) follow(pickAt(ev.clientX, ev.clientY)); if (drag && moved < 6) { cam.vTheta = cam.vPhi = 0; } drag = null; });
-  window.addEventListener('keydown', function (ev) { if (ev.key === 'Home') { cam.target.set(0, 62, 0); cam.theta = 0.6; cam.phi = 1.22; cam.r = 700; } });
+  function resetView() { cam.target.set(0, 62, 0); cam.theta = 0.6; cam.phi = 1.22; cam.r = 700; cam.lastTouch = performance.now(); }
+  window.addEventListener('keydown', function (ev) { if (ev.key === 'Home') resetView(); });
+  document.getElementById('zoom-out').addEventListener('click', function () { cam.r = Math.min(1500, cam.r * 1.5); cam.lastTouch = performance.now(); });
+  document.getElementById('zoom-in').addEventListener('click', function () { cam.r = Math.max(14, cam.r * 0.67); cam.lastTouch = performance.now(); });
+  document.getElementById('reset-view').addEventListener('click', resetView);
   el.addEventListener('wheel', function (ev) { ev.preventDefault(); cam.lastTouch = performance.now(); cam.r = Math.min(1500, Math.max(14, cam.r * (1 + ev.deltaY * 0.0012))); }, { passive: false });
   el.addEventListener('dblclick', function (ev) {
     ev.preventDefault();
