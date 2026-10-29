@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Data insights · Where the Data Goes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Six findings pulled from the sub-processor graph. Anthropic vs OpenAI, Cloudflare's AI loops, the industry disclosure gradient, multi-model hedging, the ByteDance fan-out, and AWS reach across publishing seeds.">
+<meta name="description" content="Six findings pulled from the sub-processor graph. Anthropic vs OpenAI, Cloudflare's AI loops, the industry disclosure gradient, multi-model hedging, the ByteDance fan-out, and how often AWS appears within two edges of a publishing seed.">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Narrow:wght@400;500&display=swap">
 
@@ -274,11 +274,11 @@ article.insight:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
   </article>
 
   <article class="insight" id="aws-two-hops">
-    <p class="anchor"><span class="num">06</span> AWS at two hops <a class="link" href="#aws-two-hops">#</a></p>
-    <div class="bignum">98% <span class="unit">reach AWS in ≤2 hops</span></div>
-    <h2>Of the companies that publish a sub-processor list, 98% reach AWS in two hops or fewer.</h2>
-    <p>Of the 164 publishing companies in the dataset, 138 name Amazon Web Services directly as a sub-processor. Another 23 reach AWS through a single intermediary, typically Snowflake, MongoDB, Datadog, or another hyperscaler-adjacent SaaS. The remaining three seeds either do not reach AWS at the depth the dataset covers, or do not list a cloud infrastructure vendor at all.</p>
-    <p>This measures disclosed vendor-chain paths, not actual data flows or storage locations.</p>
+    <p class="anchor"><span class="num">06</span> AWS is almost always nearby in the graph <a class="link" href="#aws-two-hops">#</a></p>
+    <div class="bignum">98% <span class="unit">within two edges of AWS</span></div>
+    <h2>In 98% of publishing seeds, Amazon Web Services sits within two sub-processor-list edges.</h2>
+    <p>Of the 164 companies in the dataset that publish a named sub-processor list, 138 name Amazon Web Services directly. Another 23 name at least one vendor that itself names AWS. Three do not reach AWS within the dataset at all.</p>
+    <p>This is a graph-topology measurement. It describes how densely AWS is cited across published sub-processor lists, not where any particular customer's data physically moves. A two-edge connection between a company and AWS means both relationships exist in public disclosures; it does not mean the company's data transits through the intermediary on its way to AWS, and it does not establish that AWS stores or processes that company's data at all. The underlying signal is interconnectedness, not data flow.</p>
   </article>
 
   <section class="finepr">
