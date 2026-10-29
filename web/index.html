@@ -40,7 +40,8 @@ body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--fo
 .head > *, .trail > .hop, .controls > *, .legend, .badge { pointer-events: auto; }
 .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
 h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; }
-.sub { margin: 4px 0 0; font-family: var(--font-label); font-size: 0.86rem; color: var(--fg-soft); max-width: 44ch; }
+.sub { margin: 6px 0 0; font-family: var(--font-label); font-size: 0.86rem; color: var(--fg-soft); max-width: 48ch; }
+.sub + .sub { margin-top: 8px; }
 .sub a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
 .sub a:hover { color: #ffffff; }
 .badge {
@@ -154,7 +155,9 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     <div class="head">
       <div>
         <h1>Where the Data Goes</h1>
-        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. This maps <b>personal-data egress between organizations</b>, not infrastructure and not every vendor relationship: self-hosted tools (Postgres, Kafka, DuckDB, Redis, Nginx) are widely used but don't appear here because no personal data crosses a corporate boundary, and vendors handling only non-personal data aren't disclosed publicly either. <a href="#about" id="about-inline">Read more on methodology.</a> Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll or double-click to zoom, Home to reset.</p>
+        <p class="sub">A sub-processor is a third party that processes personal data on behalf of another company. European privacy law requires these relationships to be published. This visualization draws every disclosure the research pipeline could find. Click a company to see the vendors it names. Click a vendor to follow where its data goes next.</p>
+        <p class="sub">What you see is only the slice of vendors that handle personal data. Companies have many other third parties that do not appear here. Self-hosted tools like Postgres and Kafka are absent too, because no data leaves the company at all. <a href="#about" id="about-inline">Read more on methodology.</a></p>
+        <p class="sub">Drag to turn. Shift-drag to move. Scroll or double-click to zoom. Press Home to reset.</p>
       </div>
       <span class="badge" id="badge">Synthetic data, awaiting crawl</span>
     </div>
