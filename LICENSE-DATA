@@ -1,0 +1,41 @@
+Dataset license: Creative Commons Attribution-ShareAlike 4.0 International
+(CC-BY-SA 4.0)
+
+Copyright (c) 2026 Orianda Daleigh / craftnano
+
+The dataset in this repository — including data/graph.json, web/graph.json,
+data/*_seeds.csv, data/aliases.yaml, data/manual/*, and derived observations
+in data/runs/ — is licensed under the Creative Commons Attribution-ShareAlike
+4.0 International License.
+
+You are free to:
+
+  Share — copy and redistribute the material in any medium or format
+  Adapt — remix, transform, and build upon the material for any purpose,
+          even commercially
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any
+  reasonable manner, but not in any way that suggests the licensor
+  endorses you or your use. Credit the project as:
+
+      "Where the Data Goes" by Orianda Daleigh / craftnano
+      https://github.com/craftnano/where-the-data-goes
+
+  ShareAlike — If you remix, transform, or build upon the material, you
+  must distribute your contributions under the same license as the
+  original.
+
+  No additional restrictions — You may not apply legal terms or
+  technological measures that legally restrict others from doing
+  anything the license permits.
+
+Full license text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Note on source data: individual sub-processor entries were originally
+published by the companies named as seeds. Their disclosures remain subject
+to those companies' own terms. This project aggregates, canonicalizes, and
+annotates them under CC-BY-SA; redistribution of the aggregated dataset must
+preserve attribution to this project and the ShareAlike obligation.

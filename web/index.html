@@ -89,6 +89,27 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
 /* While a company is selected, dim every other floating label so the chain pops. */
 body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointer-events: none; }
 .lbl.floor { pointer-events: none; cursor: default; color: var(--fg-soft); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transform: translate(-50%, 4px); }
+#about { position: fixed; inset: 0; z-index: 20; }
+#about[hidden] { display: none; }
+#about .about-scrim { position: absolute; inset: 0; background: rgba(10,8,9,0.72); backdrop-filter: blur(4px); }
+#about .about-panel {
+  position: absolute; top: 0; right: 0; height: 100%; width: min(560px, 100%);
+  background: var(--bg); border-left: 1px solid var(--rule); padding: 32px 36px 48px;
+  overflow-y: auto; box-shadow: -10px 0 40px rgba(0,0,0,0.55);
+  font-family: var(--font-label); color: var(--fg); line-height: 1.55; font-size: 0.92rem;
+}
+#about .about-panel h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.4rem; margin: 0 0 20px; }
+#about .about-panel h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.0rem; margin: 24px 0 6px; color: var(--fg); }
+#about .about-panel p { margin: 6px 0 10px; color: var(--fg); }
+#about .about-panel b { color: #ffffff; font-weight: 500; }
+#about .about-panel a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; }
+#about .about-panel a:hover { color: #ffffff; }
+#about #about-close {
+  position: absolute; top: 14px; right: 18px; font: inherit; font-size: 1.4rem; line-height: 1;
+  color: var(--fg-soft); background: transparent; border: 0; cursor: pointer; padding: 4px 8px;
+}
+#about #about-close:hover { color: var(--fg); }
+
 #tip {
   position: fixed; z-index: 6; pointer-events: none; background: var(--panel); border: 1px solid var(--rule); padding: 8px 10px;
   font-family: var(--font-label); font-size: 0.82rem; max-width: 30ch; transform: translate(12px, 12px); line-height: 1.35;
@@ -107,7 +128,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     <div class="head">
       <div>
         <h1>Where the Data Goes</h1>
-        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll or double-click to zoom, Home to reset.</p>
+        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. This maps <b>data egress between organizations — not infrastructure</b>: self-hosted tools (Postgres, Kafka, DuckDB, Redis, Nginx) are widely used but don't appear here because no personal data crosses a corporate boundary. Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll or double-click to zoom, Home to reset.</p>
       </div>
       <span class="badge" id="badge">Synthetic data, awaiting crawl</span>
     </div>
@@ -136,6 +157,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
           <button type="button" id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
           <button type="button" id="reset-view" title="Reset the camera (same as pressing Home)">reset view</button>
         </span>
+        <button type="button" id="about-open" title="About the data and methodology">About</button>
       </div>
       <div class="legend" id="legend"></div>
     </div>
@@ -143,6 +165,37 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
   </div>
 </div>
 <div id="tip" hidden></div>
+
+<div id="about" hidden aria-hidden="true" role="dialog" aria-labelledby="about-title">
+  <div class="about-scrim"></div>
+  <div class="about-panel">
+    <button type="button" id="about-close" aria-label="Close">×</button>
+    <h2 id="about-title">About the data &amp; methodology</h2>
+
+    <h3>What this is</h3>
+    <p><i>Where the Data Goes</i> is a visualization of publicly disclosed sub-processor relationships — the third parties that companies declare under GDPR Article 28 as processing personal data on their behalf. The piece is a map of <b>data egress between organizations, not of software architecture</b>. Anything a company self-hosts — Postgres, Kafka, DuckDB, Redis, Elasticsearch, Grafana, Nginx, open-source infrastructure in general — is invisible here, because no personal data crosses a corporate boundary. Think of each edge as an ingress/egress declaration, not a dependency.</p>
+
+    <h3>Data sources</h3>
+    <p>This visualization maps publicly disclosed sub-processor relationships, based on information collected from publicly accessible sources during October 2026.</p>
+    <p>Public sub-processor disclosures have become increasingly common in the GDPR era. However, disclosure practices vary across organizations, services, and customer types. Some companies publish information covering both business-to-business (B2B) and business-to-consumer (B2C) relationships; others disclose only through private contractual arrangements.</p>
+    <p>This project uses the best publicly available information identified through its research. <b>No materials requiring acceptance of a nondisclosure agreement or other confidentiality obligation were accessed or incorporated.</b></p>
+
+    <h3>AI-assisted research &amp; accuracy</h3>
+    <p>Artificial intelligence tools identified, extracted, and structured sub-processor entries from published source materials. Each observation preserves the source URL and verbatim purpose text where possible. The pipeline is open-sourced at <a href="https://github.com/craftnano/where-the-data-goes" target="_blank" rel="noopener">github.com/craftnano/where-the-data-goes</a>, so corrections are reproducible.</p>
+    <p>AI-assisted research can introduce errors, omissions, or misinterpretations. The visualization is provided on a best-effort basis. Corrections and feedback are welcome — open an issue or PR on the repository.</p>
+
+    <h3>Scope &amp; limitations</h3>
+    <p><b>Not an inventory.</b> The visualization is not an exhaustive map of corporate sub-processor relationships. The absence of a connection does not establish that no relationship exists.</p>
+    <p><b>Disclosed relationships only.</b> Connections represent relationships identified in published disclosures, not independently verified data transfers. They do not establish the nature, volume, sensitivity, or frequency of any data processed.</p>
+    <p><b>Point-in-time.</b> Source information was collected during October 2026 unless otherwise noted on an edge (archive-sourced edges carry the Wayback capture date). Relationships and disclosures may have changed since.</p>
+    <p><b>No assessment of security posture.</b> Inclusion in the visualization does not imply a vulnerability, security deficiency, regulatory violation, or inappropriate data-sharing practice.</p>
+    <p><b>B2B / B2C skew.</b> The dataset over-represents B2B SaaS companies, which disclose named vendors under Article 28. Consumer-facing businesses — healthcare, retail, mobility — typically disclose categories of recipients (per Articles 13/14) rather than named sub-processors, so they appear here as "categories only" rather than as mapped flows. This is a feature of the disclosure regime, not a crawl failure.</p>
+    <p><b>Open-source infrastructure gap.</b> Widely used self-hosted components (Postgres, Redis, Kafka, DuckDB, Elasticsearch, Grafana, Nginx, Keycloak, ClickHouse, and many others) are structurally absent. Running them creates no third-party data-processor relationship, so there is nothing to disclose. The real architecture of any company in this map is the edges you see here <i>plus</i> whatever runs inside its own cloud account.</p>
+
+    <h3>Independence</h3>
+    <p>This is an independent research and visualization project. Inclusion of an organization does not imply its participation, endorsement, or affiliation. The information is provided for research, educational, and informational purposes.</p>
+  </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
@@ -664,6 +717,16 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
   document.getElementById('zoom-out').addEventListener('click', function () { cam.r = Math.min(1500, cam.r * 1.5); cam.lastTouch = performance.now(); });
   document.getElementById('zoom-in').addEventListener('click', function () { cam.r = Math.max(14, cam.r * 0.67); cam.lastTouch = performance.now(); });
   document.getElementById('reset-view').addEventListener('click', resetView);
+  // About / methodology modal
+  (function () {
+    var about = document.getElementById('about');
+    function open() { about.hidden = false; about.setAttribute('aria-hidden','false'); }
+    function close() { about.hidden = true; about.setAttribute('aria-hidden','true'); }
+    document.getElementById('about-open').addEventListener('click', open);
+    document.getElementById('about-close').addEventListener('click', close);
+    about.querySelector('.about-scrim').addEventListener('click', close);
+    window.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !about.hidden) close(); });
+  })();
   el.addEventListener('wheel', function (ev) { ev.preventDefault(); cam.lastTouch = performance.now(); cam.r = Math.min(1500, Math.max(14, cam.r * (1 + ev.deltaY * 0.0012))); }, { passive: false });
   el.addEventListener('dblclick', function (ev) {
     ev.preventDefault();
