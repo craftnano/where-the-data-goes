@@ -938,13 +938,13 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
         var botBand = (document.querySelector('.foot') || {}).offsetHeight || 0;
         sx = Math.min(window.innerWidth - 140, Math.max(140, sx));
         if (l.floor.tier === 2) {
-          // Top caption pinned ~15% from the top: close enough to the tangle
-          // to read as its upper label, not so high it detaches from the
-          // scene. Horizontal (sx) still follows the camera.
-          sy = Math.max(50, window.innerHeight * 0.15);
+          // Top caption pinned ~22% from the top, close enough to the tangle
+          // to read as its upper label. Horizontal (sx) still follows the camera.
+          sy = Math.max(50, window.innerHeight * 0.22);
         } else if (l.floor.tier === 0) {
-          // Bottom caption pinned ~20% from the bottom, mirroring the top.
-          sy = Math.min(window.innerHeight - 40, window.innerHeight * 0.80);
+          // Bottom caption pinned ~27% from the bottom (sy at 73%), mirror
+          // distance from the tangle on the lower side.
+          sy = Math.min(window.innerHeight - 40, window.innerHeight * 0.73);
         } else {
           sy = Math.min(window.innerHeight - botBand - 40, Math.max(topBand + 60, sy));
         }
