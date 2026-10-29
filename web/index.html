@@ -650,5 +650,13 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
   }
   state.scope = document.getElementById('scope').value; state.dir = document.getElementById('dir').value; state.year = +yearEl.value; yearV.textContent = yearEl.value;
   resize(); build(data); requestAnimationFrame(frame);
+  // Auto-load graph.json from the same directory. Falls back silently to the
+  // synthetic dataset if fetch fails — e.g. opened from file:// where CORS
+  // blocks local fetches, in which case the "Load dataset JSON" picker is the
+  // way in. On a web deploy (Netlify, etc.) this just works.
+  fetch('./graph.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (json) { data = normalize(json); state.selected = null; state.trail = []; build(data); })
+    .catch(function (err) { console.info('graph.json auto-load skipped:', err.message); });
 })();
 </script>

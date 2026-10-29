@@ -56,7 +56,7 @@ Three seed sets ship with the repo:
 .venv/bin/python scripts/export_json.py --run-ids run-A,run-B,run-C
 ```
 
-The exporter walks every transcript across the listed runs, picks the latest per `(seed, product_scope)`, applies the alias table in `data/aliases.yaml` to collapse name variants, loads manual observations from `data/manual/`, and writes `data/graph.json` with:
+The exporter walks every transcript across the listed runs, picks the latest per `(seed, product_scope)`, applies the alias table in `data/aliases.yaml` to collapse name variants, loads manual observations from `data/manual/`, and writes `web/graph.json` (so the prototype auto-loads it) with:
 
 - `nodes[]`: `id`, `name`, `kind` (`seed` / `sub-processor` / `affiliate-group` / `unnamed`), `seed_sets` (`"nasdaq100"`, `"sp100"`, `"cloud100_2025"`, or empty for snowball-only)
 - `edges[]`: `from`, `to`, `purpose_category`, `purpose_text`, `first_seen`, `last_seen`, `source` (`"live"` / `"archive"` / `"manual"`), `seed_sets` (inherited from the source node), optional `product_scope`, optional `purpose_paraphrased` (manual edges), optional `to_detail` (Meta affiliate rows that collapse to a shared node but retain their raw entity name)
@@ -71,4 +71,6 @@ For a batch-run report (disclosure breakdown per seed set, Haiku-vs-Sonnet hit r
 
 ## Viewing the prototype
 
-`web/index.html` is a self-contained three.js prototype — open it directly in a browser (no server needed) and use the "Load dataset JSON" picker to point it at `data/graph.json`.
+`web/index.html` is a self-contained three.js prototype. On any web host (Netlify, GitHub Pages, `python -m http.server web`, etc.) it auto-fetches `./graph.json` on load. When opened directly from `file://` the browser blocks the fetch for security, so use the "Load dataset JSON" picker that remains in the toolbar for that case.
+
+For a Netlify deploy, point the site at this repo with publish directory `web/` and no build command — `web/index.html` and `web/graph.json` are the two files it serves.

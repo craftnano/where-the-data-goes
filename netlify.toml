@@ -1,0 +1,3 @@
+[build]
+  publish = "web"
+  # No build command: web/index.html + web/graph.json are pre-generated.

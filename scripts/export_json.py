@@ -71,7 +71,11 @@ def main() -> None:
         default=str(config.DATA_DIR / "manual"),
         help="Directory of manual observation JSON files to ingest (one per company).",
     )
-    ap.add_argument("--out", default=str(config.DATA_DIR / "graph.json"))
+    ap.add_argument(
+        "--out",
+        default=str(config.ROOT / "web" / "graph.json"),
+        help="Where to write graph.json. Defaults to web/graph.json so the three.js prototype picks it up automatically.",
+    )
     args = ap.parse_args()
 
     run_ids = [r.strip() for r in args.run_ids.split(",") if r.strip()]

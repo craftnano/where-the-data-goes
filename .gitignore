@@ -24,3 +24,9 @@ data/transcripts/
 *.swp
 .idea/
 .vscode/
+
+# Local Netlify folder
+.netlify
+
+# Claude Code local tooling
+.agents/
