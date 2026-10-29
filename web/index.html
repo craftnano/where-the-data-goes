@@ -62,6 +62,16 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
 .controls button:focus-visible, .controls .file:focus-within { outline: 2px solid var(--fg); outline-offset: 2px; }
 .controls .file { position: relative; }
 .controls .file input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.controls #search-wrap { position: relative; }
+.controls #search { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 4px 8px; width: 190px; }
+.controls #search:focus { outline: 2px solid var(--fg); outline-offset: 2px; }
+#search-list { position: absolute; top: calc(100% + 4px); left: 0; margin: 0; padding: 2px 0; background: var(--panel); border: 1px solid var(--rule); min-width: 240px; max-height: 280px; overflow-y: auto; z-index: 10; list-style: none; display: none; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+#search-list.open { display: block; }
+#search-list li { padding: 5px 10px; cursor: pointer; font-size: 0.86rem; color: var(--fg); white-space: nowrap; }
+#search-list li.active, #search-list li:hover { background: rgba(239,231,226,0.12); }
+#search-list li .meta { color: var(--fg-soft); font-size: 0.76rem; margin-left: 8px; }
+#search-list li.empty { color: var(--fg-soft); font-style: italic; cursor: default; }
+#search-list li.empty:hover { background: transparent; }
 .year { font-variant-numeric: tabular-nums; min-width: 3.2ch; display: inline-block; }
 .foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
 .legend { display: flex; gap: 12px 18px; flex-wrap: wrap; font-family: var(--font-label); font-size: 0.78rem; color: var(--fg-soft); margin-top: 10px; }
@@ -106,6 +116,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
   <div class="foot">
     <div>
       <div class="controls">
+        <span id="search-wrap"><input type="text" id="search" placeholder="Find a company…" autocomplete="off"><ul id="search-list" role="listbox"></ul></span>
         <label>as of <input type="range" id="year" min="2022" max="2026" step="1" value="2026"> <span class="year" id="yearv">2026</span></label>
         <label>show <select id="scope">
           <option value="crawled" selected>companies that publish a list</option>
@@ -649,8 +660,8 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     ev.preventDefault();
     cam.lastTouch = performance.now();
     var id = pickAt(ev.clientX, ev.clientY);
-    if (id != null && L && L.pos && L.pos[id]) {
-      cam.target.copy(L.pos[id]);
+    if (id != null && G && G.L && G.L.pos && G.L.pos[id]) {
+      cam.target.copy(G.L.pos[id]);
       cam.r = Math.max(14, cam.r * 0.4);  // zoom in on the clicked node
     } else {
       cam.r = Math.max(14, cam.r * 0.55); // zoom in on empty space
@@ -687,6 +698,83 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     var rd = new FileReader(); rd.onload = function () { try { data = normalize(JSON.parse(rd.result)); state.selected = null; state.trail = []; build(data); } catch (err) { document.getElementById('badge').textContent = 'Could not read that file: ' + err.message; } }; rd.readAsText(f);
   });
   window.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') select(null); });
+
+  // ---------- search ----------
+  (function () {
+    var input = document.getElementById('search'), list = document.getElementById('search-list');
+    var active = -1, results = [];
+    function scoreMatch(name, q) {
+      // Returns higher = better. Ordering: exact > prefix > substring > subsequence (typo-tolerant).
+      var n = name.toLowerCase(), qq = q.toLowerCase().trim();
+      if (!qq) return -1;
+      if (n === qq) return 1000;
+      if (n.indexOf(qq) === 0) return 600 - n.length * 0.5;
+      var idx = n.indexOf(qq);
+      if (idx >= 0) return 400 - idx - n.length * 0.3;
+      // Subsequence match: all query chars appear in order; penalize gaps.
+      var ni = 0, qi = 0, lastMatch = -1, gaps = 0;
+      while (ni < n.length && qi < qq.length) {
+        if (n.charCodeAt(ni) === qq.charCodeAt(qi)) {
+          if (lastMatch >= 0) gaps += (ni - lastMatch - 1);
+          lastMatch = ni; qi++;
+        }
+        ni++;
+      }
+      if (qi === qq.length) return 150 - gaps * 2 - n.length * 0.2;
+      return -1;
+    }
+    function render() {
+      list.innerHTML = '';
+      if (!results.length) {
+        var li = document.createElement('li'); li.className = 'empty'; li.textContent = 'No matches'; list.appendChild(li);
+        list.classList.add('open');
+        return;
+      }
+      results.forEach(function (r, i) {
+        var li = document.createElement('li'); li.setAttribute('role', 'option');
+        var sets = (r.node.seeds || []).join(', ');
+        var meta = sets ? ' · ' + sets : (r.node.kind === 'sub-processor' ? ' · sub-processor' : '');
+        li.innerHTML = '';
+        var span = document.createElement('span'); span.textContent = r.node.name; li.appendChild(span);
+        if (meta) { var m = document.createElement('span'); m.className = 'meta'; m.textContent = meta; li.appendChild(m); }
+        if (i === active) li.classList.add('active');
+        li.addEventListener('mousedown', function (ev) { ev.preventDefault(); choose(i); });
+        list.appendChild(li);
+      });
+      list.classList.add('open');
+    }
+    function search(q) {
+      if (!G || !G.d) { results = []; return; }
+      var scored = [];
+      G.d.nodes.forEach(function (nd) {
+        if (!state.vis[nd.id]) return;  // only offer currently-visible nodes
+        var s = scoreMatch(nd.name || '', q);
+        if (s > 0) scored.push({ node: nd, score: s });
+      });
+      scored.sort(function (a, b) { return b.score - a.score; });
+      results = scored.slice(0, 8);
+      active = results.length ? 0 : -1;
+    }
+    function choose(i) {
+      if (i < 0 || i >= results.length) return;
+      var nd = results[i].node;
+      input.value = nd.name;
+      close();
+      follow(nd.id);
+      // zoom to the node, same as dblclick
+      if (G && G.L && G.L.pos && G.L.pos[nd.id]) { cam.target.copy(G.L.pos[nd.id]); cam.r = Math.max(14, cam.r * 0.55); cam.lastTouch = performance.now(); }
+    }
+    function close() { list.classList.remove('open'); active = -1; }
+    input.addEventListener('input', function () { var q = input.value.trim(); if (!q) { close(); return; } search(q); render(); });
+    input.addEventListener('focus', function () { if (input.value.trim()) { search(input.value.trim()); render(); } });
+    input.addEventListener('blur', function () { setTimeout(close, 120); });  // delay so mousedown fires first
+    input.addEventListener('keydown', function (ev) {
+      if (ev.key === 'ArrowDown') { ev.preventDefault(); if (results.length) { active = (active + 1) % results.length; render(); } }
+      else if (ev.key === 'ArrowUp') { ev.preventDefault(); if (results.length) { active = (active - 1 + results.length) % results.length; render(); } }
+      else if (ev.key === 'Enter') { ev.preventDefault(); if (active >= 0) choose(active); }
+      else if (ev.key === 'Escape') { ev.preventDefault(); input.value = ''; close(); input.blur(); }
+    });
+  })();
 
   function resize() { var w = stage.clientWidth, h = stage.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
   window.addEventListener('resize', resize);
