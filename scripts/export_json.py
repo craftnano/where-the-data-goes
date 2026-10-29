@@ -48,6 +48,24 @@ def load_set_csv(csv_path: Path) -> set[str]:
     return out
 
 
+def load_set_industries(csv_path: Path) -> dict[str, str]:
+    """Return {canonical seed name -> industry} for any CSV that has an industry
+    column. Missing / absent column -> empty dict.
+    """
+    out: dict[str, str] = {}
+    with csv_path.open() as f:
+        reader = csv.DictReader(f)
+        if "industry" not in (reader.fieldnames or []):
+            return out
+        for row in reader:
+            industry = (row.get("industry") or "").strip()
+            if not industry:
+                continue
+            canon = canonicalize(canonicalize_seed(row["company_name"].strip()))
+            out[canon] = industry
+    return out
+
+
 def _load_run_date(run_id: str) -> str:
     sp = config.RUNS_DIR / run_id / "state.json"
     state = json.loads(sp.read_text())
@@ -62,7 +80,8 @@ def main() -> None:
         default=(
             "nasdaq100=data/nasdaq100_seeds.csv,"
             "cloud100_2025=data/cloud100_2025_seeds.csv,"
-            "sp100=data/sp100_seeds.csv"
+            "sp100=data/sp100_seeds.csv,"
+            "other=data/other_seeds.csv"
         ),
         help="Comma-separated label=csv pairs. Each node gets a seed_sets array listing every set it belongs to.",
     )
@@ -96,13 +115,17 @@ def main() -> None:
             scope = (rep.get("product_scope") or "").strip() or None
             latest[(canon, scope or "")] = (run_id, d)
 
-    # Build seed-set membership map.
+    # Build seed-set membership map and (optional) industry map across all CSVs.
     set_members: dict[str, set[str]] = {}
+    industry_by_canon: dict[str, str] = {}
     for pair in args.sets.split(","):
         if not pair.strip():
             continue
         label, csv_rel = pair.split("=", 1)
-        set_members[label.strip()] = load_set_csv(Path(csv_rel.strip()))
+        p = Path(csv_rel.strip())
+        set_members[label.strip()] = load_set_csv(p)
+        # Later CSVs' industry labels override earlier ones for overlapping seeds.
+        industry_by_canon.update(load_set_industries(p))
 
     def sets_for(canon_name: str) -> list[str]:
         return [label for label, members in set_members.items() if canon_name in members]
@@ -122,18 +145,23 @@ def main() -> None:
         canon = canonicalize(name)
         nid = node_id(canon)
         if nid not in nodes:
-            nodes[nid] = {
+            node = {
                 "id": nid,
                 "name": canon,
                 "kind": kind,
                 "seed_sets": sets_for(canon),
             }
+            if canon in industry_by_canon:
+                node["industry"] = industry_by_canon[canon]
+            nodes[nid] = node
         else:
             if kind == "seed":
                 nodes[nid]["kind"] = "seed"
             # Union seed-set membership idempotently (handles targets later discovered as seeds).
             existing = set(nodes[nid].get("seed_sets") or [])
             nodes[nid]["seed_sets"] = sorted(existing | set(sets_for(canon)))
+            if canon in industry_by_canon and "industry" not in nodes[nid]:
+                nodes[nid]["industry"] = industry_by_canon[canon]
         return canon
 
     # Sentinel for categories_only disclosures.

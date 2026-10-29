@@ -1,0 +1,53 @@
+ticker,company_name,website,industry
+OTHER-001,Greenhouse,https://www.greenhouse.io,HR / people
+OTHER-002,Lever,https://www.lever.co,HR / people
+OTHER-003,BambooHR,https://www.bamboohr.com,HR / people
+OTHER-004,Justworks,https://www.justworks.com,HR / people
+OTHER-005,Linear,https://linear.app,Productivity
+OTHER-006,Asana,https://asana.com,Productivity
+OTHER-007,Monday.com,https://monday.com,Productivity
+OTHER-008,Loom,https://www.loom.com,Productivity
+OTHER-009,Coda,https://coda.io,Productivity
+OTHER-010,Warp,https://www.warp.dev,AI dev tools
+OTHER-011,Factory,https://www.factory.ai,AI dev tools
+OTHER-012,Replit,https://replit.com,AI dev tools
+OTHER-013,Codeium,https://codeium.com,AI dev tools
+OTHER-014,Tabnine,https://www.tabnine.com,AI dev tools
+OTHER-015,Cognition AI,https://www.cognition.ai,AI dev tools
+OTHER-016,Modal,https://modal.com,AI infra
+OTHER-017,RunPod,https://www.runpod.io,AI infra
+OTHER-018,Lightning AI,https://lightning.ai,AI infra
+OTHER-019,Replicate,https://replicate.com,AI infra
+OTHER-020,Groq,https://groq.com,AI infra
+OTHER-021,Weights & Biases,https://wandb.ai,AI infra
+OTHER-022,Pinecone,https://www.pinecone.io,Vector DB
+OTHER-023,Weaviate,https://weaviate.io,Vector DB
+OTHER-024,Chroma,https://www.trychroma.com,Vector DB
+OTHER-025,Qdrant,https://qdrant.tech,Vector DB
+OTHER-026,Hebbia,https://www.hebbia.com,AI apps / agents
+OTHER-027,Lindy,https://www.lindy.ai,AI apps / agents
+OTHER-028,Decagon,https://decagon.ai,AI apps / agents
+OTHER-029,Jasper,https://www.jasper.ai,AI apps / agents
+OTHER-030,Writer,https://writer.com,AI apps / agents
+OTHER-031,Hex,https://hex.tech,Data / BI
+OTHER-032,Preset,https://preset.io,Data / BI
+OTHER-033,Metabase,https://www.metabase.com,Data / BI
+OTHER-034,Monte Carlo,https://www.montecarlodata.com,Data / BI
+OTHER-035,Mercury,https://mercury.com,Fintech / banking
+OTHER-036,Modern Treasury,https://www.moderntreasury.com,Fintech / banking
+OTHER-037,Finch,https://tryfinch.com,Fintech / banking
+OTHER-038,Deepgram,https://deepgram.com,Voice / AI comms
+OTHER-039,AssemblyAI,https://www.assemblyai.com,Voice / AI comms
+OTHER-040,Daily.co,https://www.daily.co,Voice / AI comms
+OTHER-041,Figma,https://www.figma.com,Design
+OTHER-042,Framer,https://www.framer.com,Design
+OTHER-043,Descript,https://www.descript.com,Design
+OTHER-044,Lyft,https://www.lyft.com,Transportation
+OTHER-045,Hims & Hers,https://www.forhims.com,Healthcare
+OTHER-046,Ro,https://ro.co,Healthcare
+OTHER-047,Oscar Health,https://www.hioscar.com,Healthcare
+OTHER-048,Hinge Health,https://www.hingehealth.com,Healthcare
+OTHER-049,Lyra Health,https://www.lyrahealth.com,Healthcare
+OTHER-050,Spring Health,https://www.springhealth.com,Healthcare
+OTHER-051,Doximity,https://www.doximity.com,Healthcare
+OTHER-052,Tempus AI,https://www.tempus.com,Healthcare

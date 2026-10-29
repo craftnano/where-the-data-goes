@@ -57,6 +57,20 @@ def load_seed_set(csv_path: Path) -> set[str]:
     return out
 
 
+def load_industries(csv_path: Path) -> dict[str, str]:
+    """Return {canonical seed name -> industry} if the CSV has an industry column."""
+    out: dict[str, str] = {}
+    with csv_path.open() as f:
+        reader = csv.DictReader(f)
+        if "industry" not in (reader.fieldnames or []):
+            return out
+        for row in reader:
+            ind = (row.get("industry") or "").strip()
+            if ind:
+                out[_normalize_seed(row["company_name"].strip())] = ind
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--run-ids", required=True, help="Comma-separated run IDs in chronological order.")
@@ -81,14 +95,19 @@ def main() -> None:
     transcripts = list(latest.values())
     state = {"total_cost_usd": total_cost}
 
-    # Build seed-set membership (company canonical name -> set label).
+    # Build seed-set membership (company canonical name -> set label), plus
+    # per-set industry maps when the CSV carries an industry column.
     set_defs: list[tuple[str, set[str]]] = []
+    industries_by_set: dict[str, dict[str, str]] = {}
     if args.sets:
         for pair in args.sets.split(","):
             label, csv_rel = pair.split("=", 1)
-            set_defs.append((label.strip(), load_seed_set(Path(csv_rel.strip()))))
+            p = Path(csv_rel.strip())
+            set_defs.append((label.strip(), load_seed_set(p)))
+            industries_by_set[label.strip()] = load_industries(p)
     else:
         set_defs.append(("all", {_normalize_seed(t["company"]) for t in transcripts}))
+        industries_by_set["all"] = {}
 
     # Per-set grouping. For each seed set, group its member transcripts by class.
     by_set: dict[str, dict[str, list[str]]] = {label: defaultdict(list) for label, _ in set_defs}
@@ -158,6 +177,13 @@ def main() -> None:
     print(f" Unique seeds covered: {len(transcripts)}")
     print(f" Total cost (USD)    : ${state['total_cost_usd']:.4f}")
     print(f" Hard cap            : ${config.HARD_SPEND_CAP_USD:.2f}")
+    # Index each transcript's final class by seed canonical for the industry view.
+    class_by_canon: dict[str, str] = {}
+    for t in transcripts:
+        canon = _normalize_seed(t["company"])
+        cls = (t["final"].get("report") or {}).get("disclosure_class") or "nothing_found"
+        class_by_canon[canon] = cls
+
     for label, _ in set_defs:
         buckets = by_set[label]
         covered = sum(len(v) for v in buckets.values())
@@ -168,6 +194,19 @@ def main() -> None:
             print(f"  {cls}  ({len(names)})")
             for n in names:
                 print(f"    - {n}")
+        # If this set has industry labels, follow up with an industry-grouped view.
+        industries = industries_by_set.get(label) or {}
+        if industries:
+            print(f"\n-- Industry breakdown — {label} --")
+            by_ind: dict[str, list[tuple[str, str]]] = defaultdict(list)
+            for canon in sorted({n for b in buckets.values() for n in b}):
+                ind = industries.get(canon, "(uncategorized)")
+                by_ind[ind].append((canon, class_by_canon.get(canon, "nothing_found")))
+            for ind in sorted(by_ind, key=lambda k: (-len(by_ind[k]), k)):
+                members = by_ind[ind]
+                print(f"  {ind}  ({len(members)})")
+                for canon, cls in sorted(members):
+                    print(f"    - {canon}  [{cls}]")
     print()
     haiku_rate = (haiku_hits / haiku_tried * 100.0) if haiku_tried else 0.0
     rescue_rate = (sonnet_rescues / sonnet_tried * 100.0) if sonnet_tried else 0.0
