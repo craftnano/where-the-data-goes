@@ -341,10 +341,14 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
     } else {
       for (var j0 = 0; j0 < N0; j0++) slot0[j0] = j0;
     }
+    // Radius 85 (up from 46) so the top-three hyperscalers at 0°/120°/240°
+    // are ~147 units apart — same visual-separation story as OpenAI vs
+    // Anthropic on the top floor. Still inside the ground disc (r=110) and
+    // inside the middle ring (r~100), so the floor hierarchy stays legible.
     L0_byLoad.forEach(function (x, i) {
       var a = (slot0[i] / Math.max(N0, 1)) * Math.PI * 2 + 0.4;
       ang[x.id] = a;
-      pos[x.id] = new THREE.Vector3(Math.cos(a) * 46, 0, Math.sin(a) * 46);
+      pos[x.id] = new THREE.Vector3(Math.cos(a) * 85, 0, Math.sin(a) * 85);
     });
     var catOrder = ['hosting', 'security', 'communications', 'support', 'other', 'analytics', 'payments', 'ai_inference'];
     L1.sort(function (a, b) { return catOrder.indexOf(a.cat || 'other') - catOrder.indexOf(b.cat || 'other'); });
