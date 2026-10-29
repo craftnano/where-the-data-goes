@@ -938,14 +938,17 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
         var botBand = (document.querySelector('.foot') || {}).offsetHeight || 0;
         sx = Math.min(window.innerWidth - 140, Math.max(140, sx));
         if (l.floor.tier === 2) {
-          // Top caption pinned high: can only ever occupy the upper 22% band.
-          // Natural projection can push it higher; the clamp stops it drifting
-          // down. Symmetric with the Hyperscalers clamp below (same offset
-          // from top as that one is from bottom).
-          sy = Math.max(topBand + 40, Math.min(sy, window.innerHeight * 0.22));
+          // Top caption fixed-pinned high so it always sits visibly above
+          // the tangle at the initial view. The 3D projection is ignored
+          // for vertical placement; horizontal (sx) still follows the
+          // camera. ~10% from the top gives roughly the same gap above the
+          // middle ring that Hyperscalers has below it.
+          sy = Math.max(50, window.innerHeight * 0.10);
         } else if (l.floor.tier === 0) {
-          // Bottom caption pinned low: can only ever occupy the lower 22% band.
-          sy = Math.min(window.innerHeight - botBand - 30, Math.max(sy, window.innerHeight * 0.78));
+          // Bottom caption fixed-pinned low, ~15% from the bottom. This is
+          // where the Hyperscalers caption currently reads as "about 1cm
+          // below the tangle."
+          sy = Math.min(window.innerHeight - 40, window.innerHeight * 0.85);
         } else {
           sy = Math.min(window.innerHeight - botBand - 40, Math.max(topBand + 60, sy));
         }
