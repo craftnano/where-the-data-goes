@@ -1,0 +1,26 @@
+{
+  "run_id": "run-20261029T165714Z",
+  "started_at": "2026-10-29T16:57:14.995152+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Box",
+    "Honeycomb",
+    "TurboPuffer",
+    "Postmark",
+    "GitHub",
+    "New Relic",
+    "Cohere",
+    "xAI",
+    "Retool",
+    "OpenRouter",
+    "Fastly",
+    "Iterable",
+    "DocuSign",
+    "Aiven"
+  ],
+  "failures": {},
+  "total_cost_usd": 0.930489,
+  "aborted": false
+}

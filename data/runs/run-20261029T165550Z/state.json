@@ -1,0 +1,19 @@
+{
+  "run_id": "run-20261029T165550Z",
+  "started_at": "2026-10-29T16:55:50.841627+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Nvidia",
+    "Mailgun",
+    "BlackRock",
+    "Palo Alto Networks",
+    "PayPal",
+    "Talkdesk",
+    "ADP"
+  ],
+  "failures": {},
+  "total_cost_usd": 1.125744,
+  "aborted": false
+}

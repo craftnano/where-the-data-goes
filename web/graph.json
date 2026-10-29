@@ -45,10 +45,12 @@
       "industry": "Infrastructure"
     },
     {
-      "id": "eleven-labs",
-      "name": "Eleven Labs",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "kind": "seed",
+      "seed_sets": [
+        "cloud100_2025"
+      ]
     },
     {
       "id": "google-cloud",
@@ -201,20 +203,29 @@
     {
       "id": "box",
       "name": "Box",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Content / collaboration"
     },
     {
       "id": "fastly",
       "name": "Fastly",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Infrastructure"
     },
     {
       "id": "new-relic",
       "name": "New Relic",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Dev observability"
     },
     {
       "id": "databricks",
@@ -263,8 +274,11 @@
     {
       "id": "aiven",
       "name": "Aiven",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Data / BI"
     },
     {
       "id": "ibm-watson-x",
@@ -1466,12 +1480,6 @@
       "seed_sets": []
     },
     {
-      "id": "pendo-io",
-      "name": "Pendo.io",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "pingidentity",
       "name": "PingIdentity",
       "kind": "sub-processor",
@@ -1762,10 +1770,13 @@
       ]
     },
     {
-      "id": "baseten-labs",
-      "name": "Baseten Labs",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "id": "baseten",
+      "name": "Baseten",
+      "kind": "seed",
+      "seed_sets": [
+        "backbone"
+      ],
+      "industry": "AI infra"
     },
     {
       "id": "fireworks-ai",
@@ -1874,8 +1885,11 @@
     {
       "id": "docusign",
       "name": "DocuSign",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Document management"
     },
     {
       "id": "marketo-adobe-inc",
@@ -2537,12 +2551,6 @@
       "seed_sets": []
     },
     {
-      "id": "amazon-web-services-aws",
-      "name": "Amazon Web Services (AWS)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "google-cloud-platform-gcp",
       "name": "Google Cloud Platform (GCP)",
       "kind": "sub-processor",
@@ -2822,12 +2830,6 @@
       "seed_sets": [
         "sp100"
       ]
-    },
-    {
-      "id": "oracle-america",
-      "name": "Oracle America",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "sap-america",
@@ -3182,12 +3184,6 @@
       "seed_sets": []
     },
     {
-      "id": "functional-software-inc-sentry",
-      "name": "Functional Software, Inc. (Sentry)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "google-llc-ga",
       "name": "Google LLC (GA)",
       "kind": "sub-processor",
@@ -3196,8 +3192,11 @@
     {
       "id": "iterable",
       "name": "Iterable",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Communications"
     },
     {
       "id": "microsoft-ireland-operations",
@@ -3208,8 +3207,11 @@
     {
       "id": "postmark",
       "name": "Postmark",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Communications"
     },
     {
       "id": "salesforce-canada",
@@ -3340,8 +3342,8 @@
       "seed_sets": []
     },
     {
-      "id": "pylon-labs",
-      "name": "Pylon Labs",
+      "id": "pylon",
+      "name": "Pylon",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -3570,12 +3572,6 @@
       "seed_sets": []
     },
     {
-      "id": "functional-software-dba-sentry",
-      "name": "Functional Software, dba Sentry",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "sift",
       "name": "Sift",
       "kind": "sub-processor",
@@ -3594,14 +3590,6 @@
       "seed_sets": []
     },
     {
-      "id": "elevenlabs",
-      "name": "ElevenLabs",
-      "kind": "seed",
-      "seed_sets": [
-        "cloud100_2025"
-      ]
-    },
-    {
       "id": "palantir-federal-cloud-service-pfcs",
       "name": "Palantir Federal Cloud Service (PFCS)",
       "kind": "sub-processor",
@@ -3610,8 +3598,11 @@
     {
       "id": "turbopuffer",
       "name": "TurboPuffer",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Vector DB"
     },
     {
       "id": "persona",
@@ -3642,8 +3633,11 @@
     {
       "id": "xai",
       "name": "xAI",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "AI model lab"
     },
     {
       "id": "google-gemini",
@@ -3656,15 +3650,6 @@
       "name": "Exa",
       "kind": "sub-processor",
       "seed_sets": []
-    },
-    {
-      "id": "baseten",
-      "name": "Baseten",
-      "kind": "seed",
-      "seed_sets": [
-        "backbone"
-      ],
-      "industry": "AI infra"
     },
     {
       "id": "coreweave",
@@ -3773,8 +3758,11 @@
     {
       "id": "github",
       "name": "GitHub",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Dev platform"
     },
     {
       "id": "okta-customer-identity-cloud-cic-fka-auth0",
@@ -4568,12 +4556,6 @@
       "seed_sets": []
     },
     {
-      "id": "netsuite",
-      "name": "NetSuite",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "staircase-acquired-by-gainsight",
       "name": "Staircase (acquired by Gainsight)",
       "kind": "sub-processor",
@@ -4624,8 +4606,11 @@
     {
       "id": "cohere",
       "name": "Cohere",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "AI model lab"
     },
     {
       "id": "cube-dev",
@@ -4800,12 +4785,6 @@
     {
       "id": "nylas",
       "name": "Nylas",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "oracle-netsuite",
-      "name": "Oracle Netsuite",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -5270,12 +5249,6 @@
       ]
     },
     {
-      "id": "slack-technologies",
-      "name": "Slack Technologies",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "dataiku",
       "name": "Dataiku",
       "kind": "seed",
@@ -5343,12 +5316,6 @@
     {
       "id": "posthog",
       "name": "PostHog",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "pylon",
-      "name": "Pylon",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -5654,10 +5621,13 @@
       ]
     },
     {
-      "id": "modal-labs",
-      "name": "Modal Labs",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "id": "modal",
+      "name": "Modal",
+      "kind": "seed",
+      "seed_sets": [
+        "other"
+      ],
+      "industry": "AI infra"
     },
     {
       "id": "brave-software",
@@ -6040,8 +6010,11 @@
     {
       "id": "honeycomb",
       "name": "Honeycomb",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Dev observability"
     },
     {
       "id": "prequel",
@@ -6546,15 +6519,6 @@
       ]
     },
     {
-      "id": "modal",
-      "name": "Modal",
-      "kind": "seed",
-      "seed_sets": [
-        "other"
-      ],
-      "industry": "AI infra"
-    },
-    {
       "id": "astronomer",
       "name": "Astronomer",
       "kind": "sub-processor",
@@ -7035,8 +6999,11 @@
     {
       "id": "openrouter",
       "name": "OpenRouter",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "AI infra"
     },
     {
       "id": "krea-ai",
@@ -9012,8 +8979,11 @@
     {
       "id": "retool",
       "name": "Retool",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "kind": "seed",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "industry": "Dev platform"
     },
     {
       "id": "cartesia",
@@ -9731,6 +9701,12 @@
         "other"
       ],
       "industry": "AI apps / agents"
+    },
+    {
+      "id": "functional-software-inc-sentry",
+      "name": "Functional Software Inc (Sentry)",
+      "kind": "sub-processor",
+      "seed_sets": []
     },
     {
       "id": "the-pierre-computer-company",
@@ -10747,6 +10723,453 @@
       "seed_sets": []
     },
     {
+      "id": "upcloud-oy",
+      "name": "Upcloud Oy",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "oracle-finland-oy",
+      "name": "Oracle Finland Oy",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "akenes-sa-exoscale",
+      "name": "Akenes SA (Exoscale)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "qualified-com",
+      "name": "Qualified.com",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "salesforce-com",
+      "name": "Salesforce.com",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "opsgenie-inc-owned-by-atlassian-pty-ltd",
+      "name": "Opsgenie Inc (owned by Atlassian Pty Ltd)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "amazon-web-services-emea-sarl",
+      "name": "Amazon Web Services EMEA SARL.",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "pineapple-technology-ltd-incident-io",
+      "name": "Pineapple Technology Ltd. (Incident.io)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "functional-software-inc-sentry-io",
+      "name": "Functional Software, Inc. (Sentry.io)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "anthropic-pbc",
+      "name": "Anthropic PBC**",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "spacexai-llc",
+      "name": "SpaceXAI LLC***",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "sentry-io",
+      "name": "Sentry IO",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "365-data-centers-f-k-a-sungard-availability-services",
+      "name": "365 Data Centers (f/k/a SunGard Availability Services)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "centersquare-f-k-a-cyxtera-technologies",
+      "name": "Centersquare (f/k/a Cyxtera Technologies)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "amazon-simple-email-services-amazon-ses",
+      "name": "Amazon Simple Email Services (Amazon SES)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "mailgun-owned-by-sinch-ab",
+      "name": "Mailgun (owned by Sinch AB)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "gbg-acquirer-of-idology-inc-and-acuant-inc",
+      "name": "GBG (acquirer of IDology, Inc. and Acuant, Inc.)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "australia-post-f-k-a-australian-postal-corporation",
+      "name": "Australia Post (f/k/a Australian Postal Corporation)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "franceconnect",
+      "name": "FranceConnect",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "liquid",
+      "name": "LIQUID",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "oneid-limited-f-k-a-digital-identity-net-uk-ltd",
+      "name": "OneID Limited (f/k/a Digital Identity Net UK Ltd.)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "onfido-inc-acquired-by-entrust",
+      "name": "Onfido, Inc. (acquired by Entrust)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "idura-aps",
+      "name": "Idura ApS",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "belgian-mobile-id-sa-nv-aka-itsme",
+      "name": "Belgian Mobile ID SA/NV (aka ItsMe)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "penta-f-k-a-sungard-availability-services",
+      "name": "Penta (f/k/a SunGard Availability Services)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "equinix-tsp",
+      "name": "Equinix (TSP)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "docaposte-arkhineo-f-k-a-cdc-arkhin-o-sas",
+      "name": "Docaposte Arkhineo (f/k/a CDC Arkhin\u00e9o SAS)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "esendex-aka-commify-group",
+      "name": "Esendex (aka Commify Group)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "idnow-gmbh-acquirer-of-ariadnext-s-a-s",
+      "name": "IDnow GmbH (acquirer of AriadNEXT S.A.S.)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "ubble-acquired-by-checkout-com",
+      "name": "Ubble (acquired by Checkout.com)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "vonage-holdings",
+      "name": "Vonage Holdings",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "prove-f-k-a-payfone-inc",
+      "name": "Prove (f/k/a Payfone, Inc.)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "smarty",
+      "name": "Smarty",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "microsoft-corporation-azure-ai-services",
+      "name": "Microsoft Corporation (Azure AI Services)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "cloverleaf-infor",
+      "name": "Cloverleaf (Infor)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "faxlogic",
+      "name": "FaxLogic",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "zapier-left-hook-inc",
+      "name": "Zapier (Left Hook Inc.)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "google-llc-google-cloud-platform-vertex-ai",
+      "name": "Google, LLC (Google Cloud Platform (Vertex AI))",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "4c-consulting-wipro-limited",
+      "name": "4C Consulting (WIPRO Limited)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "acumen-solutions-a-salesforce-subsidiary",
+      "name": "Acumen Solutions (a Salesforce subsidiary)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "morae-global",
+      "name": "Morae Global",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "simplus",
+      "name": "Simplus",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "backblaze",
+      "name": "Backblaze",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "wasabi-technologies",
+      "name": "Wasabi Technologies",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "datadome-solutions",
+      "name": "DataDome Solutions",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "hewlett-packard",
+      "name": "Hewlett-Packard",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "lambdatest",
+      "name": "LambdaTest",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "moveworks",
+      "name": "Moveworks",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "nexmo-inc-aka-vonage",
+      "name": "NexMo Inc (aka Vonage)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "obsidian-security",
+      "name": "Obsidian Security",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "ampcode",
+      "name": "Ampcode",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "fluint",
+      "name": "Fluint",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "mode-analytics",
+      "name": "Mode Analytics",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "pagerduty-jeli",
+      "name": "PagerDuty (Jeli)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "unblocked",
+      "name": "Unblocked",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "bird-email",
+      "name": "Bird Email*",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "digioh",
+      "name": "Digioh*",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "openai-opco",
+      "name": "OpenAI, OpCo",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "prismatic",
+      "name": "Prismatic*",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "streamnative",
+      "name": "StreamNative",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "telnyx",
+      "name": "Telnyx*",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "salesforce-service-cloud-and-agentforce",
+      "name": "Salesforce Service Cloud and Agentforce",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "pinecone-io",
+      "name": "Pinecone.io",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "ezprotect-adaptus",
+      "name": "EzProtect (Adaptus)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "deft-formerly-known-as-servercentral",
+      "name": "Deft (formerly known as ServerCentral)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "polar-signals",
+      "name": "Polar Signals",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "voyage-ai-mongodb",
+      "name": "Voyage AI (MongoDB)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "chronosphere",
+      "name": "Chronosphere",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "growthbook",
+      "name": "GrowthBook",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "paypal-braintree",
+      "name": "Paypal (Braintree)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "rivian",
+      "name": "Rivian",
+      "kind": "seed",
+      "seed_sets": [
+        "other"
+      ],
+      "industry": "Transportation"
+    },
+    {
       "id": "speechmatics",
       "name": "Speechmatics",
       "kind": "sub-processor",
@@ -10848,12 +11271,6 @@
     {
       "id": "stedi",
       "name": "Stedi",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "resend",
-      "name": "Resend",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -11103,7 +11520,7 @@
     },
     {
       "from": "zoom",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "ai_inference",
       "purpose_text": "Intelligent Features Service Provider (Text to Speech,Voice Cloning, Dubbing)",
       "first_seen": "2026-10-28",
@@ -14123,7 +14540,7 @@
     },
     {
       "from": "broadcom",
-      "to": "pendo-io",
+      "to": "pendo",
       "purpose_category": "analytics",
       "purpose_text": "Analytics/usage",
       "first_seen": "2026-10-28",
@@ -14741,7 +15158,7 @@
     },
     {
       "from": "datadog",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "ai_inference",
       "purpose_text": "AI services",
       "first_seen": "2026-10-28",
@@ -16724,7 +17141,7 @@
     },
     {
       "from": "nvidia",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "security",
       "purpose_text": "supporting cloud services, including identity management and access federation",
       "first_seen": "2026-10-28",
@@ -17198,7 +17615,7 @@
     },
     {
       "from": "thomson-reuters",
-      "to": "oracle-america",
+      "to": "oracle",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -17210,7 +17627,7 @@
     },
     {
       "from": "thomson-reuters",
-      "to": "pendo-io",
+      "to": "pendo",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -17871,7 +18288,7 @@
     },
     {
       "from": "zscaler",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "security",
       "purpose_text": "Hosting for certain features of Zscaler Private Access (ZPA), Zscaler Internet Access (ZIA), Zscaler Digital Experience (ZDX), Zscaler Deception, ZIdentity, Zscaler UVM, Zscaler Breach Predictor, Data Security Posture Management (DSPM), Zscaler Microsegmentation, Zscaler Threat Hunting Service (ZTH), Adaptive Access Engine, Zscaler Network Observability, Zero Trust Gateway, Zero Trust Branch, Business Insights, AI Protect Platform, Zero Trust Browser, Identity Protection, SOC Workbench, Health360, ZAgent, MDR, Risk360, SaaS Security Posture Management (SSPM) and Agentic SecOps.",
       "first_seen": "2026-10-28",
@@ -18159,7 +18576,7 @@
     },
     {
       "from": "1password",
-      "to": "functional-software-inc-sentry",
+      "to": "sentry",
       "purpose_category": "other",
       "purpose_text": "Bug/error reporting",
       "first_seen": "2026-10-28",
@@ -18579,7 +18996,7 @@
     },
     {
       "from": "airtable",
-      "to": "pylon-labs",
+      "to": "pylon",
       "purpose_category": "support",
       "purpose_text": "Customer support services",
       "first_seen": "2026-10-28",
@@ -18903,7 +19320,7 @@
     },
     {
       "from": "alphasense",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "other",
       "purpose_text": "Infrastructure as a Platform",
       "first_seen": "2026-10-15",
@@ -19346,7 +19763,7 @@
     },
     {
       "from": "anthropic",
-      "to": "functional-software-dba-sentry",
+      "to": "sentry",
       "purpose_category": "support",
       "purpose_text": "Error Handling, User Support",
       "first_seen": "2026-10-29",
@@ -20085,7 +20502,7 @@
     },
     {
       "from": "arctic-wolf",
-      "to": "pendo-io",
+      "to": "pendo",
       "purpose_category": "analytics",
       "purpose_text": "User Experience Metrics",
       "first_seen": "2026-10-28",
@@ -22293,7 +22710,7 @@
     },
     {
       "from": "celonis",
-      "to": "oracle-america",
+      "to": "oracle",
       "purpose_category": "hosting",
       "purpose_text": "Option for hosting of the Celonis Platform Cloud Service",
       "first_seen": "2026-10-28",
@@ -22607,7 +23024,7 @@
     },
     {
       "from": "checkr",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "analytics",
       "purpose_text": "Cloud Hosting, Analytics",
       "first_seen": "2026-10-28",
@@ -23267,7 +23684,7 @@
     },
     {
       "from": "claroty",
-      "to": "netsuite",
+      "to": "oracle",
       "purpose_category": "other",
       "purpose_text": "Cloud business software suite, including business accounting, ERP, CRM and e-commerce software",
       "first_seen": "2026-10-28",
@@ -23828,7 +24245,7 @@
     },
     {
       "from": "clickhouse",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting and infrastructure provider",
       "first_seen": "2026-10-28",
@@ -23936,7 +24353,7 @@
     },
     {
       "from": "clickhouse",
-      "to": "pylon-labs",
+      "to": "pylon",
       "purpose_category": "communications",
       "purpose_text": "Customer support chat platform",
       "first_seen": "2026-10-28",
@@ -24140,7 +24557,7 @@
     },
     {
       "from": "clickup",
-      "to": "functional-software-inc-sentry",
+      "to": "sentry",
       "purpose_category": "analytics",
       "purpose_text": "Mobile application monitoring",
       "first_seen": "2026-10-28",
@@ -24188,7 +24605,7 @@
     },
     {
       "from": "clickup",
-      "to": "oracle-netsuite",
+      "to": "oracle",
       "purpose_category": "other",
       "purpose_text": "Subscription management",
       "first_seen": "2026-10-28",
@@ -25410,7 +25827,7 @@
     },
     {
       "from": "cohesity",
-      "to": "oracle-america",
+      "to": "oracle",
       "purpose_category": "analytics",
       "purpose_text": "Hosting of Service Analytics Data",
       "first_seen": "2026-10-29",
@@ -25744,7 +26161,7 @@
     },
     {
       "from": "collibra",
-      "to": "pendo-io",
+      "to": "pendo",
       "purpose_category": "analytics",
       "purpose_text": "Platform usage, support and feedback analytics",
       "first_seen": "2026-10-28",
@@ -26176,7 +26593,7 @@
     },
     {
       "from": "databricks",
-      "to": "slack-technologies",
+      "to": "slack",
       "purpose_category": "support",
       "purpose_text": "Customer support.",
       "first_seen": "2026-10-28",
@@ -26883,7 +27300,7 @@
     },
     {
       "from": "fal-ai",
-      "to": "pylon-labs",
+      "to": "pylon",
       "purpose_category": "communications",
       "purpose_text": "Email Support",
       "first_seen": "2026-10-28",
@@ -27407,7 +27824,7 @@
     },
     {
       "from": "fivetran",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "ai_inference",
       "purpose_text": "Inference infrastructure provider for hosting and serving AI models",
       "first_seen": "2026-10-28",
@@ -27599,7 +28016,7 @@
     },
     {
       "from": "glean",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "ai_inference",
       "purpose_text": "LLM Provider",
       "first_seen": "2026-10-28",
@@ -27635,7 +28052,7 @@
     },
     {
       "from": "glean",
-      "to": "modal-labs",
+      "to": "modal",
       "purpose_category": "ai_inference",
       "purpose_text": "LLM Provider",
       "first_seen": "2026-10-28",
@@ -28259,7 +28676,7 @@
     },
     {
       "from": "harvey",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "other",
       "purpose_text": "AI provider",
       "first_seen": "2026-10-28",
@@ -28679,7 +29096,7 @@
     },
     {
       "from": "hugging-face",
-      "to": "slack-technologies",
+      "to": "slack",
       "purpose_category": "other",
       "purpose_text": "Communication",
       "first_seen": "2026-10-28",
@@ -28835,7 +29252,7 @@
     },
     {
       "from": "intercom",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "ai_inference",
       "purpose_text": "AI processing (text to speech)",
       "first_seen": "2026-10-28",
@@ -29978,7 +30395,7 @@
     },
     {
       "from": "miro",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "other",
       "purpose_text": "Live Captions, Transcripts",
       "first_seen": "2026-10-28",
@@ -30218,7 +30635,7 @@
     },
     {
       "from": "navan",
-      "to": "slack-technologies",
+      "to": "slack",
       "purpose_category": "communications",
       "purpose_text": "Internal messaging and logging platform",
       "first_seen": "2026-10-28",
@@ -30434,7 +30851,7 @@
     },
     {
       "from": "notion",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "ai_inference",
       "purpose_text": "Service provider for hosting large language models and embeddings.",
       "first_seen": "2026-10-28",
@@ -30974,7 +31391,7 @@
     },
     {
       "from": "onetrust",
-      "to": "pendo-io",
+      "to": "pendo",
       "purpose_category": "other",
       "purpose_text": "End User Behavior Analysis",
       "first_seen": "2026-10-28",
@@ -31202,7 +31619,7 @@
     },
     {
       "from": "openai",
-      "to": "pylon-labs",
+      "to": "pylon",
       "purpose_category": "support",
       "purpose_text": "Customer support***",
       "first_seen": "2026-10-28",
@@ -32068,7 +32485,7 @@
     },
     {
       "from": "runway",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "other",
       "purpose_text": "Voice model training and audio processing (only if certain features used)",
       "first_seen": "2026-10-28",
@@ -32092,7 +32509,7 @@
     },
     {
       "from": "runway",
-      "to": "modal-labs",
+      "to": "modal",
       "purpose_category": "hosting",
       "purpose_text": "Compute infrastructure",
       "first_seen": "2026-10-28",
@@ -32200,7 +32617,7 @@
     },
     {
       "from": "runway",
-      "to": "oracle-america",
+      "to": "oracle",
       "purpose_category": "hosting",
       "purpose_text": "Compute infrastructure",
       "first_seen": "2026-10-28",
@@ -32458,7 +32875,7 @@
     },
     {
       "from": "sierra",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "ai_inference",
       "purpose_text": "AI services",
       "first_seen": "2026-10-29",
@@ -32484,7 +32901,7 @@
     },
     {
       "from": "sierra",
-      "to": "modal-labs",
+      "to": "modal",
       "purpose_category": "ai_inference",
       "purpose_text": "AI services",
       "first_seen": "2026-10-29",
@@ -32510,7 +32927,7 @@
     },
     {
       "from": "sierra",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "ai_inference",
       "purpose_text": "AI services",
       "first_seen": "2026-10-29",
@@ -32574,7 +32991,7 @@
     },
     {
       "from": "snyk",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "other",
       "purpose_text": "IT",
       "first_seen": "2026-10-28",
@@ -32658,7 +33075,7 @@
     },
     {
       "from": "snyk",
-      "to": "functional-software-inc-sentry",
+      "to": "sentry",
       "purpose_category": "analytics",
       "purpose_text": "Cloud monitoring",
       "first_seen": "2026-10-28",
@@ -33318,7 +33735,7 @@
     },
     {
       "from": "synthesia",
-      "to": "modal-labs",
+      "to": "modal",
       "purpose_category": "hosting",
       "purpose_text": "Compute for video processing services, including the processing of audio and video data for the purpose of video creation.",
       "first_seen": "2026-10-28",
@@ -33402,7 +33819,7 @@
     },
     {
       "from": "synthesia",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "ai_inference",
       "purpose_text": "Text-to-speech conversion, voice cloning",
       "first_seen": "2026-10-28",
@@ -33654,7 +34071,7 @@
     },
     {
       "from": "tanium",
-      "to": "oracle-america",
+      "to": "oracle",
       "purpose_category": "hosting",
       "purpose_text": "Hosting and storage services",
       "first_seen": "2026-10-28",
@@ -35335,7 +35752,7 @@
     },
     {
       "from": "workato",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "other",
       "purpose_text": "Provision of Otto Feature.",
       "first_seen": "2026-10-28",
@@ -35383,7 +35800,7 @@
     },
     {
       "from": "zapier",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "hosting",
       "purpose_text": "Cloud service and artificial intelligence provider",
       "first_seen": "2026-10-28",
@@ -37157,7 +37574,7 @@
     },
     {
       "from": "arista-networks",
-      "to": "pendo-io",
+      "to": "pendo",
       "purpose_category": "support",
       "purpose_text": "Service support and improvement",
       "first_seen": "2026-10-28",
@@ -37194,7 +37611,7 @@
     },
     {
       "from": "blackrock",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "hosting",
       "purpose_text": "Hosting Services",
       "first_seen": "2026-10-28",
@@ -38499,7 +38916,7 @@
     },
     {
       "from": "salesforce",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "ai_inference",
       "purpose_text": "Provider of text-to-speech services",
       "first_seen": "2026-10-28",
@@ -38538,7 +38955,7 @@
     },
     {
       "from": "salesforce",
-      "to": "pendo-io",
+      "to": "pendo",
       "purpose_category": "analytics",
       "purpose_text": "User analytics provider.",
       "first_seen": "2026-10-28",
@@ -38676,6 +39093,18 @@
         "sp100"
       ],
       "product_scope": "Cross-Border Commercial Card Program privacy notice"
+    },
+    {
+      "from": "uber",
+      "to": "unnamed-sub-processor",
+      "purpose_category": "unnamed",
+      "purpose_text": "(categories_only disclosure)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "sp100"
+      ]
     },
     {
       "from": "union-pacific",
@@ -40403,7 +40832,7 @@
     },
     {
       "from": "bamboohr",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "hosting",
       "purpose_text": "Cloud service hosting provider",
       "first_seen": "2026-10-29",
@@ -40572,7 +41001,7 @@
     },
     {
       "from": "chroma",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Infrastructure",
       "first_seen": "2026-10-29",
@@ -41736,7 +42165,7 @@
     },
     {
       "from": "decagon",
-      "to": "modal-labs",
+      "to": "modal",
       "purpose_category": "ai_inference",
       "purpose_text": "LLM Model Finetuning",
       "first_seen": "2026-10-29",
@@ -43308,7 +43737,7 @@
     },
     {
       "from": "figma",
-      "to": "functional-software-inc-sentry",
+      "to": "sentry",
       "purpose_category": "analytics",
       "purpose_text": "Application error tracking and monitoring",
       "first_seen": "2026-10-29",
@@ -43334,7 +43763,7 @@
     },
     {
       "from": "figma",
-      "to": "modal-labs",
+      "to": "modal",
       "purpose_category": "hosting",
       "purpose_text": "Cloud infrastructure provider for customer sandbox environments",
       "first_seen": "2026-10-29",
@@ -43568,7 +43997,7 @@
     },
     {
       "from": "figma",
-      "to": "eleven-labs",
+      "to": "elevenlabs",
       "purpose_category": "ai_inference",
       "purpose_text": "Selectable AI model provider",
       "first_seen": "2026-10-29",
@@ -43815,7 +44244,7 @@
     },
     {
       "from": "figma",
-      "to": "pylon-labs",
+      "to": "pylon",
       "purpose_category": "support",
       "purpose_text": "Customer service and technical support",
       "first_seen": "2026-10-29",
@@ -44738,7 +45167,7 @@
     },
     {
       "from": "groq",
-      "to": "oracle-netsuite",
+      "to": "oracle",
       "purpose_category": "other",
       "purpose_text": "Cloud business software suite providing resource management, accounting, business management, customer relationship management, business intelligence, order management, production management, supply chain management and warehouse management.",
       "first_seen": "2026-10-29",
@@ -46218,7 +46647,7 @@
     },
     {
       "from": "linear",
-      "to": "modal-labs",
+      "to": "modal",
       "purpose_category": "hosting",
       "purpose_text": "Cloud provider",
       "first_seen": "2026-10-29",
@@ -46309,7 +46738,7 @@
     },
     {
       "from": "linear",
-      "to": "pylon-labs",
+      "to": "pylon",
       "purpose_category": "support",
       "purpose_text": "Customer support",
       "first_seen": "2026-10-29",
@@ -46361,7 +46790,7 @@
     },
     {
       "from": "linear",
-      "to": "slack-technologies",
+      "to": "slack",
       "purpose_category": "other",
       "purpose_text": "Collaboration and community",
       "first_seen": "2026-10-29",
@@ -47563,7 +47992,7 @@
     },
     {
       "from": "modern-treasury",
-      "to": "pylon-labs",
+      "to": "pylon",
       "purpose_category": "support",
       "purpose_text": "Cloud customer service infrastructure",
       "first_seen": "2026-10-29",
@@ -50568,7 +50997,7 @@
     },
     {
       "from": "cloudflare",
-      "to": "slack-technologies",
+      "to": "slack",
       "purpose_category": "communications",
       "purpose_text": "Customer support communications",
       "first_seen": "2026-10-29",
@@ -50624,7 +51053,7 @@
     },
     {
       "from": "cloudflare",
-      "to": "oracle-america",
+      "to": "oracle",
       "purpose_category": "other",
       "purpose_text": "Cloudflare Developer Platform and Cache Reserve",
       "first_seen": "2026-10-29",
@@ -50638,7 +51067,7 @@
     },
     {
       "from": "cloudflare",
-      "to": "amazon-web-services-aws",
+      "to": "amazon-web-services",
       "purpose_category": "security",
       "purpose_text": "Cloudflare Email Security (formerly Area 1)",
       "first_seen": "2026-10-29",
@@ -51152,7 +51581,7 @@
     },
     {
       "from": "gainsight",
-      "to": "functional-software-inc-sentry",
+      "to": "sentry",
       "purpose_category": "analytics",
       "purpose_text": "Application Monitoring",
       "first_seen": "2026-10-29",
@@ -51347,7 +51776,7 @@
     },
     {
       "from": "gainsight",
-      "to": "slack-technologies",
+      "to": "slack",
       "purpose_category": "communications",
       "purpose_text": "IT Support Chat",
       "first_seen": "2026-10-29",
@@ -51516,7 +51945,7 @@
     },
     {
       "from": "hubspot",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "ai_inference",
       "purpose_text": "AI Service Provider",
       "first_seen": "2026-10-29",
@@ -51806,7 +52235,7 @@
     },
     {
       "from": "mongodb",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "hosting",
       "purpose_text": "Inference services for the optional embedding and reranking model services included in the Cloud Services",
       "first_seen": "2026-10-29",
@@ -54352,7 +54781,7 @@
     },
     {
       "from": "zendesk",
-      "to": "baseten-labs",
+      "to": "baseten",
       "purpose_category": "ai_inference",
       "purpose_text": "Provides hosting and inference infrastructure for open-weight AI models.",
       "first_seen": "2026-10-29",
@@ -54609,6 +55038,3026 @@
         "backbone"
       ],
       "note": "Zendesk help center Sub-processor Policy (edited Sep 02, 2026). Includes infrastructure, service-specific, and additional Innovation Services third-party sub-processors; Zendesk Group affiliates excluded. Duplicates across sections listed once."
+    },
+    {
+      "from": "adp",
+      "to": "appdirect",
+      "purpose_category": "other",
+      "purpose_text": "APPSTORE",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "nasdaq100"
+      ],
+      "product_scope": "ADP Marketplace International (ESI)",
+      "note": "ADP has no company-wide public list. The only list found is the ADP Marketplace International (ESI) PDF. It names ADP affiliates (omitted) and one third party, AppDirect. The ADPIA insurance page says its list is available only on request by email."
+    },
+    {
+      "from": "paypal",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud hosting provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "nasdaq100"
+      ],
+      "product_scope": "PayPal Braintree In-Person (custom prompts features) only. This is not a company-wide PayPal list.",
+      "note": "I found no company-wide PayPal sub-processor list. The /legalhub/subprocessors URL returns 404. The PayPal Business Management DPA says to contact customer service for a list. The Payment Processing DPA names no vendors. The only named list is the Braintree In-Person one."
+    },
+    {
+      "from": "paypal",
+      "to": "splunk",
+      "purpose_category": "analytics",
+      "purpose_text": "Application logging and performance monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "nasdaq100"
+      ],
+      "product_scope": "PayPal Braintree In-Person (custom prompts features) only. This is not a company-wide PayPal list.",
+      "note": "I found no company-wide PayPal sub-processor list. The /legalhub/subprocessors URL returns 404. The PayPal Business Management DPA says to contact customer service for a list. The Payment Processing DPA names no vendors. The only named list is the Braintree In-Person one."
+    },
+    {
+      "from": "aiven",
+      "to": "google-cloud",
+      "purpose_category": "analytics",
+      "purpose_text": "Management services for Aiven console, backup, API, system of record database, centralized logging and monitoring systems.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Management services for DNS, Disaster recovery, backup, long term storage of audits logs.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "google-cloud",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure for Cloud Services, Cloud Service backups.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "microsoft-azure",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure for Cloud Services, Cloud Service backups.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "digitalocean",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure for Cloud Services. (No object storage services available, the nearest region from another infrastructure provider is used).",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "upcloud-oy",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure for Cloud Services. (No object storage services available, the nearest region from another infrastructure provider is used).",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "oracle-finland-oy",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure for Cloud Services, Cloud Service backups.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "akenes-sa-exoscale",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure for Cloud Services, Cloud Service backups.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "ovh-sas",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure for Cloud Services, Cloud Service backups.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI service provider processing customer inputs (prompts, data, and content) to generate AI-powered responses and features. Used for AI-enabled services: (i) AI editor in Aiven for PostgreSQL. (ii) Aiven Managed Agents.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "qualified-com",
+      "purpose_category": "communications",
+      "purpose_text": "Chat function for marketing and sales purpose",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "stripe",
+      "purpose_category": "payments",
+      "purpose_text": "Credit card payment processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "slack",
+      "purpose_category": "communications",
+      "purpose_text": "Internal operational messaging",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "salesforce-com",
+      "purpose_category": "other",
+      "purpose_text": "Customer relationship management system",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "opsgenie-inc-owned-by-atlassian-pty-ltd",
+      "purpose_category": "other",
+      "purpose_text": "Alerting and paging",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "atlassian",
+      "purpose_category": "support",
+      "purpose_text": "Internal ticketing system",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "amazon-web-services-emea-sarl",
+      "purpose_category": "communications",
+      "purpose_text": "Email delivery service",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "zendesk",
+      "purpose_category": "support",
+      "purpose_text": "Customer support ticketing system",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "pineapple-technology-ltd-incident-io",
+      "purpose_category": "other",
+      "purpose_text": "Incident management coordination",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "aiven",
+      "to": "functional-software-inc-sentry-io",
+      "purpose_category": "analytics",
+      "purpose_text": "Application error monitoring and alerts",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live page lists back-end, infrastructure, service-specific subprocessors plus subcontractors; Aiven affiliates omitted. Location is the Region/Country column."
+    },
+    {
+      "from": "box",
+      "to": "amazon-web-services",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Analytics, compute, database, artificial intelligence, machine learning, networking, and storage",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Analytics, compute, database, artificial intelligence, machine learning, networking, and storage",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "international-business-machines-ibm",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Analytics, compute, database, artificial intelligence, machine learning, networking, and storage",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "microsoft-azure",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Analytics, compute, database, artificial intelligence, machine learning, networking, and storage",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "taskus",
+      "purpose_category": "payments",
+      "purpose_text": "Billing, technical, and customer support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "zendesk",
+      "purpose_category": "support",
+      "purpose_text": "User relationship management, customer and user support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Artificial intelligence, machine learning",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "anthropic-pbc",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Artificial Intelligence, machine learning",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "box",
+      "to": "spacexai-llc",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Artificial Intelligence, machine learning",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Live Box subprocessors page; Box Group affiliates excluded."
+    },
+    {
+      "from": "cohere",
+      "to": "google-cloud",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure Service Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "fullstory",
+      "purpose_category": "other",
+      "purpose_text": "Software Delivery Platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "launchdarkly",
+      "purpose_category": "other",
+      "purpose_text": "Feature Flagging",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "new-relic",
+      "purpose_category": "analytics",
+      "purpose_text": "Platform Monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "retool",
+      "purpose_category": "other",
+      "purpose_text": "Software Delivery Platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "sentry-io",
+      "purpose_category": "other",
+      "purpose_text": "Software Delivery Platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "segment",
+      "purpose_category": "other",
+      "purpose_text": "Event and Error Handling",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "sendgrid",
+      "purpose_category": "communications",
+      "purpose_text": "Email Communications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "vercel",
+      "purpose_category": "hosting",
+      "purpose_text": "Web Application Hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "salesforce",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support Management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "wiz",
+      "purpose_category": "security",
+      "purpose_text": "Cloud Security and Compliance",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "cohere",
+      "to": "forethought",
+      "purpose_category": "support",
+      "purpose_text": "Customer Support Management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Public Secureframe-powered trust center page listing subprocessors (cohere.com/trust returned 404)."
+    },
+    {
+      "from": "docusign",
+      "to": "365-data-centers-f-k-a-sungard-availability-services",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "centersquare-f-k-a-cyxtera-technologies",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "equinix",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "microsoft-azure",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud hosting services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "amazon-simple-email-services-amazon-ses",
+      "purpose_category": "communications",
+      "purpose_text": "Email Delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "mailgun-owned-by-sinch-ab",
+      "purpose_category": "communications",
+      "purpose_text": "Email Delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "gbg-acquirer-of-idology-inc-and-acuant-inc",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "australia-post-f-k-a-australian-postal-corporation",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "franceconnect",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "lexisnexis-risk-solutions-fl",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services; Knowledge-based authentication services, email address verification; SSN, Business Entity (Premium)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "liquid",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services, eSignature, and IAM integration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "oneid-limited-f-k-a-digital-identity-net-uk-ltd",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "onfido-inc-acquired-by-entrust",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "idura-aps",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "belgian-mobile-id-sa-nv-aka-itsme",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "socure",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services (Risk-Based Verification)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "penta-f-k-a-sungard-availability-services",
+      "purpose_category": "other",
+      "purpose_text": "TSP Infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "equinix-tsp",
+      "purpose_category": "other",
+      "purpose_text": "TSP infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "docaposte-arkhineo-f-k-a-cdc-arkhin-o-sas",
+      "purpose_category": "other",
+      "purpose_text": "Evidence archival functionality for Europe QES and AES",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "esendex-aka-commify-group",
+      "purpose_category": "security",
+      "purpose_text": "SMS authentication with TSP services; SMS notification for Europe Advanced (AES); other applicable Protect & Sign features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "idnow-gmbh-acquirer-of-ariadnext-s-a-s",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification services; TSP services for ID Check Remote for Europe QES",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "infobip",
+      "purpose_category": "security",
+      "purpose_text": "SMS authentication with TSP services; SMS notification for Europe Advanced (AES); other applicable Protect & Sign features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "ubble-acquired-by-checkout-com",
+      "purpose_category": "security",
+      "purpose_text": "Identity verification for Europe QES",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "vonage-holdings",
+      "purpose_category": "security",
+      "purpose_text": "SMS & phone authentication, SMS delivery, audio and video processing services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "telesign",
+      "purpose_category": "security",
+      "purpose_text": "SMS & phone authentication services; SMS delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "prove-f-k-a-payfone-inc",
+      "purpose_category": "security",
+      "purpose_text": "SMS & phone authentication services; SMS delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "smarty",
+      "purpose_category": "other",
+      "purpose_text": "Physical address verification (Basic)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "twilio",
+      "purpose_category": "communications",
+      "purpose_text": "Email address verification (Basic)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "microsoft-corporation-azure-ai-services",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Azure OpenAI Service; Azure AI Document Intelligence",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "cloverleaf-infor",
+      "purpose_category": "other",
+      "purpose_text": "Electronic Health Record (EHR) integration gateway",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "faxlogic",
+      "purpose_category": "other",
+      "purpose_text": "Document transmission via facsimile",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "fedex",
+      "purpose_category": "other",
+      "purpose_text": "Document printing to a FedEx Office location",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "oracle",
+      "purpose_category": "payments",
+      "purpose_text": "Oracle Integration Cloud platform services, payment services with third-party payment processors",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "pubnub",
+      "purpose_category": "other",
+      "purpose_text": "Service user commenting capability with documents",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "zapier-left-hook-inc",
+      "purpose_category": "communications",
+      "purpose_text": "Infrastructure services, email delivery, and cloud hosting services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "google-llc-google-cloud-platform-vertex-ai",
+      "purpose_category": "other",
+      "purpose_text": "Google Gemini: Agreement Summary and Q&A, AI extractions",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "switch",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "4c-consulting-wipro-limited",
+      "purpose_category": "other",
+      "purpose_text": "Professional service partner",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "accenture",
+      "purpose_category": "other",
+      "purpose_text": "Professional service partner",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "acumen-solutions-a-salesforce-subsidiary",
+      "purpose_category": "other",
+      "purpose_text": "Professional service partner",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "morae-global",
+      "purpose_category": "other",
+      "purpose_text": "Professional service partner",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "simplus",
+      "purpose_category": "other",
+      "purpose_text": "Professional service partner",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "docusign",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud hosting services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Docusign Subprocessor List PDF (last updated May 18, 2026) linked from docusign.com/trust/privacy/subprocessors-list. Covers eSignature, IAM, CLM, Notary; the output was truncated partway through the Notary section, so some later entries (rest of Notary, Insight, Support Suppliers) are missing. Some entries merged across product sections."
+    },
+    {
+      "from": "fastly",
+      "to": "google-cloud",
+      "purpose_category": "analytics",
+      "purpose_text": "Fastly uses Google\u2019s services for backend data hosting, data insights, logging, and observability. Products that use Google\u2019s services include Image Optimizer, AI Accelerator, AI Assistant, KV Store, Secret Store, Observability features, and event monitoring services.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Fastly affiliates on the page were excluded; only the third-party sub-processors table is listed. Page last updated 2026-09-14."
+    },
+    {
+      "from": "fastly",
+      "to": "amazon-web-services",
+      "purpose_category": "security",
+      "purpose_text": "Fastly uses AWS\u2019s services for backend data hosting, logging, and observability. Products that use AWS\u2019s services are the Next-Gen WAF, Bot Management and the Glitch Platform. AWS is also used for customer dashboards and audit logs, and in the provisioning and hosting of the control plane.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Fastly affiliates on the page were excluded; only the third-party sub-processors table is listed. Page last updated 2026-09-14."
+    },
+    {
+      "from": "fastly",
+      "to": "mongodb",
+      "purpose_category": "security",
+      "purpose_text": "Fastly uses MongoDB Atlas\u2019 services for backend data hosting. Products that use MongoDB Atlas\u2019 services include Next-Gen WAF and its associated services.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Fastly affiliates on the page were excluded; only the third-party sub-processors table is listed. Page last updated 2026-09-14."
+    },
+    {
+      "from": "fastly",
+      "to": "backblaze",
+      "purpose_category": "hosting",
+      "purpose_text": "Fastly uses Backblaze\u2019s services for data hosting. The product that uses Backblaze\u2019s services is Fastly Object Storage.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Fastly affiliates on the page were excluded; only the third-party sub-processors table is listed. Page last updated 2026-09-14."
+    },
+    {
+      "from": "fastly",
+      "to": "wasabi-technologies",
+      "purpose_category": "hosting",
+      "purpose_text": "Fastly uses Wasabi Technologies services for data hosting. The product that uses Wasabi Technologies' services is Fastly Object Storage.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Fastly affiliates on the page were excluded; only the third-party sub-processors table is listed. Page last updated 2026-09-14."
+    },
+    {
+      "from": "github",
+      "to": "amazon-web-services-inc-aws",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Cloud Hosted Infrastructure, Data Hosting, AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "cerebras-systems",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "cloudflare",
+      "purpose_category": "hosting",
+      "purpose_text": "Content delivery service",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "datadome-solutions",
+      "purpose_category": "security",
+      "purpose_text": "Security management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "elastic",
+      "purpose_category": "other",
+      "purpose_text": "Cloud Hosted Infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "fastly",
+      "purpose_category": "hosting",
+      "purpose_text": "Content delivery service",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "fullstory",
+      "purpose_category": "support",
+      "purpose_text": "Customer support ticketing analysis",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "google-cloud-platform-gcp",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Cloud Hosted Infrastructure, AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "hewlett-packard",
+      "purpose_category": "other",
+      "purpose_text": "Cloud Hosted Infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "lambdatest",
+      "purpose_category": "other",
+      "purpose_text": "Cloud Hosted Infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "microsoft-azure",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Cloud Hosted Infrastructure, Data Hosting, AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "microsoft-azure",
+      "purpose_category": "support",
+      "purpose_text": "Cognitive Services and customer support ticketing analysis",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "microsoft-azure",
+      "purpose_category": "other",
+      "purpose_text": "Technical Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "moveworks",
+      "purpose_category": "support",
+      "purpose_text": "Customer support ticketing analysis",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "nexmo-inc-aka-vonage",
+      "purpose_category": "security",
+      "purpose_text": "SMS notification provider for 2 Factor Authentication",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "obsidian-security",
+      "purpose_category": "security",
+      "purpose_text": "Security management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "oracle",
+      "purpose_category": "other",
+      "purpose_text": "Cloud Hosted Infrastructure",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "pusher",
+      "purpose_category": "other",
+      "purpose_text": "Building and managing real-time infrastructure for web and mobile applications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "tines-automation",
+      "purpose_category": "security",
+      "purpose_text": "Security management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "twilio-sendgrid",
+      "purpose_category": "security",
+      "purpose_text": "SMS notification provider for 2 Factor Authentication",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "xai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI Inference and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "github",
+      "to": "zendesk",
+      "purpose_category": "support",
+      "purpose_text": "Customer support ticketing system",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "GitHub's own subprocessor list on GitHub Docs; GitHub subsidiaries (affiliates) excluded."
+    },
+    {
+      "from": "honeycomb",
+      "to": "amazon-web-services",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Cloud service provider and AI services. Customer may designate data residency upon signup.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "ampcode",
+      "purpose_category": "other",
+      "purpose_text": "Internal Engineering Tooling",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "amplitude",
+      "purpose_category": "analytics",
+      "purpose_text": "User Experience Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "asana",
+      "purpose_category": "support",
+      "purpose_text": "Internal support collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "braintrust-data",
+      "purpose_category": "analytics",
+      "purpose_text": "User Experience Analytics",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "census-sutro-labs-inc",
+      "purpose_category": "other",
+      "purpose_text": "Business intelligence services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "dbt-labs",
+      "purpose_category": "other",
+      "purpose_text": "Business intelligence services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "dovetail",
+      "purpose_category": "analytics",
+      "purpose_text": "User research and customer feedback software for the analysis, organization, and storage of research and feedback artifacts",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "fivetran",
+      "purpose_category": "other",
+      "purpose_text": "Business intelligence services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "fluint",
+      "purpose_category": "other",
+      "purpose_text": "Sales pipeline creation and acceleration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "gong-io",
+      "purpose_category": "other",
+      "purpose_text": "Sales conversation and revenue intelligence platform",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Business applications, communication, and AI Services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "incident-io",
+      "purpose_category": "analytics",
+      "purpose_text": "Incident tracking and response",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "kapa-ai",
+      "purpose_category": "other",
+      "purpose_text": "AI-Powered help and information retrieval",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "linear",
+      "purpose_category": "support",
+      "purpose_text": "Internal Support Collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "mode-analytics",
+      "purpose_category": "other",
+      "purpose_text": "Business intelligence services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "notion",
+      "purpose_category": "other",
+      "purpose_text": "Internal Documentation and Collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "AI services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "pagerduty-jeli",
+      "purpose_category": "analytics",
+      "purpose_text": "Incident tracking and response",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "productboard",
+      "purpose_category": "analytics",
+      "purpose_text": "Customer feedback and roadmapping",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "pylon",
+      "purpose_category": "security",
+      "purpose_text": "Support Ticketing system. NOTE this vendor is only considered a subprocessor IF you provide telemetry data containing PII when submitting a customer support request ticket.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "salesforce",
+      "purpose_category": "other",
+      "purpose_text": "Customer Relationship Management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "sendgrid",
+      "purpose_category": "communications",
+      "purpose_text": "Transactional emails and alerts",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "snowflake",
+      "purpose_category": "other",
+      "purpose_text": "Data Warehousing services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "unblocked",
+      "purpose_category": "other",
+      "purpose_text": "Internal Engineering AI Tooling",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "zapier",
+      "purpose_category": "other",
+      "purpose_text": "Workflow Automation",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "honeycomb",
+      "to": "zoom",
+      "purpose_category": "other",
+      "purpose_text": "Virtual Meetings and Collaboration",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "product_scope": "Honeycomb US and EU product",
+      "note": "Page lists \"Subprocessors for US and EU Honeycomb product\"; \"VIEW ALL SUBPROCESSORS\" toggle was expanded in the text."
+    },
+    {
+      "from": "iterable",
+      "to": "amazon-web-services",
+      "purpose_category": "other",
+      "purpose_text": "Infrastructure as a service.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "bird-email",
+      "purpose_category": "communications",
+      "purpose_text": "Transactional and Marketing email delivery optimization and analytics.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "boldr",
+      "purpose_category": "support",
+      "purpose_text": "User support services, including technical support, customer support, and customer success.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "databricks",
+      "purpose_category": "other",
+      "purpose_text": "Data science tool.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Application monitoring system.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "digioh",
+      "purpose_category": "other",
+      "purpose_text": "Product marketing personalization, data collection, and engagement tools.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "hightouch",
+      "purpose_category": "other",
+      "purpose_text": "Data Import (Reverse ETL).",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "infobip",
+      "purpose_category": "communications",
+      "purpose_text": "Provision of WhatsApp and RCS messaging, including message delivery, inbound replies, delivery reports, and template updates.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "mailgun",
+      "purpose_category": "communications",
+      "purpose_text": "Send and receive emails via API.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "openai-opco",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Provides large language models and artificial intelligence services.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "prequel",
+      "purpose_category": "other",
+      "purpose_text": "Data Sync \u2013 Transfers for Iterable data into customer\u2019s destination of choice.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "prismatic",
+      "purpose_category": "other",
+      "purpose_text": "Integrations Hub: Integration execution and management between Iterable and external systems.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "snowflake",
+      "purpose_category": "analytics",
+      "purpose_text": "Data Analytics.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "snowflake",
+      "purpose_category": "other",
+      "purpose_text": "Secure Data Share.*",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "streamnative",
+      "purpose_category": "other",
+      "purpose_text": "Message queueing.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "telnyx",
+      "purpose_category": "communications",
+      "purpose_text": "Send SMS via API.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "iterable",
+      "to": "twilio",
+      "purpose_category": "communications",
+      "purpose_text": "Send SMS via API.",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page says 'Last updated: August 2026'. Asterisks mark conditional inclusion based on customer use, and the names above keep them as written."
+    },
+    {
+      "from": "new-relic",
+      "to": "atlassian-jira",
+      "purpose_category": "support",
+      "purpose_text": "Management of customer support tickets",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "amazon-web-services",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Infrastructure, Cloud service provider, including AI services for intelligence features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "cloudflare",
+      "purpose_category": "security",
+      "purpose_text": "Traffic routing, TLS Termination and security services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "google-cloud",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Infrastructure; Cloud service provider; including AI services for intelligence features; Email and office applications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "fivetran",
+      "purpose_category": "other",
+      "purpose_text": "Connector and extract, transform and load (ETL) services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "salesforce-service-cloud-and-agentforce",
+      "purpose_category": "support",
+      "purpose_text": "Management of customer support tickets",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "anthropic-claude",
+      "purpose_category": "support",
+      "purpose_text": "Support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "snowflake",
+      "purpose_category": "other",
+      "purpose_text": "Data warehouse services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "fastly",
+      "purpose_category": "other",
+      "purpose_text": "Traffic routing & TLS Termination",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "kentik",
+      "purpose_category": "analytics",
+      "purpose_text": "Network Synthetic monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "microsoft-azure",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Infrastructure, Cloud service provider, including AI services for intelligence features",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "sendgrid",
+      "purpose_category": "communications",
+      "purpose_text": "Email messaging services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "pinecone-io",
+      "purpose_category": "hosting",
+      "purpose_text": "Vector database that provides vector storage, search, matching, and document retrieval functionalities in connection with New Relic\u2019s AI-assisted services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "ezprotect-adaptus",
+      "purpose_category": "security",
+      "purpose_text": "Cybersecurity solution which will scan any content, including files, that a New Relic user may upload or send to New Relic in order to ensure that content is not malicious",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "new-relic",
+      "to": "pubnub",
+      "purpose_category": "communications",
+      "purpose_text": "Real-time messaging between the CodeStream client extensions and Cloudstream\u2019s API service in the cloud",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Main table plus CodeStream-only PubNub. Pixie (Google Cloud Platform) and CodeStream (AWS, Sendgrid) entries are repeats of main-list vendors and aren't listed again."
+    },
+    {
+      "from": "postmark",
+      "to": "deft-formerly-known-as-servercentral",
+      "purpose_category": "hosting",
+      "purpose_text": "Infrastructure hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Sub-processors tab on the EU Data Protection page. The table lists Deft and AWS. The text above the table also mentions Zendesk (help desk) \"for transparency\", but Zendesk isn't in the table, so I left it out."
+    },
+    {
+      "from": "postmark",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud infrastructure hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Sub-processors tab on the EU Data Protection page. The table lists Deft and AWS. The text above the table also mentions Zendesk (help desk) \"for transparency\", but Zendesk isn't in the table, so I left it out."
+    },
+    {
+      "from": "retool",
+      "to": "amazon-web-services",
+      "purpose_category": "hosting",
+      "purpose_text": "Third-party hosting provider for queries and workflow caching",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "temporal-technologies",
+      "purpose_category": "hosting",
+      "purpose_text": "Third-party hosting provider for workflow orchestration if electing to use Retool-managed Temporal Cloud",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "neon",
+      "purpose_category": "hosting",
+      "purpose_text": "Third-party hosting provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "cloudflare",
+      "purpose_category": "security",
+      "purpose_text": "DDoS protection services",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Third-Party Model Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Third-Party Model Provider",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "baseten",
+      "purpose_category": "other",
+      "purpose_text": "Third-Party infrastructure provider for open-source models",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "alphaai-technologies-inc-dba-tavily",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Third-Party web search provider for LLMs",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "clickhouse",
+      "purpose_category": "other",
+      "purpose_text": "Third-Party data store for managing Agent logs",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "pylon",
+      "purpose_category": "support",
+      "purpose_text": "Third-party service provider of customer support tools",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "retool",
+      "to": "mailgun-technologies",
+      "purpose_category": "communications",
+      "purpose_text": "Third-party service provider for sending Retool Email",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "retool.com/legal/subprocessors resolves to the docs.retool.com/legal/subprocessors page; Retool UK Limited affiliate omitted."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "amazon-web-services",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Compute and storage, model inference",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "baseten",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Model inference",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "datadog",
+      "purpose_category": "analytics",
+      "purpose_text": "Observability and monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Model inference",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "google-llc-gcp",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Compute and storage, model inference",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "incident-io",
+      "purpose_category": "analytics",
+      "purpose_text": "Production monitoring and alerting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Model inference",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "orb",
+      "purpose_category": "payments",
+      "purpose_text": "Billing and invoicing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "planetscale",
+      "purpose_category": "hosting",
+      "purpose_text": "Dashboard database hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "polar-signals",
+      "purpose_category": "other",
+      "purpose_text": "CPU and memory performance profiling",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "pylon",
+      "purpose_category": "support",
+      "purpose_text": "Customer support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "resend",
+      "purpose_category": "communications",
+      "purpose_text": "Customer notifications",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "stripe",
+      "purpose_category": "payments",
+      "purpose_text": "Payment processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "teleport",
+      "purpose_category": "other",
+      "purpose_text": "Privileged access management",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "vercel",
+      "purpose_category": "hosting",
+      "purpose_text": "Website and dashboard hosting",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "voyage-ai-mongodb",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Model inference",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "turbopuffer",
+      "to": "workos",
+      "purpose_category": "security",
+      "purpose_text": "Dashboard authentication",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Found at turbopuffer.com/docs/security/subprocessors (linked from the Security & Compliance docs page). The page is dated \"Last Updated: October 5, 2026\"."
+    },
+    {
+      "from": "xai",
+      "to": "amazon-web-services",
+      "purpose_category": "support",
+      "purpose_text": "Cloud infrastructure, services, and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "axiom",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "chronosphere",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "clickhouse",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "cloudflare",
+      "purpose_category": "hosting",
+      "purpose_text": "Content delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "elastic",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "google-cloud",
+      "purpose_category": "support",
+      "purpose_text": "Cloud infrastructure, services, and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "growthbook",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "hive",
+      "purpose_category": "hosting",
+      "purpose_text": "Content delivery",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "hubspot",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "livekit",
+      "purpose_category": "other",
+      "purpose_text": "Real-time media",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "mongodb",
+      "purpose_category": "hosting",
+      "purpose_text": "Cloud database service",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "okta",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "oracle",
+      "purpose_category": "support",
+      "purpose_text": "Cloud infrastructure, services, and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "paypal-braintree",
+      "purpose_category": "payments",
+      "purpose_text": "Payment processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "sentry",
+      "purpose_category": "analytics",
+      "purpose_text": "Error monitoring",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "stripe",
+      "purpose_category": "payments",
+      "purpose_text": "Payment processing",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "twilio",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "vercel",
+      "purpose_category": "hosting",
+      "purpose_text": "Web hosting and deployment",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "wiz",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "workos",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "xai",
+      "to": "zendesk",
+      "purpose_category": "support",
+      "purpose_text": "Services and support",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "backbone2"
+      ],
+      "note": "Page now branded \"SpaceXSI Subprocessor List\" (xAI's successor entity). trust.x.ai is gated by an access request form. Excluded the \"SpaceXSI Affiliates\" and \"SpaceXSI Subsidiary\" rows because they are the company's own entities."
+    },
+    {
+      "from": "rivian",
+      "to": "unnamed-sub-processor",
+      "purpose_category": "unnamed",
+      "purpose_text": "(categories_only disclosure)",
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "source": "live",
+      "seed_sets": [
+        "other"
+      ]
     },
     {
       "from": "adobe",
@@ -55407,7 +58856,7 @@
     },
     {
       "from": "adobe",
-      "to": "slack-technologies",
+      "to": "slack",
       "purpose_category": "support",
       "purpose_text": "Service request resolution, ticket tracking and omni-channel routing.",
       "purpose_paraphrased": true,

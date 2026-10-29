@@ -20,6 +20,7 @@ Amazon Web Services:
   - Amazon
   - Amazon Inc. (Connect)
   - Amazon Web Services
+  - Amazon Web Services (AWS)
   - Amazon Web Services Inc.
   - Amazon Web Services, Inc.
   - Amazon Web Services EMEA SARL
@@ -117,6 +118,41 @@ xAI:
   - xAI
   - xai
 
+Pylon:
+  - Pylon
+  - Pylon Labs
+  - Pylon Labs, Inc.
+
+Modal:
+  - Modal
+  - Modal Labs
+  - Modal Labs, Inc.
+
+Pendo:
+  - Pendo
+  - Pendo.io
+  - Pendo.io, Inc.
+
+Oracle:
+  - Oracle
+  - Oracle America
+  - Oracle America, Inc.
+  - Oracle Corporation
+  - Oracle Netsuite
+  - Oracle NetSuite
+  - NetSuite
+
+ElevenLabs:
+  - ElevenLabs
+  - Eleven Labs
+  - ElevenLabs Ltd.
+  - Eleven Labs Inc.
+
+Baseten:
+  - Baseten
+  - Baseten Labs
+  - Baseten Labs, Inc.
+
 Together AI:
   - Together
   - Together AI
@@ -185,6 +221,7 @@ Salesforce:
 
 Slack:
   - Slack
+  - Slack Technologies
   - Slack Technologies, LLC
   - Slack Technologies Limited
 
@@ -308,6 +345,9 @@ New Relic:
 Sentry:
   - Sentry
   - Functional Software, Inc.
+  - "Functional Software, Inc. (Sentry)"
+  - "Functional Software, Inc. - Sentry"
+  - "Functional Software, dba Sentry"
   - Sentry.io
 
 LaunchDarkly:
@@ -389,5 +429,3 @@ Twilio Inc. (SendGrid):
 Zoom Video Communications:
   - Zoom Video Communications
 
-Amazon Web Services (AWS):
-  - Amazon Web Services (AWS)

@@ -1,0 +1,15 @@
+ticker,company_name,website,industry
+BB2-001,xAI,https://x.ai,AI model lab
+BB2-002,Cohere,https://cohere.com,AI model lab
+BB2-003,Postmark,https://postmarkapp.com,Communications
+BB2-004,TurboPuffer,https://turbopuffer.com,Vector DB
+BB2-005,New Relic,https://newrelic.com,Dev observability
+BB2-006,DocuSign,https://www.docusign.com,Document management
+BB2-007,GitHub,https://github.com,Dev platform
+BB2-008,Box,https://www.box.com,Content / collaboration
+BB2-009,Iterable,https://iterable.com,Communications
+BB2-010,Honeycomb,https://www.honeycomb.io,Dev observability
+BB2-011,OpenRouter,https://openrouter.ai,AI infra
+BB2-012,Retool,https://retool.com,Dev platform
+BB2-013,Fastly,https://www.fastly.com,Infrastructure
+BB2-014,Aiven,https://aiven.io,Data / BI

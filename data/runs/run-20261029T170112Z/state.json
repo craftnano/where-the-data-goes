@@ -1,0 +1,15 @@
+{
+  "run_id": "run-20261029T170112Z",
+  "started_at": "2026-10-29T17:01:12.320153+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Uber",
+    "Lyft",
+    "Rivian"
+  ],
+  "failures": {},
+  "total_cost_usd": 0.501402,
+  "aborted": false
+}
