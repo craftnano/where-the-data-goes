@@ -434,8 +434,12 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
       var disc = new THREE.Mesh(new THREE.CircleGeometry(floorR[t], 96), new THREE.MeshBasicMaterial({ color: lin(T.fg), transparent: true, opacity: t === 0 ? 0.06 : 0.035, depthWrite: false, side: THREE.DoubleSide }));
       disc.rotation.x = -Math.PI / 2; disc.position.y = L.floorY[t] - 2.5; group.add(disc);
       if (!floorName[t]) return;  // Skip caption for unlabeled floors (middle ring has no honest one-liner).
+      // Lift the top-floor caption above its disc and push the bottom-floor
+      // caption below ground so the labels stay anchored to their halves of
+      // the screen as the camera orbits.
+      var capY = t === 2 ? L.floorY[t] + 34 : t === 0 ? L.floorY[t] - 16 : L.floorY[t] - 2;
       var cap = document.createElement('div'); cap.className = 'lbl floor'; cap.textContent = floorName[t]; document.body.appendChild(cap);
-      labels.push({ el: cap, base: true, floor: { y: L.floorY[t] - 2, r: floorR[t] + 8 } });
+      labels.push({ el: cap, base: true, floor: { y: capY, r: floorR[t] + 8, tier: t } });
     });
     // nodes: glossy blobs
     var blobGeo = new THREE.SphereGeometry(1, 28, 20);
@@ -674,7 +678,21 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
       v.project(camera);
       if (v.z > 1) { l.el.style.display = 'none'; return; }
       var sx = (v.x + 1) / 2 * window.innerWidth, sy = (1 - v.y) / 2 * window.innerHeight;
-      if (l.floor) { var topBand = (document.querySelector('.head') || {}).offsetHeight || 0, botBand = (document.querySelector('.foot') || {}).offsetHeight || 0; sx = Math.min(window.innerWidth - 140, Math.max(140, sx)); sy = Math.min(window.innerHeight - botBand - 40, Math.max(topBand + 60, sy)); }
+      if (l.floor) {
+        var topBand = (document.querySelector('.head') || {}).offsetHeight || 0;
+        var botBand = (document.querySelector('.foot') || {}).offsetHeight || 0;
+        var hMid = window.innerHeight * 0.5;
+        sx = Math.min(window.innerWidth - 140, Math.max(140, sx));
+        if (l.floor.tier === 2) {
+          // Top-floor label never crosses the horizontal midline.
+          sy = Math.max(topBand + 60, Math.min(sy, hMid - 20));
+        } else if (l.floor.tier === 0) {
+          // Bottom-floor label never crosses the midline.
+          sy = Math.min(window.innerHeight - botBand - 40, Math.max(sy, hMid + 20));
+        } else {
+          sy = Math.min(window.innerHeight - botBand - 40, Math.max(topBand + 60, sy));
+        }
+      }
       l.el.style.display = ''; l.el.style.left = sx + 'px'; l.el.style.top = sy + 'px';
     });
     renderer.render(scene, camera);
