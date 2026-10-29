@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Data insights · Where the Data Goes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Six findings pulled from the sub-processor graph. Anthropic vs OpenAI, Cloudflare's AI loops, the industry disclosure gradient, multi-model hedging, the ByteDance fan-out, and AWS as the universal bottleneck.">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Narrow:wght@400;500&display=swap">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data insights · Where the Data Goes">
+<meta property="og:description" content="Six findings from the sub-processor graph. Anthropic vs OpenAI share only 4 vendors. Cloudflare uses every major LLM provider. Healthcare publishes nothing. 98% of publishing companies reach AWS in 2 hops.">
+<meta property="og:url" content="https://data.craftnano.com/insights.html">
+<meta property="og:image" content="https://data.craftnano.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data insights · Where the Data Goes">
+<meta name="twitter:description" content="Six findings from the sub-processor graph.">
+<meta name="twitter:image" content="https://data.craftnano.com/og.png">
+
+<style>
+:root {
+  --bg: #1d1719;
+  --bg-deep: #120e10;
+  --bg-elev: #241c1e;
+  --fg: #efe7e2;
+  --fg-soft: #a69a97;
+  --rule: rgba(239,231,226,0.14);
+  --rule-strong: rgba(239,231,226,0.26);
+  --gold: #f5b84c;
+  --font-display: 'Archivo', system-ui, sans-serif;
+  --font-label: 'Archivo Narrow', 'Archivo', sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font-label); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { color: #ffffff; }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 56px 32px 120px; }
+
+.topnav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 48px; font-size: 0.86rem; }
+.topnav .back { color: var(--fg-soft); text-decoration: none; }
+.topnav .back:hover { color: var(--fg); }
+.topnav .back::before { content: '← '; }
+.topnav .brand { font-family: var(--font-display); font-weight: 500; letter-spacing: 0.02em; }
+
+.page-head { margin-bottom: 56px; border-bottom: 1px solid var(--rule); padding-bottom: 36px; }
+.page-head .kicker { font-family: var(--font-label); font-size: 0.78rem; color: var(--fg-soft); letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 20px; }
+.page-head h1 { font-family: var(--font-display); font-weight: 500; font-size: 2.8rem; line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 20px; }
+.page-head .lede { font-size: 1.05rem; color: var(--fg-soft); max-width: 60ch; margin: 0; }
+
+article.insight { margin: 72px 0; padding-top: 48px; border-top: 1px solid var(--rule); }
+article.insight:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+
+.insight .anchor { font-family: var(--font-label); font-size: 0.76rem; color: var(--fg-soft); letter-spacing: 0.2em; text-transform: uppercase; margin: 0 0 10px; display: flex; align-items: center; gap: 10px; }
+.insight .anchor .num { color: var(--gold); font-weight: 500; }
+.insight .anchor a.link { color: var(--fg-soft); text-decoration: none; margin-left: auto; opacity: 0.5; }
+.insight:hover .anchor a.link { opacity: 1; }
+
+.insight .bignum {
+  font-family: var(--font-display); font-weight: 500; font-size: 5.2rem; line-height: 0.95;
+  color: var(--gold); margin: 0 0 8px; letter-spacing: -0.02em;
+}
+.insight .bignum .unit { font-size: 1.6rem; color: var(--fg-soft); margin-left: 10px; letter-spacing: 0.01em; }
+
+.insight h2 {
+  font-family: var(--font-display); font-weight: 500; font-size: 1.6rem; line-height: 1.25;
+  margin: 0 0 18px; letter-spacing: -0.005em; max-width: 28ch;
+}
+
+.insight p { margin: 0 0 14px; color: var(--fg-soft); font-size: 0.98rem; }
+.insight p b { color: var(--fg); font-weight: 500; }
+
+.insight .visual { margin: 28px 0 10px; }
+
+/* two-column vendor list used for Anthropic vs OpenAI */
+.vs { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20px; }
+.vs .col { background: var(--bg-elev); border: 1px solid var(--rule); padding: 20px; }
+.vs .col h4 { font-family: var(--font-display); font-weight: 500; font-size: 0.98rem; margin: 0 0 14px; letter-spacing: 0.01em; }
+.vs .col ul { margin: 0; padding: 0; list-style: none; font-size: 0.86rem; line-height: 1.9; color: var(--fg-soft); }
+.vs .col li.shared { color: var(--gold); font-weight: 500; }
+.vs .col li.shared::before { content: '◆ '; }
+
+/* Industry bars */
+.bars { margin-top: 20px; display: grid; gap: 10px; }
+.bar { display: grid; grid-template-columns: 180px 1fr 50px; align-items: center; gap: 14px; font-size: 0.86rem; }
+.bar .label { color: var(--fg-soft); }
+.bar .track { position: relative; height: 8px; background: var(--bg-elev); border: 1px solid var(--rule); }
+.bar .fill { position: absolute; left: 0; top: 0; height: 100%; background: var(--gold); }
+.bar .pct { color: var(--fg); font-variant-numeric: tabular-nums; text-align: right; font-size: 0.86rem; }
+
+/* Mutual-loop grid */
+.loops { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 500px; }
+.loop { background: var(--bg-elev); border: 1px solid var(--rule); padding: 16px 18px; font-size: 0.9rem; }
+.loop b { color: var(--gold); font-weight: 500; }
+.loop .arrows { color: var(--fg-soft); margin: 0 6px; font-family: monospace; }
+
+/* Set-comparison strip */
+.setcompare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20px; }
+.setcompare .one { background: var(--bg-elev); border: 1px solid var(--rule); padding: 22px; }
+.setcompare .one .k { font-family: var(--font-display); font-size: 2.6rem; font-weight: 500; color: var(--gold); line-height: 1; letter-spacing: -0.01em; margin: 0 0 6px; }
+.setcompare .one .lbl { font-size: 0.84rem; color: var(--fg-soft); margin: 0 0 2px; }
+.setcompare .one .cohort { font-size: 0.82rem; color: var(--fg); font-weight: 500; }
+
+/* ByteDance fan */
+.fan { margin-top: 20px; background: var(--bg-elev); border: 1px solid var(--rule); padding: 20px; font-size: 0.9rem; }
+.fan .row { padding: 8px 0; border-top: 1px solid var(--rule); display: flex; gap: 14px; align-items: baseline; }
+.fan .row:first-child { border-top: 0; padding-top: 0; }
+.fan .vendor { color: var(--gold); font-weight: 500; min-width: 180px; }
+.fan .targets { color: var(--fg-soft); }
+
+.finepr {
+  margin-top: 96px; padding: 28px 0 0; border-top: 1px solid var(--rule-strong);
+  font-size: 0.78rem; color: var(--fg-soft); line-height: 1.65;
+}
+.finepr p { margin: 0 0 10px; }
+.finepr a { color: var(--fg-soft); }
+
+@media (max-width: 640px) {
+  .wrap { padding: 40px 20px 100px; }
+  .page-head h1 { font-size: 2.1rem; }
+  .insight .bignum { font-size: 4rem; }
+  .insight h2 { font-size: 1.3rem; }
+  .vs, .loops, .setcompare { grid-template-columns: 1fr; }
+  .bar { grid-template-columns: 140px 1fr 44px; gap: 10px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="topnav">
+    <a class="back" href="./">Back to the map</a>
+    <span class="brand">Where the Data Goes</span>
+  </nav>
+
+  <header class="page-head">
+    <div class="kicker">Data insights</div>
+    <h1>Six findings from the sub-processor graph</h1>
+    <p class="lede">The map renders every company that publishes a sub-processor list and every vendor each company names. These are six patterns that showed up when the resulting dataset was counted.</p>
+  </header>
+
+  <article class="insight" id="anthropic-vs-openai">
+    <p class="anchor"><span class="num">01</span> Anthropic vs OpenAI <a class="link" href="#anthropic-vs-openai">#</a></p>
+    <div class="bignum">4 <span class="unit">shared vendors</span></div>
+    <h2>Anthropic and OpenAI share only four sub-processors, and none of them are AI companies.</h2>
+    <p>Anthropic lists 22 third parties on its public sub-processor page. OpenAI lists 16. The overlap is exactly four companies: Amazon Web Services, Google Cloud, Microsoft Azure, and Cloudflare. Each of the other 18 Anthropic entries and 12 OpenAI entries is specific to one lab.</p>
+    <div class="visual">
+      <div class="vs">
+        <div class="col">
+          <h4>Anthropic (22 vendors)</h4>
+          <ul>
+            <li class="shared">Amazon Web Services</li>
+            <li class="shared">Google Cloud</li>
+            <li class="shared">Microsoft Azure</li>
+            <li class="shared">Cloudflare</li>
+            <li>Twilio</li>
+            <li>Stripe</li>
+            <li>Intercom</li>
+            <li>Sentry</li>
+            <li>WorkOS</li>
+            <li>ElevenLabs</li>
+            <li>Palantir Federal Cloud</li>
+            <li>Brave Search</li>
+            <li>TurboPuffer</li>
+            <li>Parallel Web Systems</li>
+            <li>Persona, Yoti, hCaptcha</li>
+            <li>Arkose Labs, Sift</li>
+            <li>Iterable, Boldr, Nutun</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>OpenAI (16 vendors)</h4>
+          <ul>
+            <li class="shared">Amazon Web Services</li>
+            <li class="shared">Google Cloud</li>
+            <li class="shared">Microsoft Azure</li>
+            <li class="shared">Cloudflare</li>
+            <li>Snowflake</li>
+            <li>Salesforce</li>
+            <li>Fivetran</li>
+            <li>TaskUs</li>
+            <li>CoreWeave</li>
+            <li>Cerebras</li>
+            <li>Oracle Cloud</li>
+            <li>Accenture</li>
+            <li>Cinder Technologies</li>
+            <li>Pylon Labs</li>
+            <li>Merge API</li>
+            <li>WorkOS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="insight" id="cloudflare-loops">
+    <p class="anchor"><span class="num">02</span> Cloudflare's AI Gateway <a class="link" href="#cloudflare-loops">#</a></p>
+    <div class="bignum">4 <span class="unit">mutual-dependency loops</span></div>
+    <h2>Cloudflare uses four major LLM providers, and all four of them list Cloudflare in return.</h2>
+    <p>Cloudflare's published sub-processor list names OpenAI, Anthropic, xAI, and Groq as vendors for its AI Gateway product. Each of those four labs separately lists Cloudflare on their own sub-processor pages for CDN or edge security. That produces four pairs of mutual-dependency edges in the dataset. No single hyperscaler creates as many closed loops with the frontier labs.</p>
+    <div class="visual">
+      <div class="loops">
+        <div class="loop"><b>Cloudflare</b><span class="arrows">⇄</span><b>OpenAI</b></div>
+        <div class="loop"><b>Cloudflare</b><span class="arrows">⇄</span><b>Anthropic</b></div>
+        <div class="loop"><b>Cloudflare</b><span class="arrows">⇄</span><b>xAI</b></div>
+        <div class="loop"><b>Cloudflare</b><span class="arrows">⇄</span><b>Groq</b></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="insight" id="industry-gradient">
+    <p class="anchor"><span class="num">03</span> The disclosure gradient <a class="link" href="#industry-gradient">#</a></p>
+    <div class="bignum">100% <span class="unit">to 0%</span></div>
+    <h2>Developer tools publish everything. Healthcare publishes nothing.</h2>
+    <p>Across the hand-curated set of newer SaaS and AI companies, every company tagged as productivity, design, data, vector database, voice, or developer observability published a named sub-processor list. Of the eight healthcare startups in the same set, none did. Fintech and HR landed between the two ends.</p>
+    <p>The rates below are calculated against the 54 seeds in the hand-curated "other" set, which is the only cohort with industry tags attached. The Nasdaq 100, S&amp;P 100, and Cloud 100 publishing rates are 21%, 16%, and 60% respectively.</p>
+    <div class="visual">
+      <div class="bars">
+        <div class="bar"><span class="label">Productivity</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="pct">100%</span></div>
+        <div class="bar"><span class="label">Data / BI</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="pct">100%</span></div>
+        <div class="bar"><span class="label">Design</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="pct">100%</span></div>
+        <div class="bar"><span class="label">Vector DB</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="pct">100%</span></div>
+        <div class="bar"><span class="label">Voice / AI comms</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="pct">100%</span></div>
+        <div class="bar"><span class="label">Dev observability</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="pct">100%</span></div>
+        <div class="bar"><span class="label">AI apps / agents</span><span class="track"><span class="fill" style="width:83%"></span></span><span class="pct">83%</span></div>
+        <div class="bar"><span class="label">AI dev tools</span><span class="track"><span class="fill" style="width:67%"></span></span><span class="pct">67%</span></div>
+        <div class="bar"><span class="label">AI infra</span><span class="track"><span class="fill" style="width:62%"></span></span><span class="pct">62%</span></div>
+        <div class="bar"><span class="label">HR / people</span><span class="track"><span class="fill" style="width:50%"></span></span><span class="pct">50%</span></div>
+        <div class="bar"><span class="label">Fintech / banking</span><span class="track"><span class="fill" style="width:33%"></span></span><span class="pct">33%</span></div>
+        <div class="bar"><span class="label">Transportation</span><span class="track"><span class="fill" style="width:0%"></span></span><span class="pct">0%</span></div>
+        <div class="bar"><span class="label">Healthcare</span><span class="track"><span class="fill" style="width:0%"></span></span><span class="pct">0%</span></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="insight" id="multi-model-hedging">
+    <p class="anchor"><span class="num">04</span> Multi-model hedging <a class="link" href="#multi-model-hedging">#</a></p>
+    <div class="bignum">34% <span class="unit">vs 1%</span></div>
+    <h2>A third of Cloud 100 seeds list both OpenAI and Anthropic. One S&amp;P 100 seed does.</h2>
+    <p>Across the full dataset, 67 companies name both OpenAI and Anthropic on their published sub-processor list. The breakdown by cohort is sharp. In the Forbes Cloud 100 the rate is 34%. In the S&amp;P 100 it is 1%. The Nasdaq 100 is at 3%.</p>
+    <p>The dataset only reflects what companies disclose publicly, so this understates actual usage. The gap between cohorts is still large enough to be visible even with the under-reporting.</p>
+    <div class="visual">
+      <div class="setcompare">
+        <div class="one">
+          <div class="k">34%</div>
+          <div class="lbl">of the Forbes Cloud 100</div>
+          <div class="cohort">(34 of 100 seeds)</div>
+        </div>
+        <div class="one">
+          <div class="k">1%</div>
+          <div class="lbl">of the S&amp;P 100</div>
+          <div class="cohort">(1 of 100 seeds)</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="insight" id="chinese-subprocessors">
+    <p class="anchor"><span class="num">05</span> The quiet international AI stack <a class="link" href="#chinese-subprocessors">#</a></p>
+    <div class="bignum">7 <span class="unit">US creative-AI products</span></div>
+    <h2>ByteDance, Kuaishou, Alibaba, and a Saudi state-owned AI company appear on US sub-processor lists.</h2>
+    <p>The dataset contains ten disclosed instances of sub-processors headquartered in China or operated by sovereign-state entities. BytePlus (the enterprise brand of ByteDance) provides the Seedance video-generation model to Adobe, Runway, Synthesia, and Figma. Kuaishou's Kling model is listed by Adobe. Humain, a Saudi state-owned AI company, is also listed by Adobe for image generation. Alibaba Cloud is listed by Fireworks AI and Zscaler. ByteDance appears on ElevenLabs' list.</p>
+    <p>These are self-disclosures by the US companies that use them. The dataset does not reach into the Chinese or Saudi companies' own vendor chains.</p>
+    <div class="visual">
+      <div class="fan">
+        <div class="row"><span class="vendor">BytePlus (ByteDance)</span><span class="targets">Adobe, Runway, Synthesia, Figma</span></div>
+        <div class="row"><span class="vendor">Kuaishou (Kling)</span><span class="targets">Adobe</span></div>
+        <div class="row"><span class="vendor">Humain (Saudi)</span><span class="targets">Adobe</span></div>
+        <div class="row"><span class="vendor">Alibaba Cloud</span><span class="targets">Fireworks AI, Zscaler</span></div>
+        <div class="row"><span class="vendor">ByteDance Pangle</span><span class="targets">AppLovin</span></div>
+        <div class="row"><span class="vendor">Huawei Technologies</span><span class="targets">AppLovin</span></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="insight" id="aws-two-hops">
+    <p class="anchor"><span class="num">06</span> The AWS bottleneck <a class="link" href="#aws-two-hops">#</a></p>
+    <div class="bignum">98% <span class="unit">reach AWS in ≤2 hops</span></div>
+    <h2>Of the companies that publish a sub-processor list, 98% reach AWS in two hops or fewer.</h2>
+    <p>Of the 164 publishing companies in the dataset, 138 name Amazon Web Services directly as a sub-processor. Another 23 reach AWS through a single intermediary, typically Snowflake, MongoDB, Datadog, or another hyperscaler-adjacent SaaS. The remaining three seeds either do not reach AWS at the depth the dataset covers, or do not list a cloud infrastructure vendor at all.</p>
+    <p>This measures disclosed vendor-chain paths, not actual data flows or storage locations.</p>
+  </article>
+
+  <section class="finepr">
+    <p><b>About these numbers.</b> These findings are counts derived from the sub-processor dataset collected in October 2026. The dataset covers roughly 320 unique seeds across the Nasdaq 100, S&amp;P 100, Forbes Cloud 100 (2025), and a hand-curated set of additional SaaS, AI, backbone, and healthcare companies, plus manual observations for companies whose lists are not accessible by crawl.</p>
+    <p><b>Point-in-time.</b> Sub-processor lists change frequently. Numbers above reflect the dataset at the moment of extraction and may be stale by the time you read them. Follow the pipeline on <a href="https://github.com/craftnano/where-the-data-goes" target="_blank" rel="noopener">GitHub</a> for the current graph.</p>
+    <p><b>Scope.</b> These findings describe sub-processor relationships only. They do not describe infrastructure, every vendor relationship, breach surface, or security posture. A company's full exposure includes many relationships that are not publicly disclosed and do not appear in this dataset. See the main site's <a href="./#about">methodology</a> for the full scope and limitations.</p>
+    <p><b>Reproducibility.</b> Every number here can be re-derived from the committed data. Run <code>scripts/report.py</code> and <code>scripts/export_json.py</code> against the run IDs in <code>data/runs/</code>.</p>
+    <p style="margin-top: 20px;"><a href="./">← Return to the map</a></p>
+  </section>
+
+</div>
+</body>
+</html>
