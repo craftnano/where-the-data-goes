@@ -93,24 +93,47 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
 .lbl.floor { pointer-events: none; cursor: default; color: var(--fg-soft); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transform: translate(-50%, 4px); }
 #about { position: fixed; inset: 0; z-index: 20; }
 #about[hidden] { display: none; }
-#about .about-scrim { position: absolute; inset: 0; background: rgba(10,8,9,0.72); backdrop-filter: blur(4px); }
+#about .about-scrim { position: absolute; inset: 0; background: rgba(8,6,7,0.78); }
 #about .about-panel {
-  position: absolute; top: 0; right: 0; height: 100%; width: min(560px, 100%);
-  background: var(--bg); border-left: 1px solid var(--rule); padding: 32px 36px 48px;
-  overflow-y: auto; box-shadow: -10px 0 40px rgba(0,0,0,0.55);
-  font-family: var(--font-label); color: var(--fg); line-height: 1.55; font-size: 0.92rem;
+  position: absolute; top: 0; right: 0; height: 100%; width: min(620px, 100%);
+  background: var(--bg); border-left: 1px solid var(--rule);
+  padding: 40px 44px 56px;
+  overflow-y: auto; overscroll-behavior: contain;
+  transform: translateZ(0); will-change: scroll-position;
+  box-shadow: -8px 0 24px rgba(0,0,0,0.45);
+  font-family: var(--font-label); color: var(--fg-soft); line-height: 1.62; font-size: 0.94rem;
+  scrollbar-width: thin; scrollbar-color: var(--rule) transparent;
 }
-#about .about-panel h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.4rem; margin: 0 0 20px; }
-#about .about-panel h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.0rem; margin: 24px 0 6px; color: var(--fg); }
-#about .about-panel p { margin: 6px 0 10px; color: var(--fg); }
-#about .about-panel b { color: #ffffff; font-weight: 500; }
-#about .about-panel a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; }
-#about .about-panel a:hover { color: #ffffff; }
+#about .about-panel::-webkit-scrollbar { width: 8px; }
+#about .about-panel::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
+#about .about-panel::-webkit-scrollbar-track { background: transparent; }
+
+#about .about-panel h2 {
+  font-family: var(--font-display); font-weight: 500; font-size: 1.55rem;
+  margin: 0 0 8px; color: var(--fg); letter-spacing: 0.005em;
+}
+#about .about-panel .lede {
+  margin: 0 0 28px; color: var(--fg-soft); font-style: italic; font-size: 0.9rem;
+  padding-bottom: 20px; border-bottom: 1px solid var(--rule);
+}
+#about .about-panel h3 {
+  font-family: var(--font-display); font-weight: 500; font-size: 1.08rem;
+  margin: 32px 0 10px; color: var(--fg); letter-spacing: 0.005em;
+}
+#about .about-panel h3:first-of-type { margin-top: 0; }
+#about .about-panel p { margin: 0 0 14px; color: var(--fg-soft); }
+#about .about-panel b { color: var(--fg); font-weight: 500; }
+#about .about-panel i { color: var(--fg); font-style: italic; }
+#about .about-panel a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+#about .about-panel a:hover { color: #ffffff; text-decoration-thickness: 1.5px; }
+
 #about #about-close {
-  position: absolute; top: 14px; right: 18px; font: inherit; font-size: 1.4rem; line-height: 1;
-  color: var(--fg-soft); background: transparent; border: 0; cursor: pointer; padding: 4px 8px;
+  position: absolute; top: 18px; right: 22px; font: inherit; font-size: 1.6rem; line-height: 1;
+  color: var(--fg-soft); background: transparent; border: 0; cursor: pointer; padding: 4px 10px;
+  border-radius: 4px;
 }
-#about #about-close:hover { color: var(--fg); }
+#about #about-close:hover { color: var(--fg); background: rgba(239,231,226,0.08); }
+#about #about-close:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
 
 #tip {
   position: fixed; z-index: 6; pointer-events: none; background: var(--panel); border: 1px solid var(--rule); padding: 8px 10px;
@@ -173,6 +196,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
   <div class="about-panel">
     <button type="button" id="about-close" aria-label="Close">×</button>
     <h2 id="about-title">About the data &amp; methodology</h2>
+    <p class="lede">A map of where personal data flows between organizations, one edge per publicly disclosed sub-processor relationship. Collected October 2026.</p>
 
     <h3>What this is</h3>
     <p><i>Where the Data Goes</i> is a visualization of publicly disclosed sub-processor relationships. Sub-processors are a specific legal category: third parties that process personal data (usually customer or consumer data) on behalf of the companies shown, as defined under GDPR Article 28. Each edge in the map is a company stating, under contract, that a given third party receives personal data from it.</p>
