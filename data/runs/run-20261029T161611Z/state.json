@@ -1,0 +1,31 @@
+{
+  "run_id": "run-20261029T161611Z",
+  "started_at": "2026-10-29T16:16:11.892291+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Snowflake",
+    "MongoDB",
+    "Sentry",
+    "Amplitude",
+    "Cloudflare",
+    "HubSpot",
+    "Twilio",
+    "Okta",
+    "Zendesk",
+    "Baseten",
+    "Slack",
+    "FullStory",
+    "Splunk",
+    "Segment",
+    "Mailgun",
+    "WorkOS",
+    "Elastic",
+    "Gainsight",
+    "SendGrid"
+  ],
+  "failures": {},
+  "total_cost_usd": 2.197794,
+  "aborted": false
+}

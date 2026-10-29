@@ -1,0 +1,20 @@
+ticker,company_name,website,industry
+BB-001,Cloudflare,https://www.cloudflare.com,Infrastructure
+BB-002,Twilio,https://www.twilio.com,Communications
+BB-003,Snowflake,https://www.snowflake.com,Data / BI
+BB-004,Zendesk,https://www.zendesk.com,Customer support
+BB-005,Slack,https://slack.com,Communications
+BB-006,MongoDB,https://www.mongodb.com,Data / BI
+BB-007,Okta,https://www.okta.com,Security
+BB-008,Sentry,https://sentry.io,Dev observability
+BB-009,Amplitude,https://amplitude.com,Data / BI
+BB-010,HubSpot,https://www.hubspot.com,CRM / sales
+BB-011,Mailgun,https://www.mailgun.com,Communications
+BB-012,Baseten,https://www.baseten.co,AI infra
+BB-013,Segment,https://segment.com,Data / BI
+BB-014,FullStory,https://www.fullstory.com,Data / BI
+BB-015,SendGrid,https://sendgrid.com,Communications
+BB-016,WorkOS,https://workos.com,Security
+BB-017,Elastic,https://www.elastic.co,Data / BI
+BB-018,Gainsight,https://www.gainsight.com,Customer support
+BB-019,Splunk,https://www.splunk.com,Security

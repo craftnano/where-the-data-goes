@@ -1,0 +1,6 @@
+{
+  "list_name": "SaaS backbone (frequently-named, un-crawled)",
+  "retrieved_at": "2026-10-29",
+  "size": 19,
+  "notes": "Hand-picked from the top sub-processors by incoming-edge count that weren't seeds in any other set. These companies get named by 8+ others' lists but their own outgoing data flow was never mapped. Mostly public mid-cap SaaS that falls between Nasdaq 100 and Cloud 100."
+}
