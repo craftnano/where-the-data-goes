@@ -84,7 +84,9 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
 .controls button {
   font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer;
 }
-.controls button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.controls button:focus-visible, .controls .toolbar-link:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.controls .toolbar-link { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; }
+.controls .toolbar-link:hover { color: #ffffff; }
 .controls .zoom-widget { display: inline-flex; gap: 0; }
 .controls .zoom-widget button { padding: 5px 10px; min-width: 32px; }
 .controls .zoom-widget button + button { border-left: 0; }
@@ -210,6 +212,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
           <button type="button" id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
           <button type="button" id="reset-view" title="Reset the camera (same as pressing Home)">reset view</button>
         </span>
+        <a class="toolbar-link" href="./insights.html" title="Six findings from the dataset">Insights</a>
         <button type="button" id="about-open" title="About the data and methodology">About</button>
       </div>
       <div class="legend" id="legend"></div>
