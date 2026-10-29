@@ -1,0 +1,13 @@
+{
+  "run_id": "run-20261028T232537Z",
+  "started_at": "2026-10-28T23:25:37.743146+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Anthropic"
+  ],
+  "failures": {},
+  "total_cost_usd": 0.043155,
+  "aborted": false
+}

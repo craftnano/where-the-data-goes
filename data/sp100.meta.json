@@ -1,0 +1,7 @@
+{
+  "list_name": "S&P 100",
+  "retrieved_from": "https://en.wikipedia.org/wiki/S%26P_100",
+  "retrieved_at": "2026-10-28",
+  "size": 100,
+  "notes": "Alphabet dual-class (GOOGL + GOOG) collapsed to a single row. Overlap with nasdaq100: 33 companies; those keep their nasdaq100 crawl results and gain sp100 tag. 67 companies are new and get crawled in a dedicated run."
+}

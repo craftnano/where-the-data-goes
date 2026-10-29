@@ -1,0 +1,22 @@
+{
+  "run_id": "run-20261028T211042Z",
+  "started_at": "2026-10-28T21:10:42.518556+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Charter Communications",
+    "Diamondback Energy",
+    "DoorDash",
+    "CoStar Group",
+    "Adobe Inc.",
+    "Arm Holdings",
+    "Booking Holdings",
+    "Advanced Micro Devices Inc.",
+    "Cadence Design Systems",
+    "Coca-Cola Europacific Partners"
+  ],
+  "failures": {},
+  "total_cost_usd": 1.018335,
+  "aborted": false
+}

@@ -1,0 +1,269 @@
+# Hand-maintained alias table. Keys are canonical names; values are the raw
+# strings observed on sub-processor lists that should resolve to the key.
+# Order under each key is alphabetical for stable diffs.
+#
+# Rules of thumb for canonicalization:
+#   * Collapse legal-entity suffixes (Inc., LLC, GmbH, Ltd, SARL, Limited, Corp.).
+#   * Collapse jurisdictional variants ("Amazon Web Services, Inc.",
+#     "AWS EMEA SARL" -> "Amazon Web Services"). We explicitly discard
+#     jurisdiction here; see methodology note.
+#   * Keep "Google Cloud Platform" separate from "Google" the parent, since
+#     disclosures almost always mean the GCP line.
+#   * Treat parent/child branded products as one node ONLY if a brand swap
+#     wouldn't change the data flow (e.g. "Twilio SendGrid" -> "SendGrid"
+#     stays separate because it's a distinct ingress point).
+
+Amazon Web Services:
+  - AWS
+  - Amazon
+  - Amazon Inc. (Connect)
+  - Amazon Web Services
+  - Amazon Web Services, Inc.
+  - Amazon Web Services EMEA SARL
+  - Amazon Web Services EMEA S.a.r.l.
+  - Amazon Data Services Ireland Limited
+  - Amazon Data Services Ireland Ltd
+  # Note: "Amazon" and "Amazon Inc. (Connect)" are conditionally skipped by
+  # entities.canonicalize when the purpose text is clearly retail/marketplace.
+
+Google:
+  - GCP
+  - Google
+  - Google (Alphabet)
+  - Google Cloud
+  - Google Cloud EMEA Limited
+  - Google Cloud Platform
+  - Google Ireland Limited (Cloud)
+  - Google LLC (Cloud Services)
+
+Microsoft:
+  - Azure
+  - Microsoft
+  - Microsoft Azure
+  - Microsoft Corporation (Azure)
+  - Microsoft Ireland Operations Limited
+  - Microsoft Online Inc.
+
+Google Workspace:
+  - G Suite
+  - Google Workspace
+  - Google LLC (Workspace)
+
+Google (Analytics):
+  - Google Analytics
+  - Google LLC (Analytics)
+
+OpenAI:
+  - OpenAI
+  - OpenAI, LLC
+  - OpenAI, L.L.C.
+  - OpenAI Ireland Limited
+  - OpenAI OpCo, LLC
+
+Anthropic:
+  - Anthropic
+  - Anthropic PBC
+  - Anthropic, PBC
+
+Microsoft (OpenAI via Azure):
+  - Azure OpenAI
+  - Azure OpenAI Service
+  - Microsoft Azure OpenAI
+
+AWS Bedrock:
+  - AWS Bedrock
+  - Amazon Bedrock
+
+Google Vertex AI:
+  - Vertex AI
+  - Google Vertex AI
+  - Google Cloud Vertex AI
+  - Google LLC (Vertex AI)
+  - Google LLC (Google Vertex AI)
+  # Note: bare "Vertex" is NOT an alias here — that's Vertex Inc. (tax software,
+  # vertexinc.com), unrelated to Google's AI platform. Keep it distinct.
+
+# Vertex Inc. — the tax-calculation / compliance software company. Pinned as its
+# own canonical so it never collides with "Vertex AI" or "Vertex Pharmaceuticals".
+Vertex Inc.:
+  - Vertex
+  - Vertex Inc.
+  - Vertex, Inc.
+  - Vertex SMB
+
+Cloudflare:
+  - Cloudflare
+  - Cloudflare, Inc.
+  - Cloudflare Workers
+
+Stripe:
+  - Stripe
+  - Stripe, Inc.
+  - Stripe Payments Europe, Ltd.
+
+Twilio:
+  - Twilio
+  - Twilio Inc.
+  - Twilio Ireland Limited
+
+SendGrid:
+  - SendGrid
+  - Twilio SendGrid
+
+Snowflake:
+  - Snowflake
+  - Snowflake Inc.
+  - Snowflake Computing
+
+Datadog:
+  - Datadog
+  - Datadog, Inc.
+
+Salesforce:
+  - Salesforce
+  - Salesforce.com, Inc.
+  - Salesforce.com EMEA Limited
+
+Slack:
+  - Slack
+  - Slack Technologies, LLC
+  - Slack Technologies Limited
+
+Zendesk:
+  - Zendesk
+  - Zendesk, Inc.
+
+Intercom:
+  - Intercom
+  - Intercom, Inc.
+  - Intercom R&D Unlimited Company
+
+HubSpot:
+  - HubSpot
+  - HubSpot, Inc.
+  - HubSpot Ireland Limited
+
+Segment:
+  - Segment
+  - Segment.io
+  - Twilio Segment
+
+Mixpanel:
+  - Mixpanel
+  - Mixpanel, Inc.
+
+Amplitude:
+  - Amplitude
+  - Amplitude, Inc.
+
+PagerDuty:
+  - PagerDuty
+  - PagerDuty, Inc.
+
+Okta:
+  - Okta
+  - Okta, Inc.
+  - Auth0
+  - Auth0, Inc.
+
+GitHub:
+  - GitHub
+  - GitHub, Inc.
+  - Microsoft GitHub
+
+MongoDB:
+  - MongoDB
+  - MongoDB, Inc.
+  - MongoDB Atlas
+
+Elastic:
+  - Elastic
+  - Elasticsearch
+  - Elastic N.V.
+
+Fastly:
+  - Fastly
+  - Fastly, Inc.
+
+Akamai:
+  - Akamai
+  - Akamai Technologies, Inc.
+
+Vercel:
+  - Vercel
+  - Vercel Inc.
+
+Netlify:
+  - Netlify
+  - Netlify, Inc.
+
+Heroku:
+  - Heroku
+  - Salesforce (Heroku)
+
+Zoom:
+  - Zoom
+  - Zoom Video Communications, Inc.
+  - Zoom Communications
+
+Atlassian:
+  - Atlassian
+  - Atlassian Corporation Plc
+  - Atlassian Pty Ltd
+  - Atlassian US, Inc.
+
+DocuSign:
+  - DocuSign
+  - DocuSign, Inc.
+
+Dropbox:
+  - Dropbox
+  - Dropbox, Inc.
+
+Box:
+  - Box
+  - Box, Inc.
+
+Cloudinary:
+  - Cloudinary
+  - Cloudinary Ltd.
+
+Mailgun:
+  - Mailgun
+  - Mailgun Technologies, Inc.
+
+Mailchimp:
+  - Mailchimp
+  - Intuit Mailchimp
+  - The Rocket Science Group LLC
+
+Postmark:
+  - Postmark
+  - ActiveCampaign (Postmark)
+  - Wildbit, LLC
+
+New Relic:
+  - New Relic
+  - New Relic, Inc.
+
+Sentry:
+  - Sentry
+  - Functional Software, Inc.
+  - Sentry.io
+
+LaunchDarkly:
+  - LaunchDarkly
+  - LaunchDarkly, Inc.
+
+FullStory:
+  - FullStory
+  - FullStory, Inc.
+
+Heap:
+  - Heap
+  - Heap, Inc.
+
+Hotjar:
+  - Hotjar
+  - Hotjar Ltd
+  - Contentsquare (Hotjar)

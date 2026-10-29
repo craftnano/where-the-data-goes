@@ -1,0 +1,8 @@
+{
+  "list_name": "Forbes Cloud 100",
+  "list_year": 2025,
+  "source": "https://www.forbes.com/lists/cloud100/",
+  "retrieved_from": "Forbes Cloud 100.xlsx (user-provided)",
+  "retrieved_at": "2026-10-28",
+  "notes": "Websites are slug.com heuristics; agent searches regardless. Ticker column holds the Forbes rank (CL100-001..CL100-100)."
+}

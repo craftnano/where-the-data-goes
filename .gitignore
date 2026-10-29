@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Crawl byproducts — large, regenerable, and sometimes contain raw HTML of
+# pages that happened to render private content. Everything the agent needs
+# to rebuild them (seeds, aliases, the run state in data/runs/, graph.json)
+# IS committed.
+data/snapshots/
+data/transcripts/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+.idea/
+.vscode/

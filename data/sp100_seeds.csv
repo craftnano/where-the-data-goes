@@ -1,0 +1,101 @@
+ticker,company_name,website
+AAPL,Apple Inc.,https://www.appleinc.com
+ABBV,AbbVie,https://www.abbvie.com
+ABT,Abbott Laboratories,https://www.abbottlaboratories.com
+ACN,Accenture,https://www.accenture.com
+ADBE,Adobe Inc.,https://www.adobeinc.com
+AMAT,Applied Materials,https://www.appliedmaterials.com
+AMD,Advanced Micro Devices,https://www.advancedmicrodevices.com
+AMGN,Amgen,https://www.amgen.com
+AMT,American Tower,https://www.americantower.com
+AMZN,Amazon,https://www.amazon.com
+ANET,Arista Networks,https://www.arista.com
+AVGO,Broadcom,https://www.broadcom.com
+AXP,American Express,https://www.americanexpress.com
+BA,Boeing,https://www.boeing.com
+BAC,Bank of America,https://www.bankofamerica.com
+BKNG,Booking Holdings,https://www.bookingholdings.com
+BLK,BlackRock,https://www.blackrock.com
+BMY,Bristol Myers Squibb,https://www.bristolmyerssquibb.com
+BNY,BNY Mellon,https://www.bny.com
+BRK.B,Berkshire Hathaway (Class B),https://www.berkshirehathaway.com
+C,Citigroup,https://www.citigroup.com
+CAT,Caterpillar Inc.,https://www.caterpillarinc.com
+CMCSA,Comcast,https://www.comcast.com
+COF,Capital One,https://www.capitalone.com
+COP,ConocoPhillips,https://www.conocophillips.com
+COST,Costco,https://www.costco.com
+CRM,Salesforce,https://www.salesforce.com
+CSCO,Cisco,https://www.cisco.com
+CVS,CVS Health,https://www.cvshealth.com
+CVX,Chevron Corporation,https://www.chevroncorporation.com
+DE,Deere & Company,https://www.deerecompany.com
+DELL,Dell Technologies,https://www.delltechnologies.com
+DHR,Danaher Corporation,https://www.danahercorporation.com
+DIS,Walt Disney Company,https://www.waltdisneycompany.com
+DUK,Duke Energy,https://www.dukeenergy.com
+EMR,Emerson Electric,https://www.emersonelectric.com
+FDX,FedEx,https://www.fedex.com
+GD,General Dynamics,https://www.generaldynamics.com
+GE,GE Aerospace,https://www.geaerospace.com
+GEV,GE Vernova,https://www.gevernova.com
+GILD,Gilead Sciences,https://www.gileadsciences.com
+GM,General Motors,https://www.generalmotors.com
+GOOGL,Alphabet,https://www.alphabet.com
+GS,Goldman Sachs,https://www.goldmansachs.com
+HD,Home Depot,https://www.homedepot.com
+IBM,IBM,https://www.ibm.com
+INTC,Intel,https://www.intel.com
+INTU,Intuit,https://www.intuit.com
+ISRG,Intuitive Surgical,https://www.intuitivesurgical.com
+JNJ,Johnson & Johnson,https://www.johnsonjohnson.com
+JPM,JPMorgan Chase,https://www.jpmorganchase.com
+KO,Coca-Cola Company,https://www.cocacolacompany.com
+LIN,Linde plc,https://www.lindeplc.com
+LLY,Eli Lilly and Company,https://www.elilillyandcompany.com
+LMT,Lockheed Martin,https://www.lockheedmartin.com
+LOW,Lowe's,https://www.lowes.com
+LRCX,Lam Research,https://www.lamresearch.com
+MA,Mastercard,https://www.mastercard.com
+MCD,McDonald's,https://www.mcdonalds.com
+MDLZ,Mondelez International,https://www.mondelezinternational.com
+MDT,Medtronic,https://www.medtronic.com
+META,Meta Platforms,https://www.metaplatforms.com
+MMM,3M,https://www.3m.com
+MO,Altria,https://www.altria.com
+MRK,Merck & Co.,https://www.merckco.com
+MS,Morgan Stanley,https://www.morganstanley.com
+MSFT,Microsoft,https://www.microsoft.com
+MU,Micron Technology,https://www.microntechnology.com
+NEE,NextEra Energy,https://www.nexteraenergy.com
+NFLX,Netflix,https://www.netflix.com
+NOW,ServiceNow,https://www.servicenow.com
+NVDA,Nvidia,https://www.nvidia.com
+ORCL,Oracle Corporation,https://www.oraclecorporation.com
+PANW,Palo Alto Networks,https://www.paloaltonetworks.com
+PEP,PepsiCo,https://www.pepsico.com
+PFE,Pfizer,https://www.pfizer.com
+PG,Procter & Gamble,https://www.proctergamble.com
+PLTR,Palantir Technologies,https://www.palantirtechnologies.com
+PM,Philip Morris International,https://www.philipmorrisinternational.com
+QCOM,Qualcomm,https://www.qualcomm.com
+RTX,RTX Corporation,https://www.rtx.com
+SBUX,Starbucks,https://www.starbucks.com
+SCHW,Charles Schwab Corporation,https://www.charlesschwabcorporation.com
+SNDK,Sandisk,https://www.sandisk.com
+SO,Southern Company,https://www.southerncompany.com
+T,AT&T,https://www.att.com
+TMO,Thermo Fisher Scientific,https://www.thermofisherscientific.com
+TMUS,T-Mobile US,https://www.tmobileus.com
+TSLA,"Tesla, Inc.",https://www.teslainc.com
+TXN,Texas Instruments,https://www.texasinstruments.com
+UBER,Uber,https://www.uber.com
+UNH,UnitedHealth Group,https://www.unitedhealthgroup.com
+UNP,Union Pacific Corporation,https://www.unionpacificcorporation.com
+UPS,United Parcel Service,https://www.unitedparcelservice.com
+USB,U.S. Bancorp,https://www.usbank.com
+V,Visa Inc.,https://www.visa.com
+VZ,Verizon,https://www.verizon.com
+WFC,Wells Fargo,https://www.wellsfargo.com
+WMT,Walmart,https://www.walmart.com
+XOM,ExxonMobil,https://www.exxonmobil.com

@@ -1,0 +1,9 @@
+{
+  "run_id": "run-20261028T201640Z",
+  "started_at": "2026-10-28T20:16:40.779839+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "completed_companies": [],
+  "total_cost_usd": 0.0,
+  "aborted": false
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "run-20261028T234237Z",
+  "started_at": "2026-10-28T23:42:37.982389+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Meta Platforms"
+  ],
+  "failures": {},
+  "total_cost_usd": 0.044877,
+  "aborted": false
+}

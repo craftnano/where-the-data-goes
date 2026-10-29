@@ -1,0 +1,654 @@
+<title>Where the Data Goes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Narrow:wght@400;500&display=swap">
+<style>
+/* Layout: full-bleed WebGL stage; a thin label layer over it; the trail of hops across the top; legend along the bottom edge.
+   One committed look: a dark, wet specimen tray. Glossy noodles carry the data. */
+:root {
+  --bg: #1d1719;            /* wet slate with a little blood in it */
+  --bg-deep: #120e10;
+  --fg: #efe7e2;
+  --fg-soft: #a69a97;
+  --panel: rgba(29,23,25,0.78);
+  --rule: rgba(239,231,226,0.18);
+  --c-hosting: #4f8cff;        /* electric vein */
+  --c-communications: #ff6a4d; /* coral */
+  --c-analytics: #ffd93b;      /* acid yellow */
+  --c-payments: #ff2e63;       /* arterial */
+  --c-support: #b26bff;        /* violet */
+  --c-security: #2ee6c5;       /* aqua */
+  --c-ai: #ff5fc8;             /* hot pink */
+  --c-other: #ffb48a;          /* peach */
+  --c-unnamed: #6c6569;        /* grey: named only as a category */
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-label: "Archivo Narrow", "Arial Narrow", Arial, sans-serif;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-display); overflow: hidden; }
+#stage { position: fixed; inset: 0; }
+#stage canvas { display: block; width: 100%; height: 100%; }
+#ui {
+  position: fixed; inset: 0; pointer-events: none; z-index: 5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 16px;
+  display: grid; grid-template-rows: auto 1fr auto; gap: 12px;
+}
+#ui > * { pointer-events: none; }
+.head > *, .trail > .hop, .controls > *, .legend, .badge { pointer-events: auto; }
+.head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; }
+.sub { margin: 4px 0 0; font-family: var(--font-label); font-size: 0.86rem; color: var(--fg-soft); max-width: 44ch; }
+.badge {
+  font-family: var(--font-label); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+  border: 1px solid var(--rule); padding: 4px 8px; color: var(--fg-soft); background: var(--panel); white-space: nowrap;
+}
+.trail { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-family: var(--font-label); font-size: 0.9rem; min-height: 1.4em; }
+.trail .hop { background: var(--panel); border: 1px solid var(--rule); padding: 3px 8px; }
+.trail .hop.cur { border-color: var(--fg); }
+.trail .arrow { color: var(--fg-soft); }
+.trail .note { color: var(--fg-soft); font-size: 0.82rem; }
+.controls { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-family: var(--font-label); font-size: 0.86rem; }
+.controls label { display: inline-flex; gap: 8px; align-items: center; }
+.controls #seeds label { gap: 4px; margin-left: 6px; }
+.controls input[type="checkbox"] { accent-color: var(--fg); }
+.controls input[type="range"] { width: 160px; accent-color: var(--fg); }
+.controls select { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 4px 6px; }
+.controls button, .controls .file {
+  font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--rule); padding: 5px 10px; cursor: pointer;
+}
+.controls button:focus-visible, .controls .file:focus-within { outline: 2px solid var(--fg); outline-offset: 2px; }
+.controls .file { position: relative; }
+.controls .file input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.year { font-variant-numeric: tabular-nums; min-width: 3.2ch; display: inline-block; }
+.foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.legend { display: flex; gap: 12px 18px; flex-wrap: wrap; font-family: var(--font-label); font-size: 0.78rem; color: var(--fg-soft); margin-top: 10px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 5px; border-radius: 3px; display: inline-block; box-shadow: inset 0 1px 1px rgba(255,255,255,0.5); }
+.hint { font-family: var(--font-label); font-size: 0.78rem; color: var(--fg-soft); text-align: right; max-width: 36ch; margin: 0; }
+.lbl {
+  position: fixed; left: 0; top: 0; z-index: 2; transform: translate(-50%, 10px); pointer-events: auto; cursor: pointer; white-space: nowrap;
+  font-family: var(--font-label); font-size: 0.78rem; color: var(--fg); letter-spacing: 0.02em;
+  text-shadow: 0 0 6px var(--bg), 0 0 3px var(--bg), 0 1px 2px var(--bg-deep);
+}
+.lbl.sel { font-weight: 500; font-size: 0.92rem; }
+.lbl.dest { color: var(--fg-soft); }
+.lbl.floor { pointer-events: none; cursor: default; color: var(--fg-soft); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transform: translate(-50%, 4px); }
+#tip {
+  position: fixed; z-index: 6; pointer-events: none; background: var(--panel); border: 1px solid var(--rule); padding: 8px 10px;
+  font-family: var(--font-label); font-size: 0.82rem; max-width: 30ch; transform: translate(12px, 12px); line-height: 1.35;
+}
+#tip b { font-family: var(--font-display); font-weight: 600; display: block; margin-bottom: 2px; }
+#tip .m { color: var(--fg-soft); }
+@media (max-width: 520px) {
+  .sub, .hint { display: none; }
+  .controls input[type="range"] { width: 120px; }
+}
+</style>
+
+<div id="stage"></div>
+<div id="ui">
+  <div>
+    <div class="head">
+      <div>
+        <h1>Where the Data Goes</h1>
+        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll to zoom, Home to reset.</p>
+      </div>
+      <span class="badge" id="badge">Synthetic data, awaiting crawl</span>
+    </div>
+    <div class="trail" id="trail"><span class="note">Click any node to start following</span></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="foot">
+    <div>
+      <div class="controls">
+        <label>as of <input type="range" id="year" min="2022" max="2026" step="1" value="2026"> <span class="year" id="yearv">2026</span></label>
+        <label>show <select id="scope">
+          <option value="crawled" selected>companies that publish a list</option>
+          <option value="multi">also companies named by 2 or more lists</option>
+          <option value="all">everyone named</option>
+        </select></label>
+        <span id="seeds" hidden>from <label><input type="checkbox" id="seed-nasdaq100" checked> Nasdaq 100</label> <label><input type="checkbox" id="seed-sp100" checked> S&amp;P 100</label> <label><input type="checkbox" id="seed-cloud100" checked> Cloud 100</label> <label title="Companies not on a seed list: reached because another company's list named them, or added by hand"><input type="checkbox" id="seed-other" checked> other top companies</label></span>
+        <label>follow <select id="dir">
+          <option value="out" selected>where it sends data</option>
+          <option value="in">who sends it data</option>
+          <option value="both">both</option>
+        </select></label>
+        <button type="button" id="reset">Clear selection</button>
+        <span class="file"><input type="file" id="file" accept="application/json,.json"><label for="file">Load dataset JSON</label></span>
+      </div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <p class="hint">Ground floor: cloud providers. Middle: companies and the services they lean on. Upstairs: foundation model providers. Noodle thickness is how many companies' data flows through it; colour is what it is used for.</p>
+  </div>
+</div>
+<div id="tip" hidden></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  var CATS = [
+    ['hosting', 'Hosting'], ['communications', 'Communications'], ['analytics', 'Analytics'], ['payments', 'Payments'],
+    ['support', 'Support'], ['security', 'Security'], ['ai_inference', 'AI inference'], ['other', 'Other'], ['unnamed', 'Named only as a category']
+  ];
+  var TOK = { hosting: '--c-hosting', communications: '--c-communications', analytics: '--c-analytics', payments: '--c-payments',
+    support: '--c-support', security: '--c-security', ai_inference: '--c-ai', other: '--c-other', unnamed: '--c-unnamed' };
+  function css(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  var T = { bg: css('--bg'), deep: css('--bg-deep'), fg: css('--fg'), cat: {} };
+  for (var k0 in TOK) T.cat[k0] = css(TOK[k0]);
+
+  var legend = document.getElementById('legend');
+  CATS.forEach(function (c) {
+    var s = document.createElement('span'); var i = document.createElement('i');
+    i.style.background = 'var(' + TOK[c[0]] + ')'; s.appendChild(i); s.appendChild(document.createTextNode(c[1])); legend.appendChild(s);
+  });
+
+  // ---------- synthetic data shaped like the real thing ----------
+  function rng(seed) { var s = seed >>> 0; return function () { s = (s * 1664525 + 1013904223) >>> 0; return s / 4294967296; }; }
+  var R = rng(20261028);
+  function pick(a) { return a[Math.floor(R() * a.length)]; }
+
+  function synthetic() {
+    var nodes = [], edges = [], byName = {};
+    function add(name, level, kind) { if (byName[name]) return byName[name]; var n = { id: nodes.length, name: name, level: level, kind: kind || 'company' }; nodes.push(n); byName[name] = n; return n; }
+    function edge(a, b, cat, text, year) { if (a === b) return; edges.push({ from: a.id, to: b.id, cat: cat, text: text, year: year }); }
+    var hyper = ['Amazon Web Services', 'Google Cloud', 'Microsoft Azure'].map(function (n) { return add(n, 0); });
+    var infraDef = [
+      ['Cloudflare', 'security', 'CDN, DDoS protection'], ['Akamai', 'security', 'Content delivery'], ['Fastly', 'hosting', 'Edge delivery'],
+      ['Twilio', 'communications', 'SMS and voice'], ['SendGrid', 'communications', 'Transactional email'], ['Mailgun', 'communications', 'Email delivery'],
+      ['Stripe', 'payments', 'Payment processing'], ['Adyen', 'payments', 'Payment processing'], ['Snowflake', 'analytics', 'Data warehousing'],
+      ['Databricks', 'analytics', 'Data processing'], ['Datadog', 'hosting', 'Monitoring and logging'], ['New Relic', 'hosting', 'Application monitoring'],
+      ['Sentry', 'hosting', 'Error tracking'], ['PagerDuty', 'support', 'Incident management'], ['Zendesk', 'support', 'Customer support'],
+      ['Intercom', 'support', 'In-app messaging'], ['Salesforce', 'other', 'CRM'], ['HubSpot', 'other', 'Marketing automation'],
+      ['Segment', 'analytics', 'Customer data platform'], ['Mixpanel', 'analytics', 'Product analytics'], ['Amplitude', 'analytics', 'Product analytics'],
+      ['Okta', 'security', 'Identity and access'], ['Auth0', 'security', 'Authentication'], ['Slack', 'communications', 'Internal messaging'],
+      ['Zoom', 'communications', 'Video meetings'], ['Atlassian', 'support', 'Issue tracking'], ['MongoDB', 'hosting', 'Database hosting'],
+      ['OpenAI', 'ai_inference', 'Large language model inference'], ['Anthropic', 'ai_inference', 'Large language model inference'],
+      ['Baseten', 'ai_inference', 'Model hosting'], ['Fireworks AI', 'ai_inference', 'Model inference'], ['Speechmatics', 'ai_inference', 'Speech to text']
+    ];
+    var infra = infraDef.map(function (d) { var n = add(d[0], 1); n.cat = d[1]; n.text = d[2]; return n; });
+    var aiInfra = infra.filter(function (n) { return n.cat === 'ai_inference'; });
+    infra.forEach(function (n) {
+      edge(n, pick(hyper), 'hosting', 'Cloud infrastructure hosting', 2022);
+      if (R() < 0.35) edge(n, pick(hyper), 'hosting', 'Cloud infrastructure hosting', 2023);
+      for (var i = 0, k = 2 + Math.floor(R() * 3); i < k; i++) { var m = pick(infra); edge(n, m, m.cat, m.text, 2022 + Math.floor(R() * 3)); }
+    });
+    edge(byName['OpenAI'], byName['Microsoft Azure'], 'hosting', 'Cloud infrastructure hosting', 2022);
+    edge(byName['Microsoft Azure'], byName['OpenAI'], 'ai_inference', 'Azure OpenAI Service model inference', 2023);
+    edge(byName['Anthropic'], byName['Amazon Web Services'], 'hosting', 'Cloud infrastructure hosting', 2023);
+    edge(byName['Anthropic'], byName['Google Cloud'], 'hosting', 'Cloud infrastructure hosting', 2023);
+    edge(byName['Amazon Web Services'], byName['Anthropic'], 'ai_inference', 'Amazon Bedrock model inference', 2024);
+    edge(byName['Google Cloud'], byName['Anthropic'], 'ai_inference', 'Vertex AI model inference', 2024);
+    edge(byName['Snowflake'], byName['Amazon Web Services'], 'hosting', 'Cloud infrastructure hosting', 2022);
+    edge(byName['Amazon Web Services'], byName['Snowflake'], 'analytics', 'Usage analytics', 2024);
+    var A = ['North', 'Harbor', 'Quill', 'Lantern', 'Cedar', 'Meridian', 'Tidal', 'Basalt', 'Orchard', 'Ferro', 'Lumen', 'Pell', 'Saltmarsh', 'Vantage', 'Kestrel',
+      'Brightline', 'Cobble', 'Halden', 'Juniper', 'Marrow', 'Nimbus', 'Osprey', 'Pinnacle', 'Rook', 'Solstice', 'Tern', 'Umber', 'Vesper', 'Wick', 'Yarrow', 'Zephyr',
+      'Alder', 'Bramble', 'Clearwater', 'Driftwood', 'Ember', 'Fable', 'Granite', 'Hollow', 'Ironwood', 'Keel', 'Larkspur', 'Mosaic', 'Nettle', 'Oriel', 'Pebble'];
+    var B = ['Health', 'Payroll', 'Benefits', 'Labs', 'Systems', 'Works', 'Analytics', 'Robotics', 'Learning', 'Logistics', 'Studio', 'Finance', 'Legal',
+      'Clinic', 'Retail', 'Energy', 'Insurance', 'Media', 'Talent', 'Security', 'Mobility', 'Housing', 'Commerce', 'Dental', 'Travel', 'Hiring'];
+    var used = {}, companies = [];
+    while (companies.length < 380) { var nm = pick(A) + ' ' + pick(B); if (used[nm]) continue; used[nm] = 1; companies.push(add(nm, 2)); }
+    companies.forEach(function (c) {
+      edge(c, pick(hyper), 'hosting', 'Cloud infrastructure hosting', 2022 + Math.floor(R() * 2));
+      if (R() < 0.25) edge(c, pick(hyper), 'hosting', 'Cloud infrastructure hosting', 2023);
+      for (var i = 0, k = 3 + Math.floor(R() * 6); i < k; i++) {
+        var m = pick(infra);
+        var yr = m.cat === 'ai_inference' ? 2024 + Math.floor(Math.pow(R(), 0.6) * 3) : 2022 + Math.floor(R() * 3);
+        edge(c, m, m.cat, m.text, Math.min(yr, 2026));
+      }
+      if (R() < 0.55) { var ai = pick(aiInfra); edge(c, ai, 'ai_inference', ai.text, Math.min(2026, 2024 + Math.floor(Math.pow(R(), 0.5) * 3))); }
+      if (R() < 0.12) { var o = pick(companies); if (o !== c) edge(c, o, 'other', 'Embedded partner service', 2023 + Math.floor(R() * 3)); }
+      if (R() < 0.18) { var u = add('Unnamed: ' + pick(['cloud hosting providers', 'analytics vendors', 'customer support tooling', 'payment processors']), 3, 'unnamed'); edge(c, u, 'unnamed', 'Disclosed as a category only', 2023); }
+    });
+    var seen = {}; edges = edges.filter(function (e) { var k = e.from + '>' + e.to; if (seen[k]) return false; seen[k] = 1; return true; });
+    return { nodes: nodes, edges: edges, synthetic: true };
+  }
+
+  // Real dataset: { nodes:[{id,name,kind?}], edges:[{from,to,purpose_category|cat,purpose_text|text,first_seen|year}] }
+  function normalize(raw) {
+    var nodes = [], idmap = {}, edges = [];
+    (raw.nodes || []).forEach(function (n, i) { var id = n.id != null ? n.id : i; idmap[id] = nodes.length; nodes.push({ id: nodes.length, name: n.name || String(id), kind: n.kind || (String(n.name || '').indexOf('Unnamed') === 0 ? 'unnamed' : 'company'), seeds: n.seed_sets || null }); });
+    (raw.edges || []).forEach(function (e) {
+      if (!(e.from in idmap) || !(e.to in idmap)) return;
+      var cat = e.purpose_category || e.cat || 'other'; if (!TOK[cat]) cat = 'other';
+      var y = e.year || (e.first_seen ? parseInt(String(e.first_seen).slice(0, 4), 10) : 2022);
+      edges.push({ from: idmap[e.from], to: idmap[e.to], cat: cat, text: e.purpose_text || e.text || '', year: isNaN(y) ? 2022 : y });
+    });
+    var indeg = new Array(nodes.length).fill(0); edges.forEach(function (e) { indeg[e.to]++; });
+    var order = nodes.map(function (n, i) { return i; }).sort(function (a, b) { return indeg[b] - indeg[a]; });
+    nodes.forEach(function (n) { n.level = n.kind === 'unnamed' ? 3 : 2; });
+    order.slice(0, 3).forEach(function (i) { nodes[i].level = 0; });
+    order.slice(3, 40).forEach(function (i) { if (indeg[i] > 2) nodes[i].level = 1; });
+    // ring-one nodes take the category they are most often named for
+    nodes.forEach(function (n) { if (n.level === 1) { var c = {}; edges.forEach(function (e) { if (e.to === n.id) c[e.cat] = (c[e.cat] || 0) + 1; }); n.cat = Object.keys(c).sort(function (a, b) { return c[b] - c[a]; })[0] || 'other'; } });
+    return { nodes: nodes, edges: edges, synthetic: false };
+  }
+
+  // ---------- renderer, lights, wet tray ----------
+  var stage = document.getElementById('stage');
+  var renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+  renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  stage.appendChild(renderer.domElement);
+  var scene = new THREE.Scene();
+  (function () {  // vignette: a dark field that is a little lighter where the body sits
+    var c = document.createElement('canvas'); c.width = 1024; c.height = 1024; var g = c.getContext('2d');
+    var grad = g.createRadialGradient(512, 560, 40, 512, 560, 760);
+    grad.addColorStop(0, '#3a2c31'); grad.addColorStop(0.45, '#241b1f'); grad.addColorStop(1, '#0d0a0b');
+    g.fillStyle = grad; g.fillRect(0, 0, 1024, 1024);
+    var tex = new THREE.CanvasTexture(c); tex.encoding = THREE.sRGBEncoding; scene.background = tex;
+  })();
+  scene.fog = new THREE.Fog(new THREE.Color(T.bg).convertSRGBToLinear(), 700, 1700);
+  var camera = new THREE.PerspectiveCamera(36, 1, 0.5, 2500);
+  var cam = { theta: 0.6, phi: 1.22, r: 700, target: new THREE.Vector3(0, 62, 0), vTheta: 0, vPhi: 0, lastTouch: -1e9 };
+
+  // a studio environment painted by hand: dark room, two softboxes, a floor glow. This is what makes things look wet.
+  function studioEnv() {
+    var c = document.createElement('canvas'); c.width = 1024; c.height = 512; var g = c.getContext('2d');
+    var grad = g.createLinearGradient(0, 0, 0, 512); grad.addColorStop(0, '#2a2326'); grad.addColorStop(0.5, '#15110f'); grad.addColorStop(1, '#3a2c2a');
+    g.fillStyle = grad; g.fillRect(0, 0, 1024, 512);
+    function box(x, y, w, h, col, blur) { g.save(); g.filter = 'blur(' + blur + 'px)'; g.fillStyle = col; g.fillRect(x, y, w, h); g.restore(); }
+    box(120, 60, 260, 120, '#fff4ea', 18);   // key softbox, warm
+    box(620, 90, 180, 90, '#dfe9ff', 16);    // fill, cool
+    box(880, 40, 90, 300, '#ffd9c9', 22);    // rim strip
+    box(0, 430, 1024, 60, '#5a3f44', 30);    // floor bounce
+    var tex = new THREE.CanvasTexture(c); tex.mapping = THREE.EquirectangularReflectionMapping; tex.encoding = THREE.sRGBEncoding;
+    var pm = new THREE.PMREMGenerator(renderer); pm.compileEquirectangularShader();
+    var env = pm.fromEquirectangular(tex).texture; pm.dispose(); tex.dispose(); return env;
+  }
+  scene.environment = studioEnv();
+  var hemi = new THREE.HemisphereLight(0xffe9dd, 0x1a1012, 0.3); scene.add(hemi);
+  var key = new THREE.DirectionalLight(0xfff1e6, 1.45); key.position.set(-160, 240, 140); key.castShadow = true;
+  key.shadow.mapSize.set(2048, 2048); key.shadow.camera.left = -340; key.shadow.camera.right = 340; key.shadow.camera.top = 340; key.shadow.camera.bottom = -340;
+  key.shadow.camera.near = 40; key.shadow.camera.far = 1000; key.shadow.radius = 6; key.shadow.bias = -0.0005; scene.add(key);
+  var rim = new THREE.DirectionalLight(0xc8d8ff, 0.5); rim.position.set(200, 120, -220); scene.add(rim);
+
+  var ground = new THREE.Mesh(new THREE.CircleGeometry(900, 64), new THREE.MeshStandardMaterial({ color: new THREE.Color(T.deep).convertSRGBToLinear(), roughness: 0.55, metalness: 0.05, envMapIntensity: 0.6 }));
+  ground.rotation.x = -Math.PI / 2; ground.position.y = -1.6; ground.receiveShadow = true; scene.add(ground);
+  (function () {
+    var c = document.createElement('canvas'); c.width = c.height = 512; var g = c.getContext('2d');
+    var grad = g.createRadialGradient(256, 256, 0, 256, 256, 256);
+    grad.addColorStop(0, 'rgba(255,220,200,0.55)'); grad.addColorStop(0.5, 'rgba(255,200,180,0.12)'); grad.addColorStop(1, 'rgba(255,200,180,0)');
+    g.fillStyle = grad; g.fillRect(0, 0, 512, 512);
+    var tex = new THREE.CanvasTexture(c); tex.encoding = THREE.sRGBEncoding;
+    var pool = new THREE.Mesh(new THREE.PlaneGeometry(520, 520), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0.6 }));
+    pool.rotation.x = -Math.PI / 2; pool.position.y = -1.4; scene.add(pool);
+  })();
+
+  // ---------- state ----------
+  var data = synthetic(), G = null, labels = [];
+  var CLOUDS = ['amazon web services', 'aws', 'google', 'google cloud', 'microsoft', 'microsoft azure', 'azure', 'oracle cloud', 'oracle', 'ibm cloud', 'alibaba cloud', 'alibaba', 'digitalocean', 'ovh', 'ovhcloud', 'hetzner', 'linode', 'akamai cloud', 'tencent cloud', 'huawei cloud', 'scaleway', 'vultr', 'rackspace', 'equinix'];
+  var MODELS = ['openai', 'anthropic', 'google vertex ai', 'vertex ai', 'azure openai', 'azure openai service', 'amazon bedrock', 'bedrock', 'aws bedrock', 'mistral', 'mistral ai', 'xai', 'x.ai', 'cohere', 'meta ai', 'meta llama', 'llama', 'deepseek', 'ai21', 'ai21 labs', 'google deepmind', 'deepmind', 'gemini'];
+  function isAI(node) {
+    var nm = (node.name || '').toLowerCase().replace(/[,.]|\b(inc|llc|ltd|corp|corporation|limited|gmbh)\b/g, '').trim();
+    return MODELS.indexOf(nm) >= 0;
+  }
+  function isCloud(node) { var nm = (node.name || '').toLowerCase().replace(/[,.]|\b(inc|llc|ltd|corp|corporation|limited)\b/g, '').trim(); return CLOUDS.indexOf(nm) >= 0; }
+  var zeroM = new THREE.Matrix4().makeScale(0, 0, 0);
+  var state = { year: 2026, selected: null, trail: [], scope: 'crawled', vis: null, dir: 'out', seedsOn: { nasdaq100: true, sp100: true, cloud100: true, other: true } };
+  function nodeInScope(L, id, node) {
+    if (state.scope === 'all') return true;
+    if (node.kind === 'unnamed') return false;
+    if (node.anchor) return true;
+    if (node.seeds && L.out[id].length > 0) {
+      var on = state.seedsOn, sets = node.seeds.length ? node.seeds : ['snowball'];
+      var key = function (k) { k = String(k).toLowerCase(); return k.indexOf('nasdaq') === 0 ? 'nasdaq100' : k.indexOf('sp100') === 0 || k.indexOf('s&p') === 0 ? 'sp100' : k.indexOf('cloud100') === 0 ? 'cloud100' : 'other'; };
+      if (!sets.some(function (k) { return on[key(k)]; })) return false;
+    }
+    var crawled = L.out[id].length > 0 || node.level === 0;
+    if (state.scope === 'crawled') return crawled;
+    return crawled || L.indeg[id] >= 2;
+  }
+  function edgeOK(G, k) {
+    var e = G.d.edges[k];
+    return e.year <= state.year && state.vis[e.from] && state.vis[e.to];
+  }
+
+  function clearGraph() {
+    if (!G) return;
+    G.group.traverse(function (o) { if (o.geometry) o.geometry.dispose(); if (o.material && o.material.dispose) o.material.dispose(); });
+    scene.remove(G.group); G = null;
+    labels.forEach(function (l) { l.el.remove(); }); labels = [];
+  }
+
+  function layout(d) {
+    var n = d.nodes.length, indeg = new Array(n).fill(0), out = [], inn = [];
+    for (var i = 0; i < n; i++) { out.push([]); inn.push([]); }
+    d.edges.forEach(function (e) { indeg[e.to]++; out[e.from].push(e); inn[e.to].push(e); });
+    var pos = new Array(n), ang = new Array(n);
+    var L0 = d.nodes.filter(function (x) { return x.level === 0 || isCloud(x); }), L1 = d.nodes.filter(function (x) { return x.level === 1 && !isCloud(x); });
+    L0.forEach(function (x, i) { var a = (i / Math.max(L0.length, 1)) * Math.PI * 2 + 0.4; ang[x.id] = a; pos[x.id] = new THREE.Vector3(Math.cos(a) * 46, 0, Math.sin(a) * 46); });
+    var catOrder = ['hosting', 'security', 'communications', 'support', 'other', 'analytics', 'payments', 'ai_inference'];
+    L1.sort(function (a, b) { return catOrder.indexOf(a.cat || 'other') - catOrder.indexOf(b.cat || 'other'); });
+    L1.forEach(function (x, i) { var a = (i / Math.max(L1.length, 1)) * Math.PI * 2; ang[x.id] = a; var r = 100 + (R() - 0.5) * 24; pos[x.id] = new THREE.Vector3(Math.cos(a) * r, 0, Math.sin(a) * r); });
+    // publishers (companies with a list) sit in a ring, angled toward the infrastructure they lean on
+    var publishers = d.nodes.filter(function (x) { return x.level === 2 && out[x.id].length > 0; });
+    publishers.forEach(function (x) {
+      var sx = 0, sy = 0, cnt = 0;
+      out[x.id].forEach(function (e) { var t = d.nodes[e.to]; if (t.level <= 1 && ang[t.id] != null) { sx += Math.cos(ang[t.id]); sy += Math.sin(ang[t.id]); cnt++; } });
+      var a = cnt ? Math.atan2(sy, sx) : R() * Math.PI * 2;
+      a += (R() - 0.5) * 0.5; ang[x.id] = a;
+      var r = 170 + Math.pow(R(), 0.9) * 50;
+      pos[x.id] = new THREE.Vector3(Math.cos(a) * r, 0, Math.sin(a) * r);
+    });
+    // leaves (named by a list, never crawled) fan outward from whoever named them, like hairs
+    d.nodes.forEach(function (x) {
+      if (x.level < 2 || pos[x.id]) return;
+      var sx = 0, sy = 0, cnt = 0, rbase = 0;
+      inn[x.id].forEach(function (e) { var s = d.nodes[e.from]; if (ang[s.id] != null) { sx += Math.cos(ang[s.id]); sy += Math.sin(ang[s.id]); cnt++; var p = pos[s.id]; rbase += p ? Math.sqrt(p.x * p.x + p.z * p.z) : 120; } });
+      var a = cnt ? Math.atan2(sy, sx) : R() * Math.PI * 2;
+      a += (R() - 0.5) * (cnt > 1 ? 0.25 : 0.12); ang[x.id] = a;
+      var r = (cnt ? rbase / cnt : 190) + 26 + Math.pow(R(), 0.7) * (x.level === 3 ? 90 : 70);
+      pos[x.id] = new THREE.Vector3(Math.cos(a) * r, 0, Math.sin(a) * r);
+    });
+    var tier = new Array(n);
+    d.nodes.forEach(function (x) {
+      var t = {}; inn[x.id].forEach(function (e) { t[e.cat] = (t[e.cat] || 0) + 1; });
+      var top = Object.keys(t).sort(function (a, b) { return t[b] - t[a]; })[0];
+      tier[x.id] = isCloud(x) ? 0 : isAI(x) ? 2 : 1;
+    });
+    var floorY = [0, 62, 136];
+    pos.forEach(function (p, i) { if (!p) p = pos[i] = new THREE.Vector3(); p.y = floorY[tier[i]] + (R() - 0.5) * 3; if (tier[i] === 2) { p.x *= 0.8; p.z *= 0.8; } });
+    return { pos: pos, indeg: indeg, out: out, inn: inn, tier: tier, floorY: floorY };
+  }
+
+  // a noodle: a catmull-rom through jittered waypoints, so it wanders a little like a vessel
+  function noodle(a, b, lift) {
+    var pts = [a.clone()], d = b.clone().sub(a), len = d.length(), side = new THREE.Vector3(-d.z, 0, d.x).normalize();
+    var n = len > 90 ? 3 : (len > 40 ? 2 : 1);
+    for (var i = 1; i <= n; i++) {
+      var t = i / (n + 1), p = a.clone().lerp(b, t);
+      p.add(side.clone().multiplyScalar((R() - 0.5) * len * 0.08));
+      var climb = Math.abs(b.y - a.y);
+      p.y += Math.sin(t * Math.PI) * Math.max(0.8, 1.5 + len * 0.035 + lift - climb * 0.3) + (R() - 0.5) * 1.2;
+      pts.push(p);
+    }
+    pts.push(b.clone());
+    return new THREE.CatmullRomCurve3(pts, false, 'centripetal', 0.6);
+  }
+
+  function mergedTubes(d, curves, radii, filter, colorFor, segs, radial) {
+    var P = [], N = [], C = [], U = [], I = [], base = 0, col = new THREE.Color();
+    curves.forEach(function (cv, k) {
+      if (!filter(k)) return;
+      var g = new THREE.TubeGeometry(cv, segs, radii[k], radial, false);
+      var p = g.attributes.position.array, nn = g.attributes.normal.array, uv = g.attributes.uv.array, idx = g.index.array;
+      colorFor(k, col);
+      for (var i = 0; i < p.length; i += 3) { P.push(p[i], p[i + 1], p[i + 2]); N.push(nn[i], nn[i + 1], nn[i + 2]); C.push(col.r, col.g, col.b); }
+      for (var j = 0; j < uv.length; j += 2) U.push(uv[j], uv[j + 1]);
+      for (var q = 0; q < idx.length; q++) I.push(idx[q] + base);
+      base += p.length / 3; g.dispose();
+    });
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(P, 3));
+    geo.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3));
+    geo.setAttribute('color', new THREE.Float32BufferAttribute(C, 3));
+    geo.setAttribute('uv', new THREE.Float32BufferAttribute(U, 2));
+    geo.setIndex(I);
+    return geo;
+  }
+
+  var ghost = lin(T.bg).lerp(lin(T.fg), 0.06);
+  function lin(c) { return new THREE.Color(c).convertSRGBToLinear(); }
+  function catColor(cat) { return lin(T.cat[cat] || T.cat.other); }
+
+  function build(d) {
+    clearGraph();
+    var L = layout(d), n = d.nodes.length, group = new THREE.Group(); scene.add(group);
+    d.nodes.forEach(function (x) {
+      var t = {}; L.inn[x.id].forEach(function (e) { t[e.cat] = (t[e.cat] || 0) + 1; });
+      var top = Object.keys(t).sort(function (a, b) { return t[b] - t[a]; })[0];
+      x.anchor = isCloud(x) || isAI(x);
+    });
+    var sizes = d.nodes.map(function (x) { var s = 1.2 + 2.3 * Math.log10(1 + L.indeg[x.id]) + (L.out[x.id].length ? 1.0 : 0); if (x.level === 0) s *= 1.3; if (x.kind === 'unnamed') s *= 0.75; return s; });
+    var weights = d.edges.map(function (e) { return L.indeg[e.from] + 1; });
+    var maxW = Math.max.apply(null, weights.concat([1]));
+    var radii = weights.map(function (w) { return 0.16 + 1.6 * Math.pow(w / maxW, 0.75); });
+    var curves = d.edges.map(function (e, k) { return noodle(L.pos[e.from], L.pos[e.to], Math.log10(weights[k] + 1) * 2.5); });
+
+    // faint floor discs for the middle and upper tiers; the ground is the tray itself
+    var floorR = [110, 300, 170], floorName = ['Cloud providers', 'Companies and the services they rely on', 'Foundation model providers'];
+    [0, 1, 2].forEach(function (t) {
+      var disc = new THREE.Mesh(new THREE.CircleGeometry(floorR[t], 96), new THREE.MeshBasicMaterial({ color: lin(T.fg), transparent: true, opacity: t === 0 ? 0.06 : 0.035, depthWrite: false, side: THREE.DoubleSide }));
+      disc.rotation.x = -Math.PI / 2; disc.position.y = L.floorY[t] - 2.5; group.add(disc);
+      var cap = document.createElement('div'); cap.className = 'lbl floor'; cap.textContent = floorName[t]; document.body.appendChild(cap);
+      labels.push({ el: cap, base: true, floor: { y: L.floorY[t] - 2, r: floorR[t] + 8 } });
+    });
+    // nodes: glossy blobs
+    var blobGeo = new THREE.SphereGeometry(1, 28, 20);
+    var blobMat = new THREE.MeshPhysicalMaterial({ roughness: 0.3, metalness: 0, clearcoat: 0.8, clearcoatRoughness: 0.2, envMapIntensity: 0.8 });
+    var blobs = new THREE.InstancedMesh(blobGeo, blobMat, n); blobs.castShadow = true; blobs.receiveShadow = true;
+    var m = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), sc = new THREE.Vector3(), mats = [], baseColors = [];
+    for (var i = 0; i < n; i++) {
+      var s = sizes[i], node = d.nodes[i];
+      e.set((R() - 0.5) * 0.3, R() * Math.PI, (R() - 0.5) * 0.3); q.setFromEuler(e);
+      sc.set(s * (0.9 + R() * 0.3), s * 0.72, s * (0.9 + R() * 0.3));
+      m.compose(L.pos[i], q, sc); blobs.setMatrixAt(i, m); mats.push(m.clone());
+      var c;
+      if (node.kind === 'unnamed') c = catColor('unnamed');
+      else if (node.level === 0) c = catColor('hosting').lerp(lin('#ffffff'), 0.25);
+      else {
+        var tally = {}; L.inn[i].forEach(function (e) { tally[e.cat] = (tally[e.cat] || 0) + 1; });
+        var top = Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; })[0];
+        c = top ? catColor(top) : lin('#c9a98e');
+      }
+      baseColors.push(c); blobs.setColorAt(i, c);
+    }
+    blobs.instanceMatrix.needsUpdate = true; if (blobs.instanceColor) blobs.instanceColor.needsUpdate = true;
+    group.add(blobs);
+
+    // noodles: one merged glossy mesh, coloured per vertex so dimming is a colour rewrite, not a rebuild
+    var tubeMat = new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: 0.42, metalness: 0, clearcoat: 0.6, clearcoatRoughness: 0.3, envMapIntensity: 0.7 });
+    var tubes = null, tubeOrder = [];
+    function rebuildTubes() {
+      if (tubes) { group.remove(tubes); tubes.geometry.dispose(); }
+      tubeOrder = [];
+      var geo = mergedTubes(d, curves, radii, function (k) { var ok = edgeOK(G, k); if (ok) tubeOrder.push(k); return ok; }, function (k, col) { col.copy(catColor(d.edges[k].cat)); }, 18, 7);
+      tubes = new THREE.Mesh(geo, tubeMat); tubes.castShadow = true; tubes.receiveShadow = true; group.add(tubes);
+    }
+
+    // flowing pulses along the selected chain: a stripe texture sliding along the tube's length
+    var sc2 = document.createElement('canvas'); sc2.width = 256; sc2.height = 8; var sg = sc2.getContext('2d');
+    sg.clearRect(0, 0, 256, 8); var sgr = sg.createLinearGradient(0, 0, 256, 0);
+    sgr.addColorStop(0, 'rgba(255,255,255,0)'); sgr.addColorStop(0.55, 'rgba(255,255,255,0)'); sgr.addColorStop(0.8, 'rgba(255,255,255,0.95)'); sgr.addColorStop(1, 'rgba(255,255,255,0)');
+    sg.fillStyle = sgr; sg.fillRect(0, 0, 256, 8);
+    var stripe = new THREE.CanvasTexture(sc2); stripe.wrapS = THREE.RepeatWrapping; stripe.wrapT = THREE.RepeatWrapping; stripe.repeat.set(6, 1);
+    var flowMat = new THREE.MeshBasicMaterial({ map: stripe, transparent: true, opacity: 0.9, depthWrite: false, blending: THREE.AdditiveBlending });
+    var stripeIn = stripe.clone(); stripeIn.needsUpdate = true;
+    var flowMatIn = new THREE.MeshBasicMaterial({ map: stripeIn, transparent: true, opacity: 0.9, depthWrite: false, blending: THREE.AdditiveBlending });
+    var haloMat = new THREE.MeshBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.42, depthWrite: false, blending: THREE.AdditiveBlending });
+
+    d.nodes.forEach(function (x) { if (x.level <= 1 || L.tier[x.id] !== 1) { var el = document.createElement('div'); el.className = 'lbl'; el.textContent = x.name; el.addEventListener('click', function () { follow(x.id); }); document.body.appendChild(el); labels.push({ el: el, id: x.id, base: true }); } });
+
+    G = { group: group, blobs: blobs, L: L, mats: mats, sizes: sizes, baseColors: baseColors, curves: curves, radii: radii, weights: weights,
+      tubes: function () { return tubes; }, tubeOrder: function () { return tubeOrder; }, rebuildTubes: rebuildTubes, flowMat: flowMat, flowMatIn: flowMatIn, haloMat: haloMat, stripe: stripe, stripeIn: stripeIn, flow: null, halo: null, d: d };
+    applyYear();
+    document.getElementById('badge').textContent = d.synthetic ? 'Synthetic data, awaiting crawl' : (d.nodes.length + ' companies, ' + d.edges.length + ' disclosures');
+    document.getElementById('seeds').hidden = !d.nodes.some(function (x) { return x.seeds; });
+  }
+
+  function applyYear() {
+    if (!G) return;
+    var d = G.d, n = d.nodes.length, vis = new Array(n).fill(false), scoped = new Array(n);
+    for (var s0 = 0; s0 < n; s0++) scoped[s0] = nodeInScope(G.L, s0, d.nodes[s0]);
+    d.edges.forEach(function (e) { if (e.year <= state.year && scoped[e.from] && scoped[e.to]) { vis[e.from] = true; vis[e.to] = true; } });
+    state.vis = vis;
+    var zero = new THREE.Matrix4().makeScale(0, 0, 0);
+    for (var i = 0; i < n; i++) G.blobs.setMatrixAt(i, vis[i] ? G.mats[i] : zero);
+    G.blobs.instanceMatrix.needsUpdate = true;
+    G.rebuildTubes();
+    labels.forEach(function (l) { l.hidden = l.floor ? false : !vis[l.id]; });
+    if (state.selected != null && !vis[state.selected]) { state.selected = null; state.trail = []; }
+    select(state.selected, true);
+  }
+
+  function hops(G, id) {  // [edge, neighbour] pairs in the chosen direction(s)
+    var out = [];
+    if (state.dir !== 'in') G.L.out[id].forEach(function (e) { out.push([e, e.to]); });
+    if (state.dir !== 'out') G.L.inn[id].forEach(function (e) { out.push([e, e.from]); });
+    return out;
+  }
+  function chainOf(id) {  // n and e hold hop depth: 1 = disclosed by the selected company, 2 = the next company's own disclosure (a hint only)
+    var d = G.d, keepN = {}, keepE = {}, q = [[id, 0]]; keepN[id] = 0;
+    while (q.length) {
+      var cur = q.shift(), hop = cur[1]; if (hop >= 2) continue;
+      hops(G, cur[0]).forEach(function (pair) { var e = pair[0], nxt = pair[1], k = d.edges.indexOf(e); if (!edgeOK(G, k)) return; if (keepE[k] == null) keepE[k] = hop + 1; if (keepN[nxt] == null) { keepN[nxt] = hop + 1; q.push([nxt, hop + 1]); } });
+    }
+    return { n: keepN, e: keepE };
+  }
+
+  function renderTrail() {
+    var t = document.getElementById('trail'); t.innerHTML = '';
+    if (!state.trail.length) { var s = document.createElement('span'); s.className = 'note'; s.textContent = 'Click any node to start following'; t.appendChild(s); return; }
+    state.trail.forEach(function (id, i) {
+      if (i) { var a = document.createElement('span'); a.className = 'arrow'; a.textContent = '→'; t.appendChild(a); }
+      var h = document.createElement('span'); h.className = 'hop' + (i === state.trail.length - 1 ? ' cur' : ''); h.textContent = G.d.nodes[id].name; t.appendChild(h);
+    });
+    var lastId = state.trail[state.trail.length - 1];
+    var sends = G.L.out[lastId].filter(function (e) { return edgeOK(G, G.d.edges.indexOf(e)); }).length, gets = G.L.inn[lastId].filter(function (e) { return edgeOK(G, G.d.edges.indexOf(e)); }).length;
+    var note = document.createElement('span'); note.className = 'note', parts = [];
+    if (state.dir !== 'in') parts.push(sends ? 'sends data to ' + sends + ' place' + (sends === 1 ? '' : 's') : 'end of the disclosed chain');
+    if (state.dir !== 'out') parts.push(gets ? 'receives from ' + gets + ' compan' + (gets === 1 ? 'y' : 'ies') : 'named by nobody in the dataset');
+    note.textContent = parts.join('; ') + ((sends && state.dir !== 'in') || (gets && state.dir !== 'out') ? '. Click one to follow' : '');
+    t.appendChild(note);
+  }
+
+  function select(id, keepTrail) {
+    if (!G) return;
+    state.selected = id;
+    if (G.flow) { G.group.remove(G.flow); G.flow.children.forEach(function (m) { m.geometry.dispose(); }); G.flow = null; }
+    if (G.halo) { G.group.remove(G.halo); G.halo.geometry.dispose(); G.halo = null; }
+    labels = labels.filter(function (l) { if (!l.base) { l.el.remove(); return false; } return true; });
+    var d = G.d, tubes = G.tubes(), order = G.tubeOrder(), colAttr = tubes.geometry.attributes.color, col = new THREE.Color();
+    var vertsPer = colAttr.count / Math.max(order.length, 1);
+    if (id == null) {
+      for (var i = 0; i < d.nodes.length; i++) { G.blobs.setColorAt(i, G.baseColors[i]); G.blobs.setMatrixAt(i, state.vis[i] ? G.mats[i] : zeroM); }
+      order.forEach(function (k, j) { col.copy(catColor(d.edges[k].cat)); col.lerp(lin(T.bg), 0.08); for (var v = 0; v < vertsPer; v++) colAttr.setXYZ(j * vertsPer + v, col.r, col.g, col.b); });
+      if (!keepTrail) state.trail = [];
+    } else {
+      var ch = chainOf(id);
+      var white = new THREE.Color('#ffffff'), swell = new THREE.Matrix4(), sv = new THREE.Vector3(), sq = new THREE.Quaternion(), sp = new THREE.Vector3();
+      for (var j2 = 0; j2 < d.nodes.length; j2++) {
+        if (!state.vis[j2]) { G.blobs.setMatrixAt(j2, zeroM); continue; }
+        if (ch.n[j2] != null && ch.n[j2] <= 1) { G.blobs.setColorAt(j2, G.baseColors[j2].clone().lerp(lin('#ffffff'), 0.22)); G.mats[j2].decompose(sp, sq, sv); sv.multiplyScalar(j2 === id ? 1.5 : 1.2); swell.compose(sp, sq, sv); G.blobs.setMatrixAt(j2, swell); }
+        else if (ch.n[j2] === 2) { G.blobs.setColorAt(j2, ghost.clone().lerp(G.baseColors[j2], 0.45)); G.blobs.setMatrixAt(j2, G.mats[j2]); }
+        else { G.blobs.setColorAt(j2, ghost); G.blobs.setMatrixAt(j2, G.mats[j2]); }
+      }
+      order.forEach(function (k, j) { if (ch.e[k] === 1) col.copy(catColor(d.edges[k].cat)); else if (ch.e[k] === 2) col.copy(ghost).lerp(catColor(d.edges[k].cat), 0.3); else col.copy(ghost); for (var v = 0; v < vertsPer; v++) colAttr.setXYZ(j * vertsPer + v, col.r, col.g, col.b); });
+      var hgeo = mergedTubes(d, G.curves, G.radii.map(function (r) { return r * 1.6 + 0.5; }), function (k) { return ch.e[k] === 1 && edgeOK(G, k); }, function (k, c) { c.copy(catColor(d.edges[k].cat)); }, 20, 7);
+      G.halo = new THREE.Mesh(hgeo, G.haloMat); G.group.add(G.halo);
+      // pulses only on the first hop out of the current node, so the eye can follow
+      var firstOut = {}, firstIn = {};
+      if (state.dir !== 'in') G.L.out[id].forEach(function (e) { var k = d.edges.indexOf(e); if (edgeOK(G, k)) firstOut[k] = 1; });
+      if (state.dir !== 'out') G.L.inn[id].forEach(function (e) { var k = d.edges.indexOf(e); if (edgeOK(G, k)) firstIn[k] = 1; });
+      G.flow = new THREE.Group();
+      if (Object.keys(firstOut).length) G.flow.add(new THREE.Mesh(mergedTubes(d, G.curves, G.radii.map(function (r) { return r + 0.22; }), function (k) { return !!firstOut[k]; }, function (k, c) { c.set('#ffffff'); }, 24, 7), G.flowMat));
+      if (Object.keys(firstIn).length) G.flow.add(new THREE.Mesh(mergedTubes(d, G.curves, G.radii.map(function (r) { return r + 0.22; }), function (k) { return !!firstIn[k]; }, function (k, c) { c.set('#ffffff'); }, 24, 7), G.flowMatIn));
+      G.group.add(G.flow);
+      var el = document.createElement('div'); el.className = 'lbl sel'; el.textContent = d.nodes[id].name; el.addEventListener('click', function () { follow(id); }); document.body.appendChild(el); labels.push({ el: el, id: id, base: false });
+      hops(G, id).forEach(function (pair) { var e = pair[0], other = pair[1]; if (!edgeOK(G, d.edges.indexOf(e)) || d.nodes[other].level <= 1) return; var e2 = document.createElement('div'); e2.className = 'lbl dest'; e2.textContent = d.nodes[other].name; e2.addEventListener('click', function () { follow(other); }); document.body.appendChild(e2); labels.push({ el: e2, id: other, base: false }); });
+    }
+    colAttr.needsUpdate = true; G.blobs.instanceMatrix.needsUpdate = true;
+    if (G.blobs.instanceColor) G.blobs.instanceColor.needsUpdate = true;
+    renderTrail();
+  }
+
+  function follow(id) {
+    if (id == null) { select(null); return; }
+    var last = state.trail[state.trail.length - 1];
+    if (last != null && hops(G, last).some(function (pair) { return pair[1] === id && edgeOK(G, G.d.edges.indexOf(pair[0])); })) state.trail.push(id);
+    else state.trail = [id];
+    select(id, true);
+  }
+
+  // ---------- interaction ----------
+  var drag = null, moved = 0, motion = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var el = renderer.domElement;
+  el.addEventListener('contextmenu', function (ev) { ev.preventDefault(); });
+  el.addEventListener('pointerdown', function (ev) {
+    drag = { x: ev.clientX, y: ev.clientY, lx: ev.clientX, ly: ev.clientY, pan: ev.shiftKey || ev.button === 2, t: performance.now() };
+    moved = 0; cam.vTheta = cam.vPhi = 0; cam.lastTouch = performance.now(); el.setPointerCapture(ev.pointerId);
+  });
+  el.addEventListener('pointermove', function (ev) {
+    if (!drag) { hover(ev.clientX, ev.clientY); return; }
+    var dx = ev.clientX - drag.lx, dy = ev.clientY - drag.ly; drag.lx = ev.clientX; drag.ly = ev.clientY;
+    moved += Math.abs(dx) + Math.abs(dy); cam.lastTouch = performance.now();
+    if (drag.pan) {
+      var right = new THREE.Vector3(Math.cos(cam.theta), 0, -Math.sin(cam.theta)), up = new THREE.Vector3(0, 1, 0), k = cam.r * 0.0012;
+      cam.target.addScaledVector(right, -dx * k).addScaledVector(up, dy * k);
+    } else {
+      var dTh = -dx * 0.005, dPh = -dy * 0.004;
+      cam.theta += dTh; cam.phi = Math.min(1.5, Math.max(0.15, cam.phi + dPh));
+      cam.vTheta = dTh; cam.vPhi = dPh;
+    }
+  });
+  el.addEventListener('pointerup', function (ev) { if (drag && moved < 6 && !drag.pan) follow(pickAt(ev.clientX, ev.clientY)); if (drag && moved < 6) { cam.vTheta = cam.vPhi = 0; } drag = null; });
+  window.addEventListener('keydown', function (ev) { if (ev.key === 'Home') { cam.target.set(0, 62, 0); cam.theta = 0.6; cam.phi = 1.22; cam.r = 700; } });
+  el.addEventListener('wheel', function (ev) { ev.preventDefault(); cam.lastTouch = performance.now(); cam.r = Math.min(1500, Math.max(14, cam.r * (1 + ev.deltaY * 0.0012))); }, { passive: false });
+  var ray = new THREE.Raycaster(), ptr = new THREE.Vector2(), tip = document.getElementById('tip');
+  function pickAt(x, y) {
+    if (!G) return null;
+    ptr.x = (x / window.innerWidth) * 2 - 1; ptr.y = -(y / window.innerHeight) * 2 + 1; ray.setFromCamera(ptr, camera);
+    var hit = ray.intersectObject(G.blobs); return (hit.length && hit[0].instanceId != null) ? hit[0].instanceId : null;
+  }
+  function hover(x, y) {
+    var id = pickAt(x, y);
+    el.style.cursor = id != null ? 'pointer' : 'grab';
+    if (id == null) { tip.hidden = true; return; }
+    var node = G.d.nodes[id], named = G.L.inn[id].filter(function (e) { return e.year <= state.year; }).length;
+    var usesAll = G.L.out[id].filter(function (e) { return e.year <= state.year; }).length, uses = G.L.out[id].filter(function (e) { return edgeOK(G, G.d.edges.indexOf(e)); }).length;
+    var purposes = {}; G.L.inn[id].forEach(function (e) { if (e.text) purposes[e.text] = (purposes[e.text] || 0) + 1; });
+    var top = Object.keys(purposes).sort(function (a, b) { return purposes[b] - purposes[a]; }).slice(0, 2).join('; ');
+    tip.innerHTML = '<b></b><span class="m"></span>';
+    tip.querySelector('b').textContent = node.name;
+    var shown = usesAll !== uses ? ' (' + uses + ' drawn)' : '';
+    tip.querySelector('.m').textContent = (named ? 'Named by ' + named + ' list' + (named === 1 ? '' : 's') + (usesAll ? ', names ' + usesAll + shown : '') : 'Names ' + usesAll + ' sub-processor' + (usesAll === 1 ? '' : 's') + shown) + (top ? '. ' + top : '');
+    tip.style.left = x + 'px'; tip.style.top = y + 'px'; tip.hidden = false;
+  }
+  document.getElementById('reset').addEventListener('click', function () { select(null); });
+  document.getElementById('scope').addEventListener('change', function (ev) { state.scope = ev.target.value; applyYear(); });
+  document.getElementById('dir').addEventListener('change', function (ev) { state.dir = ev.target.value; state.trail = state.selected != null ? [state.selected] : []; select(state.selected, true); });
+  ['nasdaq100', 'sp100', 'cloud100', 'other'].forEach(function (k) { var box = document.getElementById('seed-' + k); state.seedsOn[k] = box.checked; box.addEventListener('change', function (ev) { state.seedsOn[k] = ev.target.checked; applyYear(); }); });
+  var yearEl = document.getElementById('year'), yearV = document.getElementById('yearv');
+  yearEl.addEventListener('input', function () { state.year = +yearEl.value; yearV.textContent = yearEl.value; applyYear(); });
+  document.getElementById('file').addEventListener('change', function (ev) {
+    var f = ev.target.files && ev.target.files[0]; if (!f) return;
+    var rd = new FileReader(); rd.onload = function () { try { data = normalize(JSON.parse(rd.result)); state.selected = null; state.trail = []; build(data); } catch (err) { document.getElementById('badge').textContent = 'Could not read that file: ' + err.message; } }; rd.readAsText(f);
+  });
+  window.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') select(null); });
+
+  function resize() { var w = stage.clientWidth, h = stage.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+  window.addEventListener('resize', resize);
+
+  var v = new THREE.Vector3(), t0 = performance.now(), last = t0;
+  function frame(now) {
+    requestAnimationFrame(frame);
+    var dt = Math.min(0.05, (now - last) / 1000); last = now;
+    if (!drag) {
+      cam.theta += cam.vTheta; cam.phi = Math.min(1.5, Math.max(0.15, cam.phi + cam.vPhi)); cam.vTheta *= 0.92; cam.vPhi *= 0.92;
+      if (motion && now - cam.lastTouch > 8000) cam.theta += 0.00028;
+    }
+    if (G && G.flow) { G.stripe.offset.x -= dt * 0.9; G.stripeIn.offset.x -= dt * 0.9; }
+    camera.position.set(cam.target.x + Math.sin(cam.theta) * Math.sin(cam.phi) * cam.r, cam.target.y + Math.cos(cam.phi) * cam.r, cam.target.z + Math.cos(cam.theta) * Math.sin(cam.phi) * cam.r);
+    camera.lookAt(cam.target);
+    labels.forEach(function (l) {
+      if (l.hidden || !G) { l.el.style.display = 'none'; return; }
+      if (l.floor) {  // caption sits on the rim of its disc, on the side facing the camera
+        var dx = camera.position.x - cam.target.x, dz = camera.position.z - cam.target.z, len = Math.sqrt(dx * dx + dz * dz) || 1;
+        v.set(dx / len * l.floor.r, l.floor.y, dz / len * l.floor.r);
+      } else { v.copy(G.L.pos[l.id]); v.y += G.sizes[l.id] * 0.9; }
+      v.project(camera);
+      if (v.z > 1) { l.el.style.display = 'none'; return; }
+      var sx = (v.x + 1) / 2 * window.innerWidth, sy = (1 - v.y) / 2 * window.innerHeight;
+      if (l.floor) { var topBand = (document.querySelector('.head') || {}).offsetHeight || 0, botBand = (document.querySelector('.foot') || {}).offsetHeight || 0; sx = Math.min(window.innerWidth - 140, Math.max(140, sx)); sy = Math.min(window.innerHeight - botBand - 40, Math.max(topBand + 60, sy)); }
+      l.el.style.display = ''; l.el.style.left = sx + 'px'; l.el.style.top = sy + 'px';
+    });
+    renderer.render(scene, camera);
+  }
+  state.scope = document.getElementById('scope').value; state.dir = document.getElementById('dir').value; state.year = +yearEl.value; yearV.textContent = yearEl.value;
+  resize(); build(data); requestAnimationFrame(frame);
+})();
+</script>

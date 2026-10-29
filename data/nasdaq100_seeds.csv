@@ -1,0 +1,101 @@
+ticker,company_name,website
+ADBE,Adobe Inc.,https://www.adobe.com
+ADP,ADP,https://www.adp.com
+AMD,Advanced Micro Devices Inc.,https://www.amd.com
+ABNB,Airbnb,https://www.airbnb.com
+ALNY,Alnylam Pharmaceuticals,https://www.alnylam.com
+GOOGL,Alphabet,https://abc.xyz
+AMZN,Amazon,https://www.amazon.com
+AEP,American Electric Power,https://www.aep.com
+AMGN,Amgen,https://www.amgen.com
+ADI,Analog Devices,https://www.analog.com
+AAPL,Apple Inc.,https://www.apple.com
+AMAT,Applied Materials,https://www.appliedmaterials.com
+APP,AppLovin Corp,https://www.applovin.com
+ARM,Arm Holdings,https://www.arm.com
+ASML,ASML Holding,https://www.asml.com
+TEAM,Atlassian,https://www.atlassian.com
+ADSK,Autodesk,https://www.autodesk.com
+AXON,Axon Enterprise Inc.,https://www.axon.com
+BKR,Baker Hughes,https://www.bakerhughes.com
+BKNG,Booking Holdings,https://www.bookingholdings.com
+AVGO,Broadcom Inc.,https://www.broadcom.com
+CDNS,Cadence Design Systems,https://www.cadence.com
+CHTR,Charter Communications,https://corporate.charter.com
+CTAS,Cintas,https://www.cintas.com
+CSCO,Cisco,https://www.cisco.com
+CCEP,Coca-Cola Europacific Partners,https://www.cocacolaep.com
+CTSH,Cognizant,https://www.cognizant.com
+CMCSA,Comcast,https://corporate.comcast.com
+CEG,Constellation Energy,https://www.constellationenergy.com
+CPRT,Copart,https://www.copart.com
+CSGP,CoStar Group,https://www.costargroup.com
+COST,Costco,https://www.costco.com
+CRWD,CrowdStrike,https://www.crowdstrike.com
+CSX,CSX Corporation,https://www.csx.com
+DDOG,Datadog,https://www.datadoghq.com
+DXCM,DexCom,https://www.dexcom.com
+FANG,Diamondback Energy,https://www.diamondbackenergy.com
+DASH,DoorDash,https://www.doordash.com
+EA,Electronic Arts,https://www.ea.com
+EXC,Exelon,https://www.exeloncorp.com
+FAST,Fastenal,https://www.fastenal.com
+FER,Ferrovial SE,https://www.ferrovial.com
+FTNT,Fortinet,https://www.fortinet.com
+GEHC,GE HealthCare,https://www.gehealthcare.com
+GILD,Gilead Sciences,https://www.gilead.com
+HON,Honeywell,https://www.honeywell.com
+IDXX,Idexx Laboratories,https://www.idexx.com
+INSM,Insmed Incorporated,https://www.insmed.com
+INTC,Intel,https://www.intel.com
+INTU,Intuit,https://www.intuit.com
+ISRG,Intuitive Surgical,https://www.intuitive.com
+KDP,Keurig Dr Pepper,https://www.keurigdrpepper.com
+KLAC,KLA Corporation,https://www.kla.com
+KHC,Kraft Heinz,https://www.kraftheinzcompany.com
+LRCX,Lam Research,https://www.lamresearch.com
+LIN,Linde plc,https://www.linde.com
+MAR,Marriott International,https://www.marriott.com
+MRVL,Marvell Technology,https://www.marvell.com
+MELI,MercadoLibre,https://www.mercadolibre.com
+META,Meta Platforms,https://about.meta.com
+MCHP,Microchip Technology,https://www.microchip.com
+MU,Micron Technology,https://www.micron.com
+MSFT,Microsoft,https://www.microsoft.com
+MSTR,MicroStrategy Inc.,https://www.strategy.com
+MDLZ,Mondelez International,https://www.mondelezinternational.com
+MPWR,Monolithic Power Systems,https://www.monolithicpower.com
+MNST,Monster Beverage,https://www.monsterbevcorp.com
+NFLX,Netflix,https://www.netflix.com
+NVDA,Nvidia,https://www.nvidia.com
+NXPI,NXP Semiconductors,https://www.nxp.com
+ODFL,Old Dominion Freight Line,https://www.odfl.com
+ORLY,O'Reilly Automotive,https://www.oreillyauto.com
+PCAR,Paccar,https://www.paccar.com
+PLTR,Palantir Technologies,https://www.palantir.com
+PANW,Palo Alto Networks,https://www.paloaltonetworks.com
+PAYX,Paychex,https://www.paychex.com
+PYPL,PayPal,https://www.paypal.com
+PDD,PDD Holdings,https://www.pddholdings.com
+PEP,PepsiCo,https://www.pepsico.com
+QCOM,Qualcomm,https://www.qualcomm.com
+REGN,Regeneron Pharmaceuticals,https://www.regeneron.com
+ROP,Roper Technologies,https://www.ropertech.com
+ROST,Ross Stores,https://corp.rossstores.com
+STX,Seagate Technology Holdings,https://www.seagate.com
+SHOP,Shopify,https://www.shopify.com
+SBUX,Starbucks,https://www.starbucks.com
+SNPS,Synopsys,https://www.synopsys.com
+TTWO,Take-Two Interactive,https://www.take2games.com
+TSLA,"Tesla, Inc.",https://www.tesla.com
+TXN,Texas Instruments,https://www.ti.com
+TRI,Thomson Reuters Corporation,https://www.thomsonreuters.com
+TMUS,T-Mobile US,https://www.t-mobile.com
+VRSK,Verisk,https://www.verisk.com
+VRTX,Vertex Pharmaceuticals,https://www.vrtx.com
+WMT,Walmart,https://corporate.walmart.com
+WBD,Warner Bros. Discovery,https://www.wbd.com
+WDC,Western Digital,https://www.westerndigital.com
+WDAY,"Workday, Inc.",https://www.workday.com
+XEL,Xcel Energy,https://www.xcelenergy.com
+ZS,Zscaler,https://www.zscaler.com
