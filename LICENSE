@@ -23,4 +23,4 @@ SOFTWARE.
 The MIT license covers the software (code, scripts, and visualization) only.
 The dataset itself (data/*.csv, data/*.yaml, data/*.json, data/manual/*,
 web/graph.json) is licensed separately under Creative Commons
-Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0) — see LICENSE-DATA.
+Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0). See LICENSE-DATA.

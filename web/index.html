@@ -41,6 +41,8 @@ body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--fo
 .head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
 h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; text-wrap: balance; }
 .sub { margin: 4px 0 0; font-family: var(--font-label); font-size: 0.86rem; color: var(--fg-soft); max-width: 44ch; }
+.sub a { color: var(--fg); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.sub a:hover { color: #ffffff; }
 .badge {
   font-family: var(--font-label); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
   border: 1px solid var(--rule); padding: 4px 8px; color: var(--fg-soft); background: var(--panel); white-space: nowrap;
@@ -128,7 +130,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     <div class="head">
       <div>
         <h1>Where the Data Goes</h1>
-        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. This maps <b>data egress between organizations — not infrastructure</b>: self-hosted tools (Postgres, Kafka, DuckDB, Redis, Nginx) are widely used but don't appear here because no personal data crosses a corporate boundary. Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll or double-click to zoom, Home to reset.</p>
+        <p class="sub">Every company that publishes a sub-processor list, and every company it names, as one organism. This maps <b>personal-data egress between organizations</b>, not infrastructure and not every vendor relationship: self-hosted tools (Postgres, Kafka, DuckDB, Redis, Nginx) are widely used but don't appear here because no personal data crosses a corporate boundary, and vendors handling only non-personal data aren't disclosed publicly either. <a href="#about" id="about-inline">Read more on methodology.</a> Click a company to see what it disclosed; click where its data lands to see what that company disclosed in turn. Drag to turn, shift-drag to move, scroll or double-click to zoom, Home to reset.</p>
       </div>
       <span class="badge" id="badge">Synthetic data, awaiting crawl</span>
     </div>
@@ -173,24 +175,29 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     <h2 id="about-title">About the data &amp; methodology</h2>
 
     <h3>What this is</h3>
-    <p><i>Where the Data Goes</i> is a visualization of publicly disclosed sub-processor relationships — the third parties that companies declare under GDPR Article 28 as processing personal data on their behalf. The piece is a map of <b>data egress between organizations, not of software architecture</b>. Anything a company self-hosts — Postgres, Kafka, DuckDB, Redis, Elasticsearch, Grafana, Nginx, open-source infrastructure in general — is invisible here, because no personal data crosses a corporate boundary. Think of each edge as an ingress/egress declaration, not a dependency.</p>
+    <p><i>Where the Data Goes</i> is a visualization of publicly disclosed sub-processor relationships. Sub-processors are a specific legal category: third parties that process personal data (usually customer or consumer data) on behalf of the companies shown, as defined under GDPR Article 28. Each edge in the map is a company stating, under contract, that a given third party receives personal data from it.</p>
+    <p>The piece is a map of <b>personal-data egress between organizations</b>, not of software architecture. Anything a company self-hosts (Postgres, Kafka, DuckDB, Redis, Elasticsearch, Grafana, Nginx, open-source infrastructure in general) is invisible here because no personal data crosses a corporate boundary. Think of each edge as an ingress/egress declaration, not a dependency.</p>
+
+    <h3>What this is <i>not</i></h3>
+    <p><b>Not a map of all vendor relationships.</b> Every company shown has many additional third parties that do not appear here: SaaS tools handling non-personal data (procurement, finance, internal analytics), APIs that do not involve personally identifiable information, consultants, agencies, infrastructure vendors with no personal-data access, data brokers that purchase rather than process, and so on. None of those relationships trigger a public sub-processor disclosure, so none are mapped.</p>
+    <p><b>Not a map of breach surface.</b> In the event of a security incident, the exposure surface is not limited to the edges shown here. The companies in this map typically have dozens or hundreds of additional vendor and API relationships beyond their sub-processor list, almost all of them undisclosed publicly. Treating this map as a complete inventory of a company's exposure would be a mistake.</p>
+    <p><b>Not an infrastructure map.</b> Self-hosted databases, caches, queues, observability stacks, and development tools are structurally absent. The real architecture of any company shown here is the edges you see <i>plus</i> whatever runs inside its own cloud account.</p>
 
     <h3>Data sources</h3>
-    <p>This visualization maps publicly disclosed sub-processor relationships, based on information collected from publicly accessible sources during October 2026.</p>
-    <p>Public sub-processor disclosures have become increasingly common in the GDPR era. However, disclosure practices vary across organizations, services, and customer types. Some companies publish information covering both business-to-business (B2B) and business-to-consumer (B2C) relationships; others disclose only through private contractual arrangements.</p>
+    <p>This visualization is based on information collected from publicly accessible sources during October 2026.</p>
+    <p>Public sub-processor disclosures have become increasingly common in the GDPR era. Disclosure practices vary across organizations, services, and customer types. Some companies publish information covering both business-to-business and business-to-consumer relationships; others disclose only through private contractual arrangements.</p>
     <p>This project uses the best publicly available information identified through its research. <b>No materials requiring acceptance of a nondisclosure agreement or other confidentiality obligation were accessed or incorporated.</b></p>
 
     <h3>AI-assisted research &amp; accuracy</h3>
     <p>Artificial intelligence tools identified, extracted, and structured sub-processor entries from published source materials. Each observation preserves the source URL and verbatim purpose text where possible. The pipeline is open-sourced at <a href="https://github.com/craftnano/where-the-data-goes" target="_blank" rel="noopener">github.com/craftnano/where-the-data-goes</a>, so corrections are reproducible.</p>
-    <p>AI-assisted research can introduce errors, omissions, or misinterpretations. The visualization is provided on a best-effort basis. Corrections and feedback are welcome — open an issue or PR on the repository.</p>
+    <p>AI-assisted research can introduce errors, omissions, or misinterpretations. The visualization is provided on a best-effort basis. Corrections and feedback are welcome. Open an issue or pull request on the repository.</p>
 
     <h3>Scope &amp; limitations</h3>
     <p><b>Not an inventory.</b> The visualization is not an exhaustive map of corporate sub-processor relationships. The absence of a connection does not establish that no relationship exists.</p>
     <p><b>Disclosed relationships only.</b> Connections represent relationships identified in published disclosures, not independently verified data transfers. They do not establish the nature, volume, sensitivity, or frequency of any data processed.</p>
     <p><b>Point-in-time.</b> Source information was collected during October 2026 unless otherwise noted on an edge (archive-sourced edges carry the Wayback capture date). Relationships and disclosures may have changed since.</p>
     <p><b>No assessment of security posture.</b> Inclusion in the visualization does not imply a vulnerability, security deficiency, regulatory violation, or inappropriate data-sharing practice.</p>
-    <p><b>B2B / B2C skew.</b> The dataset over-represents B2B SaaS companies, which disclose named vendors under Article 28. Consumer-facing businesses — healthcare, retail, mobility — typically disclose categories of recipients (per Articles 13/14) rather than named sub-processors, so they appear here as "categories only" rather than as mapped flows. This is a feature of the disclosure regime, not a crawl failure.</p>
-    <p><b>Open-source infrastructure gap.</b> Widely used self-hosted components (Postgres, Redis, Kafka, DuckDB, Elasticsearch, Grafana, Nginx, Keycloak, ClickHouse, and many others) are structurally absent. Running them creates no third-party data-processor relationship, so there is nothing to disclose. The real architecture of any company in this map is the edges you see here <i>plus</i> whatever runs inside its own cloud account.</p>
+    <p><b>B2B over B2C skew.</b> The dataset over-represents B2B SaaS companies, which disclose named vendors under Article 28. Consumer-facing businesses (healthcare, retail, mobility, finance) typically disclose categories of recipients under Articles 13/14 rather than named sub-processors, so they appear here as "categories only" rather than as mapped flows. This is a feature of the disclosure regime, not a crawl failure.</p>
 
     <h3>Independence</h3>
     <p>This is an independent research and visualization project. Inclusion of an organization does not imply its participation, endorsement, or affiliation. The information is provided for research, educational, and informational purposes.</p>
@@ -394,7 +401,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     var L0 = d.nodes.filter(function (x) { return x.level === 0 || isCloud(x); }), L1 = d.nodes.filter(function (x) { return x.level === 1 && !isCloud(x); });
     // Place hyperscalers on an even ring, but pin the top three (by incoming
     // edge count) to 0°, 120°, 240° so AWS, Google Cloud, and Microsoft Azure
-    // sit opposite each other — otherwise they often cluster and their flows
+    // sit opposite each other; otherwise they often cluster and their flows
     // can't be compared visually.
     var L0_byLoad = L0.slice().sort(function (a, b) { return (indeg[b.id] || 0) - (indeg[a.id] || 0); });
     var N0 = L0_byLoad.length;
@@ -414,7 +421,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
       for (var j0 = 0; j0 < N0; j0++) slot0[j0] = j0;
     }
     // Radius 85 (up from 46) so the top-three hyperscalers at 0°/120°/240°
-    // are ~147 units apart — same visual-separation story as OpenAI vs
+    // are ~147 units apart, same visual-separation story as OpenAI vs
     // Anthropic on the top floor. Still inside the ground disc (r=110) and
     // inside the middle ring (r~100), so the floor hierarchy stays legible.
     L0_byLoad.forEach(function (x, i) {
@@ -454,7 +461,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     var floorY = [0, 62, 136];
     // Tier-2 nodes (foundation model providers) sit on an even ring on the top
     // floor instead of inheriting an angle from their shared infrastructure.
-    // Otherwise OpenAI and Anthropic — which both lean on AWS/Azure/GCP — end
+    // Otherwise OpenAI and Anthropic (which both lean on AWS/Azure/GCP) end
     // up stacked on top of each other and you can't compare their flows.
     var tier2Ids = [];
     for (var i2 = 0; i2 < n; i2++) if (tier[i2] === 2) tier2Ids.push(i2);
@@ -723,6 +730,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
     function open() { about.hidden = false; about.setAttribute('aria-hidden','false'); }
     function close() { about.hidden = true; about.setAttribute('aria-hidden','true'); }
     document.getElementById('about-open').addEventListener('click', open);
+    document.getElementById('about-inline').addEventListener('click', function (ev) { ev.preventDefault(); open(); });
     document.getElementById('about-close').addEventListener('click', close);
     about.querySelector('.about-scrim').addEventListener('click', close);
     window.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !about.hidden) close(); });
@@ -889,7 +897,7 @@ body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointe
   state.scope = document.getElementById('scope').value; state.dir = document.getElementById('dir').value; state.year = +yearEl.value; yearV.textContent = yearEl.value;
   resize(); build(data); requestAnimationFrame(frame);
   // Auto-load graph.json from the same directory. Falls back silently to the
-  // synthetic dataset if fetch fails — e.g. opened from file:// where browsers
+  // synthetic dataset if fetch fails (e.g. opened from file:// where browsers
   // block local fetches. For a web deploy (Netlify, etc.) this just works.
   // (To view locally without a server, run `python -m http.server` in web/.)
   fetch('./graph.json', { cache: 'no-store' })

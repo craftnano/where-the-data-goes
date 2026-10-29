@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for looking. This is a data-art piece first and a maintained dataset second — but the data gets better the more eyes are on it. A few ways to help:
+Thanks for looking. This is a data-art piece first and a maintained dataset second, but the data gets better the more eyes are on it. A few ways to help:
 
 ## Fixing a company's sub-processor list
 
@@ -24,13 +24,13 @@ Open a PR with the new seed row and the resulting transcript under `data/transcr
 
 ## Reporting a wrong edge
 
-Edges with `source: "live"` or `source: "archive"` reflect what the agent extracted from the company's own page at the dated URL. If the edge is wrong because the agent misread the page, open an issue — include the entry row from the transcript JSON so I can trace what went wrong. Edges with `source: "manual"` and `purpose_paraphrased: true` are human-extracted and can be corrected directly in the manual JSON.
+Edges with `source: "live"` or `source: "archive"` reflect what the agent extracted from the company's own page at the dated URL. If the edge is wrong because the agent misread the page, open an issue and include the entry row from the transcript JSON so I can trace what went wrong. Edges with `source: "manual"` and `purpose_paraphrased: true` are human-extracted and can be corrected directly in the manual JSON.
 
 ## Methodology clarifications
 
 The quick frame:
 
-- **This is a map of data egress between organizations, not of software.** Anything self-hosted — Postgres, Redis, Kafka, DuckDB, Grafana, Elasticsearch, Nginx — is invisible here, because no personal data crosses a corporate boundary.
+- **This is a map of personal-data egress between organizations, not of software.** Anything self-hosted (Postgres, Redis, Kafka, DuckDB, Grafana, Elasticsearch, Nginx) is invisible here because no personal data crosses a corporate boundary. It is also not a map of every vendor relationship: non-personal-data vendors and internal tools don't get publicly disclosed and don't appear here either.
 - **Sub-processor disclosure is a GDPR Article 28 obligation.** B2B SaaS vendors publish named lists; B2C companies disclose "categories of recipients" instead (per Article 13/14). The dataset over-represents B2B SaaS by regulatory design.
 - **Edges mean "disclosed," not "verified."** Inclusion does not imply any security, compliance, or data-handling judgment about the company.
 

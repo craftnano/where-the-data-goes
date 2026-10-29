@@ -13,8 +13,8 @@ cp .env.example .env    # then paste your keys in
 
 `.env` needs:
 
-- `ANTHROPIC_API_KEY` — model calls
-- `BRAVE_API_KEY` — the `search` tool
+- `ANTHROPIC_API_KEY`: model calls
+- `BRAVE_API_KEY`: the `search` tool
 
 Model IDs, prices, per-run spend cap, Phase 1 cumulative ceiling, and polite-crawling defaults live in `config.py`.
 
@@ -32,23 +32,23 @@ A seed set (10 concurrent):
 .venv/bin/python agent.py --seeds data/nasdaq100_seeds.csv --concurrent 10
 ```
 
-Options: `--offset N` (skip the first N rows), `--limit N`, `--hint "..."` (extra context appended to the per-company prompt — useful when you know the exact URL or need to override a default rule like "skip affiliates"), `--run-id <id>` (resume an existing run; already-completed companies are skipped).
+Options: `--offset N` (skip the first N rows), `--limit N`, `--hint "..."` (extra context appended to the per-company prompt; useful when you know the exact URL or need to override a default rule like "skip affiliates"), `--run-id <id>` (resume an existing run; already-completed companies are skipped).
 
 Each run writes:
 
-- `data/runs/<run_id>/state.json` — resume state and per-run cost
-- `data/transcripts/<run_id>/<company>.json` — the agent's full tool-call history and the final `report` (gitignored)
-- `data/snapshots/<run_id>/<hash>.{html,pdf,meta.json}` — raw copies of every page the agent opened (gitignored)
+- `data/runs/<run_id>/state.json`: resume state and per-run cost
+- `data/transcripts/<run_id>/<company>.json`: the agent's full tool-call history and the final `report` (gitignored)
+- `data/snapshots/<run_id>/<hash>.{html,pdf,meta.json}`: raw copies of every page the agent opened (gitignored)
 
 Cumulative spend across every run is persisted in `data/spend_ledger.json`; the agent refuses to start a new run once Phase 1's `$50` ceiling is reached.
 
 Three seed sets ship with the repo:
 
-- `data/nasdaq100_seeds.csv` — Nasdaq 100 constituents (Alphabet dual-class collapsed to one row)
-- `data/sp100_seeds.csv` — S&P 100 constituents (33 overlap with Nasdaq)
-- `data/cloud100_2025_seeds.csv` — Forbes Cloud 100 (2025)
+- `data/nasdaq100_seeds.csv`: Nasdaq 100 constituents (Alphabet dual-class collapsed to one row)
+- `data/sp100_seeds.csv`: S&P 100 constituents (33 overlap with Nasdaq)
+- `data/cloud100_2025_seeds.csv`: Forbes Cloud 100 (2025)
 
-`data/manual/` holds human-curated observations (one JSON file per company) that get merged into the export as `source: "manual"` edges — useful when a live page blocks and no acceptable archive capture exists.
+`data/manual/` holds human-curated observations (one JSON file per company) that get merged into the export as `source: "manual"` edges. Useful when a live page blocks and no acceptable archive capture exists.
 
 ## Exporting `graph.json`
 
@@ -73,4 +73,4 @@ For a batch-run report (disclosure breakdown per seed set, Haiku-vs-Sonnet hit r
 
 `web/index.html` is a self-contained three.js prototype. It auto-fetches `./graph.json` from the same directory on load, so any web host serves it with no build step. To view locally, serve the `web/` folder (e.g. `python3 -m http.server --directory web 8000` → open `http://localhost:8000/`); browsers block `fetch()` from `file://` URLs, so double-clicking the HTML won't load the dataset.
 
-For a Netlify deploy, point the site at this repo with publish directory `web/` and no build command — `web/index.html` and `web/graph.json` are the two files it serves.
+For a Netlify deploy, point the site at this repo with publish directory `web/` and no build command. `web/index.html` and `web/graph.json` are the two files it serves.
