@@ -1,0 +1,13 @@
+{
+  "run_id": "run-20261029T003114Z",
+  "started_at": "2026-10-29T00:31:14.612486+00:00",
+  "kind": "live",
+  "primary_model": "claude-haiku-5-5",
+  "retry_model": "claude-sonnet-5-5",
+  "completed_companies": [
+    "Microsoft"
+  ],
+  "failures": {},
+  "total_cost_usd": 0.064107,
+  "aborted": false
+}

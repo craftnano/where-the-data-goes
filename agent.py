@@ -124,6 +124,10 @@ TOOLS = [
                     "type": ["string", "null"],
                     "description": "If this list is scoped to a specific product line rather than the whole company, name the scope here (e.g. 'Meta for Work / Horizon Managed Solutions'). Null for company-wide lists.",
                 },
+                "note": {
+                    "type": ["string", "null"],
+                    "description": "Optional one-line annotation about where/how the list was obtained (e.g. 'PDF via Microsoft Service Trust Portal', 'Behind a login — screenshotted and transcribed by hand'). Null if nothing non-obvious.",
+                },
                 "entries": {
                     "type": "array",
                     "description": "Sub-processors named on the list. Empty when disclosure_class is not 'named_list' and no archive-sourced entries were found.",

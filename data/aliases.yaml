@@ -7,26 +7,34 @@
 #   * Collapse jurisdictional variants ("Amazon Web Services, Inc.",
 #     "AWS EMEA SARL" -> "Amazon Web Services"). We explicitly discard
 #     jurisdiction here; see methodology note.
-#   * Keep "Google Cloud Platform" separate from "Google" the parent, since
-#     disclosures almost always mean the GCP line.
+#   * The three cloud canonicals are Amazon Web Services, Google Cloud, and
+#     Microsoft Azure. Each absorbs its parent brand (Amazon, Alphabet/Google,
+#     Microsoft) because on sub-processor lists those parent names almost
+#     always mean the cloud line. Azure OpenAI, Google Vertex AI, and Amazon
+#     Bedrock stay as their own canonicals (distinct ingress points).
 #   * Treat parent/child branded products as one node ONLY if a brand swap
 #     wouldn't change the data flow (e.g. "Twilio SendGrid" -> "SendGrid"
 #     stays separate because it's a distinct ingress point).
 
 Amazon Web Services:
-  - AWS
   - Amazon
   - Amazon Inc. (Connect)
   - Amazon Web Services
+  - Amazon Web Services Inc.
   - Amazon Web Services, Inc.
   - Amazon Web Services EMEA SARL
   - Amazon Web Services EMEA S.a.r.l.
   - Amazon Data Services Ireland Limited
   - Amazon Data Services Ireland Ltd
+  - Amazon.com
+  - Amazon.com, Inc.
+  - AWS
   # Note: "Amazon" and "Amazon Inc. (Connect)" are conditionally skipped by
   # entities.canonicalize when the purpose text is clearly retail/marketplace.
 
-Google:
+Google Cloud:
+  - Alphabet
+  - Alphabet Inc.
   - GCP
   - Google
   - Google (Alphabet)
@@ -34,12 +42,16 @@ Google:
   - Google Cloud EMEA Limited
   - Google Cloud Platform
   - Google Ireland Limited (Cloud)
+  - Google LLC
   - Google LLC (Cloud Services)
 
-Microsoft:
+Microsoft Azure:
   - Azure
   - Microsoft
   - Microsoft Azure
+  - Microsoft Corp
+  - Microsoft Corp.
+  - Microsoft Corporation
   - Microsoft Corporation (Azure)
   - Microsoft Ireland Operations Limited
   - Microsoft Online Inc.
@@ -54,25 +66,45 @@ Google (Analytics):
   - Google LLC (Analytics)
 
 OpenAI:
+  - "(If AI Services is enabled) OpenAI"
   - OpenAI
-  - OpenAI, LLC
+  - OpenAI, L.L.C
   - OpenAI, L.L.C.
+  - OpenAI, LLC
+  - OpenAI Group PBC
+  - OpenAI Ireland
   - OpenAI Ireland Limited
   - OpenAI OpCo, LLC
 
 Anthropic:
   - Anthropic
+  - "Anthropic (Claude AI)"
+  - Anthropic AI PBC
+  - "Anthropic AI PBC (Claude)"
+  - Anthropic Ireland
   - Anthropic PBC
+  - "Anthropic PBC (Claude)"
   - Anthropic, PBC
 
-Microsoft (OpenAI via Azure):
+Azure OpenAI:
+  - "(If AI Services is enabled) Microsoft (Azure OpenAI)"
   - Azure OpenAI
   - Azure OpenAI Service
   - Microsoft Azure OpenAI
+  - "Microsoft (OpenAI via Azure)"
+  - "Microsoft Corporation (Azure OpenAI)"
+  - "Microsoft Corporation (Azure OpenAI Service)"
 
-AWS Bedrock:
-  - AWS Bedrock
+Fireworks AI:
+  - Fireworks
+  - Fireworks AI
+  - Fireworks AI, Inc.
+  - Fireworks.ai
+
+Amazon Bedrock:
   - Amazon Bedrock
+  - Amazon (Bedrock)
+  - AWS Bedrock
 
 Google Vertex AI:
   - Vertex AI
@@ -267,3 +299,68 @@ Hotjar:
   - Hotjar
   - Hotjar Ltd
   - Contentsquare (Hotjar)
+
+# ---------------------------------------------------------------------------
+# Case-only disambiguation. Each canonical below is spelled the brand's own
+# way; because _alias_map() keys lowercase, every casing variant collapses
+# into the single canonical here (e.g. "Crowdstrike" and "CROWDSTRIKE" both
+# resolve to "CrowdStrike").
+# ---------------------------------------------------------------------------
+BrainTrust Data:
+  - BrainTrust Data
+
+BytePlus Pte.:
+  - BytePlus Pte.
+
+ChurnZero:
+  - ChurnZero
+
+CrowdStrike:
+  - CrowdStrike
+
+dbt Labs:
+  - dbt Labs
+  - DBT Labs
+
+E-Hawk:
+  - E-Hawk
+
+Exa:
+  - Exa
+
+Fivetran:
+  - Fivetran
+  - FiveTran
+
+Freshdesk:
+  - Freshdesk
+  - FreshDesk
+
+LinkedIn:
+  - LinkedIn
+
+PayPal:
+  - PayPal
+
+Salesloft:
+  - Salesloft
+  - SalesLoft
+
+TeleSign:
+  - TeleSign
+  - Telesign
+
+ThoughtSpot:
+  - ThoughtSpot
+
+TurboPuffer:
+  - TurboPuffer
+
+Twilio Inc. (SendGrid):
+  - Twilio Inc. (SendGrid)
+
+Zoom Video Communications:
+  - Zoom Video Communications
+
+Amazon Web Services (AWS):
+  - Amazon Web Services (AWS)

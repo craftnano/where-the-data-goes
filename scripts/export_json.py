@@ -108,24 +108,28 @@ def main() -> None:
     for members in set_members.values():
         all_seeds |= members
 
-    # Nodes keyed by canonical name.
+    # Nodes keyed by node_id (slug) so canonical names that differ only in
+    # punctuation ("Amazon Bedrock" vs "Amazon (Bedrock)", "Microsoft Azure" vs
+    # "Microsoft (Azure)") collide to a single graph node rather than appearing
+    # as two entries with the same id field.
     nodes: dict[str, dict] = {}
 
     def ensure_node(name: str, kind: str) -> str:
         canon = canonicalize(name)
-        if canon not in nodes:
-            nodes[canon] = {
-                "id": node_id(canon),
+        nid = node_id(canon)
+        if nid not in nodes:
+            nodes[nid] = {
+                "id": nid,
                 "name": canon,
                 "kind": kind,
                 "seed_sets": sets_for(canon),
             }
         else:
             if kind == "seed":
-                nodes[canon]["kind"] = "seed"
+                nodes[nid]["kind"] = "seed"
             # Union seed-set membership idempotently (handles targets later discovered as seeds).
-            existing = set(nodes[canon].get("seed_sets") or [])
-            nodes[canon]["seed_sets"] = sorted(existing | set(sets_for(canon)))
+            existing = set(nodes[nid].get("seed_sets") or [])
+            nodes[nid]["seed_sets"] = sorted(existing | set(sets_for(canon)))
         return canon
 
     # Sentinel for categories_only disclosures.
@@ -189,6 +193,8 @@ def main() -> None:
                     edge["to_detail"] = raw_name
                 if product_scope:
                     edge["product_scope"] = product_scope
+                if rep.get("note"):
+                    edge["note"] = rep["note"]
                 edges.append(edge)
                 edge_seen[key] = edge
         elif cls == "categories_only":
@@ -209,6 +215,7 @@ def main() -> None:
     # Explicit human-labelled categories supported in manual files, mapped onto
     # our normalized vocabulary. Anything else falls through to classify_purpose().
     MANUAL_CATEGORY_MAP = {
+        # Long-form labels (Adobe manual).
         "storage and infrastructure": "hosting",
         "security": "security",
         "ai models": "ai_inference",
@@ -217,6 +224,13 @@ def main() -> None:
         "communications": "communications",
         "payments": "payments",
         "analytics": "analytics",
+        # Short-form labels (Microsoft Online Services PDF extraction).
+        "cloud": "hosting",
+        "ancillary": "other",
+        "ai": "ai_inference",
+        "contract_staff": "support",
+        # Pass-through for already-normalized labels.
+        "hosting": "hosting",
     }
 
     # Manual observations: one JSON file per company under data/manual/.

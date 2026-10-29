@@ -16,8 +16,8 @@
       ]
     },
     {
-      "id": "microsoft",
-      "name": "Microsoft",
+      "id": "microsoft-azure",
+      "name": "Microsoft Azure",
       "kind": "seed",
       "seed_sets": [
         "nasdaq100",
@@ -169,7 +169,7 @@
     },
     {
       "id": "telesign",
-      "name": "Telesign",
+      "name": "TeleSign",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -219,8 +219,8 @@
       ]
     },
     {
-      "id": "alphabet",
-      "name": "Alphabet",
+      "id": "google-cloud",
+      "name": "Google Cloud",
       "kind": "seed",
       "seed_sets": [
         "nasdaq100",
@@ -351,12 +351,6 @@
       "seed_sets": []
     },
     {
-      "id": "telesign",
-      "name": "TeleSign",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "american-electric-power",
       "name": "American Electric Power",
       "kind": "seed",
@@ -434,12 +428,6 @@
     {
       "id": "algorix-technology-pte",
       "name": "AlgoriX Technology Pte.",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "amazon-com",
-      "name": "Amazon.com",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -548,12 +536,6 @@
     {
       "id": "fluct",
       "name": "Fluct",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "google",
-      "name": "Google",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -1049,9 +1031,11 @@
     },
     {
       "id": "crowdstrike",
-      "name": "Crowdstrike",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "name": "CrowdStrike",
+      "kind": "seed",
+      "seed_sets": [
+        "nasdaq100"
+      ]
     },
     {
       "id": "tenable-holdings",
@@ -1569,7 +1553,7 @@
     },
     {
       "id": "salesloft",
-      "name": "SalesLoft",
+      "name": "Salesloft",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -1625,14 +1609,6 @@
       ]
     },
     {
-      "id": "crowdstrike",
-      "name": "CrowdStrike",
-      "kind": "seed",
-      "seed_sets": [
-        "nasdaq100"
-      ]
-    },
-    {
       "id": "csx",
       "name": "CSX",
       "kind": "seed",
@@ -1656,9 +1632,11 @@
     },
     {
       "id": "fireworks-ai",
-      "name": "Fireworks.ai",
-      "kind": "sub-processor",
-      "seed_sets": []
+      "name": "Fireworks AI",
+      "kind": "seed",
+      "seed_sets": [
+        "cloud100_2025"
+      ]
     },
     {
       "id": "hyperdoc",
@@ -1788,7 +1766,7 @@
     },
     {
       "id": "thoughtspot",
-      "name": "Thoughtspot",
+      "name": "ThoughtSpot",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -1919,7 +1897,7 @@
     },
     {
       "id": "freshdesk",
-      "name": "FreshDesk",
+      "name": "Freshdesk",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -2946,12 +2924,6 @@
       "seed_sets": []
     },
     {
-      "id": "fivetran",
-      "name": "FiveTran",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "functional-software-inc-d-b-a-sentry",
       "name": "Functional Software, Inc. (d/b/a Sentry)",
       "kind": "sub-processor",
@@ -3064,12 +3036,6 @@
       "seed_sets": []
     },
     {
-      "id": "functional-software-inc-d-b-a-sentry",
-      "name": "Functional Software, Inc. d/b/a Sentry",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "1password",
       "name": "1Password",
       "kind": "seed",
@@ -3160,8 +3126,8 @@
       ]
     },
     {
-      "id": "microsoft-corporation-azure-openai-service",
-      "name": "Microsoft Corporation (Azure OpenAI Service)",
+      "id": "azure-openai",
+      "name": "Azure OpenAI",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -3574,12 +3540,6 @@
       "seed_sets": []
     },
     {
-      "id": "anthropic-ai-pbc-claude",
-      "name": "Anthropic AI PBC (Claude)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "arctic-wolf",
       "name": "Arctic Wolf",
       "kind": "seed",
@@ -3596,12 +3556,6 @@
     {
       "id": "microsoft-sharepoint",
       "name": "Microsoft (Sharepoint)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "microsoft-azure",
-      "name": "Microsoft (Azure)",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -3661,7 +3615,7 @@
     },
     {
       "id": "amazon-bedrock",
-      "name": "Amazon (Bedrock)",
+      "name": "Amazon Bedrock",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -3752,12 +3706,6 @@
     {
       "id": "google-inc-g-suite-email",
       "name": "Google, Inc. (G-suite, email)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "anthropic-pbc-claude",
-      "name": "Anthropic PBC (Claude)",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -3922,12 +3870,6 @@
       "seed_sets": []
     },
     {
-      "id": "salesloft",
-      "name": "Salesloft",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "redis",
       "name": "Redis",
       "kind": "sub-processor",
@@ -3962,12 +3904,6 @@
     {
       "id": "assembled",
       "name": "Assembled",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "e-hawk",
-      "name": "E-HAWK",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -4294,24 +4230,12 @@
       "seed_sets": []
     },
     {
-      "id": "anthropic-ireland",
-      "name": "Anthropic Ireland",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "chainguard",
       "name": "Chainguard",
       "kind": "seed",
       "seed_sets": [
         "cloud100_2025"
       ]
-    },
-    {
-      "id": "anthropic-claude-ai",
-      "name": "Anthropic (Claude AI)",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "hubspot-clearbit",
@@ -4550,12 +4474,6 @@
       "seed_sets": []
     },
     {
-      "id": "aws-bedrock",
-      "name": "AWS Bedrock",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "google-workspace",
       "name": "Google Workspace",
       "kind": "sub-processor",
@@ -4619,19 +4537,13 @@
     },
     {
       "id": "exa",
-      "name": "EXA",
+      "name": "Exa",
       "kind": "sub-processor",
       "seed_sets": []
     },
     {
       "id": "flatfile",
       "name": "Flatfile",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "functional-software-inc-sentry",
-      "name": "Functional Software, Inc. - Sentry",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -4824,18 +4736,6 @@
       "seed_sets": []
     },
     {
-      "id": "braintrust-data",
-      "name": "Braintrust Data",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "turbopuffer",
-      "name": "Turbopuffer",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "vapi",
       "name": "Vapi",
       "kind": "sub-processor",
@@ -4874,12 +4774,6 @@
     {
       "id": "chili-piper",
       "name": "Chili Piper",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "churnzero",
-      "name": "Churnzero",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -5014,12 +4908,6 @@
       "seed_sets": []
     },
     {
-      "id": "openai-ireland",
-      "name": "OpenAI Ireland",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "rootly",
       "name": "Rootly",
       "kind": "sub-processor",
@@ -5148,20 +5036,8 @@
       "seed_sets": []
     },
     {
-      "id": "if-ai-services-is-enabled-openai",
-      "name": "(If AI Services is enabled) OpenAI",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "if-ai-services-is-enabled-microsoft-azure-openai",
-      "name": "(If AI Services is enabled) Microsoft (Azure OpenAI)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "dbt-labs",
-      "name": "Dbt Labs",
+      "name": "dbt Labs",
       "kind": "seed",
       "seed_sets": [
         "cloud100_2025"
@@ -5242,14 +5118,6 @@
       "name": "Tigris Data",
       "kind": "sub-processor",
       "seed_sets": []
-    },
-    {
-      "id": "fireworks-ai",
-      "name": "Fireworks AI",
-      "kind": "seed",
-      "seed_sets": [
-        "cloud100_2025"
-      ]
     },
     {
       "id": "alto-logica",
@@ -5384,12 +5252,6 @@
     {
       "id": "amazon-com-inc-aws",
       "name": "Amazon.com Inc. (AWS)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "twilio-inc-sendgrid",
-      "name": "Twilio Inc. (Sendgrid)",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -5556,20 +5418,8 @@
       "seed_sets": []
     },
     {
-      "id": "twilio-inc-sendgrid",
-      "name": "Twilio, Inc. (SendGrid)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "freshworks-inc-freshdesk",
       "name": "Freshworks Inc. (Freshdesk)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "microsoft-corporation-azure-openai",
-      "name": "Microsoft Corporation (Azure OpenAI)",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -5876,20 +5726,8 @@
       "seed_sets": []
     },
     {
-      "id": "openai-l-l-c",
-      "name": "OpenAI, L.L.C",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "sabre",
       "name": "Sabre",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "thoughtspot",
-      "name": "ThoughtSpot",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -5958,18 +5796,6 @@
       "seed_sets": []
     },
     {
-      "id": "exa",
-      "name": "Exa",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "fireworks",
-      "name": "Fireworks",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "mathpix",
       "name": "Mathpix",
       "kind": "sub-processor",
@@ -6028,12 +5854,6 @@
     {
       "id": "scaleway",
       "name": "Scaleway",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "paypal",
-      "name": "Paypal",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -6223,7 +6043,7 @@
     },
     {
       "id": "byteplus-pte",
-      "name": "Byteplus Pte.",
+      "name": "BytePlus Pte.",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -6308,12 +6128,6 @@
       "seed_sets": [
         "cloud100_2025"
       ]
-    },
-    {
-      "id": "dbt-labs",
-      "name": "DBT Labs",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "shoreline-labs-inc-d-b-a-nightfall",
@@ -6576,12 +6390,6 @@
       "seed_sets": []
     },
     {
-      "id": "byteplus-pte",
-      "name": "BytePlus Pte.",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "tanium",
       "name": "Tanium",
       "kind": "seed",
@@ -6598,12 +6406,6 @@
     {
       "id": "censys",
       "name": "Censys",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "openai-group-pbc",
-      "name": "OpenAI Group PBC",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -6664,12 +6466,6 @@
     {
       "id": "census-sutro-labs-inc",
       "name": "Census (Sutro Labs, Inc.)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "dbt-labs",
-      "name": "dbt Labs",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -6774,18 +6570,6 @@
     {
       "id": "messagebird-usa-inc-d-b-a-sparkpost",
       "name": "MessageBird USA Inc. d/b/a SparkPost",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "microsoft-openai-via-azure",
-      "name": "Microsoft (OpenAI via Azure)",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "amazon-web-services-inc-aws-bedrock",
-      "name": "Amazon Web Services Inc. (AWS Bedrock)",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -7040,12 +6824,6 @@
       ]
     },
     {
-      "id": "amazon-aws",
-      "name": "Amazon AWS",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "8x8",
       "name": "8x8",
       "kind": "sub-processor",
@@ -7148,12 +6926,6 @@
       "seed_sets": []
     },
     {
-      "id": "linkedin",
-      "name": "Linkedin",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
       "id": "smartrecruiters",
       "name": "SmartRecruiters",
       "kind": "sub-processor",
@@ -7226,12 +6998,6 @@
       "seed_sets": [
         "sp100"
       ]
-    },
-    {
-      "id": "amazon-web-services-aws",
-      "name": "AMAZON WEB SERVICES (AWS)",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "bny-mellon",
@@ -7392,12 +7158,6 @@
       "seed_sets": [
         "sp100"
       ]
-    },
-    {
-      "id": "freshdesk",
-      "name": "Freshdesk",
-      "kind": "sub-processor",
-      "seed_sets": []
     },
     {
       "id": "salesforce-tableau",
@@ -7734,12 +7494,6 @@
     {
       "id": "zkipster",
       "name": "ZKIPSTER",
-      "kind": "sub-processor",
-      "seed_sets": []
-    },
-    {
-      "id": "zoom-video-communications",
-      "name": "ZOOM VIDEO COMMUNICATIONS",
       "kind": "sub-processor",
       "seed_sets": []
     },
@@ -8282,12 +8036,216 @@
       "name": "SCSK Serviceware",
       "kind": "sub-processor",
       "seed_sets": []
+    },
+    {
+      "id": "tomtom-north-america",
+      "name": "TomTom North America",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "scuba-analytics-inc",
+      "name": "Scuba Analytics, Inc. *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "snowflake-inc",
+      "name": "Snowflake, Inc. *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "spacexai",
+      "name": "SpaceXAI",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "akvelon",
+      "name": "Akvelon",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "allegis-group-holdings",
+      "name": "Allegis Group Holdings",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "allyis",
+      "name": "Allyis",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "apex-systems-llc",
+      "name": "Apex Systems, LLC *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "aptly-technology",
+      "name": "Aptly Technology",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "beyondsoft-consulting-inc",
+      "name": "Beyondsoft Consulting, Inc. *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "blueprint-technologies",
+      "name": "Blueprint Technologies",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "capgemini-espa-a-s-l",
+      "name": "Capgemini, Espa\u00f1a, S.L.",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "centific-technologies",
+      "name": "Centific Technologies",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "cognizant-technology-solutions",
+      "name": "Cognizant Technology Solutions",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "csi-interfusion",
+      "name": "CSI Interfusion",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "dxc-technology-services-llc",
+      "name": "Dxc Technology Services LLC *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "ernst-young-llp",
+      "name": "Ernst & Young, LLP",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "experis",
+      "name": "Experis",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "hcl-america",
+      "name": "Hcl America",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "hi-tech-talents-llc",
+      "name": "Hi-Tech Talents LLC *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "insight-global",
+      "name": "Insight Global",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "latentview-analytics-corporation",
+      "name": "Latentview Analytics Corporation *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "launch-consulting",
+      "name": "Launch Consulting",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "ltimindtree-limited-formerly-known-as-mindtree-limited",
+      "name": "LTIMindtree Limited (Formerly known as Mindtree Limited)",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "maq-llc",
+      "name": "Maq LLC *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "matchpoint-it",
+      "name": "Matchpoint It",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "mu-sigma-business-solutions-llc",
+      "name": "Mu Sigma Business Solutions, LLC *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "shanghai-wicresoft-co-ltd",
+      "name": "Shanghai Wicresoft Co, Ltd. *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "sonata-software",
+      "name": "Sonata Software",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "tek-experts",
+      "name": "Tek Experts",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "teleion-consulting-llc",
+      "name": "Teleion Consulting, LLC *",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "telus-international-ai",
+      "name": "Telus International Ai",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "valorem",
+      "name": "Valorem",
+      "kind": "sub-processor",
+      "seed_sets": []
+    },
+    {
+      "id": "wicloud",
+      "name": "Wicloud",
+      "kind": "sub-processor",
+      "seed_sets": []
     }
   ],
   "edges": [
     {
       "from": "adobe",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Microsoft Azure (Azure) provides cloud hosting services for Adobe Cloud Services (Experience Cloud, Creative Cloud, and Document Cloud).",
       "first_seen": "2025-12-27",
@@ -8660,7 +8618,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "accenture-international",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8673,7 +8631,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "cognizant-worldwide",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8686,7 +8644,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "deloitte-consulting-llp",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8699,7 +8657,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "epam-systems",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8712,7 +8670,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "globallogic-technologies-private",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8725,7 +8683,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "globallogic",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8738,7 +8696,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "infosys",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8751,7 +8709,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "international-business-machines",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8764,7 +8722,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "ntt-data-americas",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8777,7 +8735,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "quantiphi",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8790,7 +8748,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "tata-consultancy-services",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8803,7 +8761,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "telus-international-services",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -8816,7 +8774,7 @@
       ]
     },
     {
-      "from": "alphabet",
+      "from": "google-cloud",
       "to": "virtusa-superholdco",
       "purpose_category": "support",
       "purpose_text": "Technical Support",
@@ -9057,7 +9015,7 @@
     },
     {
       "from": "applovin",
-      "to": "amazon-com",
+      "to": "amazon-web-services",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -9285,7 +9243,7 @@
     },
     {
       "from": "applovin",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -10041,7 +9999,7 @@
     },
     {
       "from": "atlassian",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "File Storage",
       "first_seen": "2026-10-28",
@@ -10053,7 +10011,7 @@
     },
     {
       "from": "atlassian",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting provider",
       "first_seen": "2026-10-28",
@@ -10461,7 +10419,7 @@
     },
     {
       "from": "autodesk",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Service Provider for PIX.",
       "first_seen": "2026-10-28",
@@ -10473,7 +10431,7 @@
     },
     {
       "from": "autodesk",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Service Provider.",
       "first_seen": "2026-10-28",
@@ -10987,7 +10945,7 @@
     },
     {
       "from": "broadcom",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Hosting provider and platform services; Infrastructure management tools",
       "first_seen": "2026-10-28",
@@ -11000,7 +10958,7 @@
     },
     {
       "from": "broadcom",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "security",
       "purpose_text": "Gather and process product feedback, Hosting provider and platform services, Single sign-on, Observability pipeline, Monitoring email delivery service, Infrastructure management, Service email provider, Authentication",
       "first_seen": "2026-10-28",
@@ -11026,7 +10984,7 @@
     },
     {
       "from": "broadcom",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "ai_inference",
       "purpose_text": "OpenAI service",
       "first_seen": "2026-10-28",
@@ -11039,7 +10997,7 @@
     },
     {
       "from": "broadcom",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Hosting provider and platform services",
       "first_seen": "2026-10-28",
@@ -11531,7 +11489,7 @@
     },
     {
       "from": "comcast",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Infrastructure",
       "first_seen": "2026-10-28",
@@ -11544,7 +11502,7 @@
     },
     {
       "from": "comcast",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Infrastructure",
       "first_seen": "2026-10-28",
@@ -11771,7 +11729,7 @@
     },
     {
       "from": "datadog",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "communications",
       "purpose_text": "Infrastructure services\nEmail and office applications",
       "first_seen": "2026-10-28",
@@ -11807,7 +11765,7 @@
     },
     {
       "from": "datadog",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Infrastructure services",
       "first_seen": "2026-10-28",
@@ -12035,7 +11993,7 @@
     },
     {
       "from": "fortinet",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Hosting and Infrastructure",
       "first_seen": "2026-10-28",
@@ -12071,7 +12029,7 @@
     },
     {
       "from": "fortinet",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Hosting and Infrastructure",
       "first_seen": "2026-10-28",
@@ -12203,7 +12161,7 @@
     },
     {
       "from": "fortinet",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "communications",
       "purpose_text": "Documents / Email",
       "first_seen": "2026-10-28",
@@ -12288,7 +12246,7 @@
     },
     {
       "from": "honeywell",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Services",
       "first_seen": "2026-10-28",
@@ -12348,7 +12306,7 @@
     },
     {
       "from": "honeywell",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud services",
       "first_seen": "2026-10-28",
@@ -12564,7 +12522,7 @@
     },
     {
       "from": "idexx-laboratories",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Infrastructure, DevOps",
       "first_seen": "2026-10-28",
@@ -13004,7 +12962,7 @@
     },
     {
       "from": "intuit",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "analytics",
       "purpose_text": "Bolsters internal operations and advertising, & website analytics.",
       "first_seen": "2026-10-28",
@@ -13043,7 +13001,7 @@
     },
     {
       "from": "intuit",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "To provide our AI features through Intuit Assist.",
       "first_seen": "2026-10-28",
@@ -13608,7 +13566,7 @@
     },
     {
       "from": "microstrategy",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Service Provider",
       "first_seen": "2026-04-23",
@@ -13962,7 +13920,7 @@
     },
     {
       "from": "shopify",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Conversational artificial intelligence services",
       "first_seen": "2026-10-28",
@@ -14180,7 +14138,7 @@
     },
     {
       "from": "thomson-reuters",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -14325,7 +14283,7 @@
     },
     {
       "from": "workday",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Hosting services and storage",
       "first_seen": "2026-10-28",
@@ -14769,7 +14727,7 @@
     },
     {
       "from": "workday",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Optical Character Recognition; Natural Language Processing",
       "first_seen": "2026-10-28",
@@ -14877,7 +14835,7 @@
     },
     {
       "from": "zscaler",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "analytics",
       "purpose_text": "Hosting for certain features of Zscaler Private Access (ZPA), Zscaler Internet Access (ZIA), Zscaler Digital Experience (ZDX), Business Insights, Zscaler Network Observability, Health360, ZAgent, MDR, Risk360, and AI Scanning Platform",
       "first_seen": "2026-10-28",
@@ -14889,7 +14847,7 @@
     },
     {
       "from": "zscaler",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "analytics",
       "purpose_text": "Hosting for certain features of Zscaler Digital Experience (ZDX), cloud infrastructure entitlement management (CIEM), IoT Discovery Report, Zscaler Breach Predictor, Zscaler Network Observability, Zscaler Copilot, ZAgent, Risk360, and Zero Trust Browser",
       "first_seen": "2026-10-28",
@@ -15297,7 +15255,7 @@
     },
     {
       "from": "abnormal-ai",
-      "to": "microsoft-corporation-azure-openai-service",
+      "to": "azure-openai",
       "purpose_category": "other",
       "purpose_text": "Artificial intelligence-enabled functionality",
       "first_seen": "2026-10-28",
@@ -15441,7 +15399,7 @@
     },
     {
       "from": "airtable",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "AI model provider",
       "first_seen": "2026-10-28",
@@ -15669,7 +15627,7 @@
     },
     {
       "from": "algolia",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Service Provider",
       "first_seen": "2026-10-28",
@@ -15741,7 +15699,7 @@
     },
     {
       "from": "algolia",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Service Provider",
       "first_seen": "2026-10-28",
@@ -15825,7 +15783,7 @@
     },
     {
       "from": "algolia",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Google provides generative AI capabilities supporting Algolia\u2019s AI services and during pre-sales motions.",
       "first_seen": "2026-10-28",
@@ -15885,7 +15843,7 @@
     },
     {
       "from": "alphasense",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "cloud infrastructure",
       "first_seen": "2026-10-15",
@@ -16197,7 +16155,7 @@
     },
     {
       "from": "anthropic",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud infrastructure",
       "first_seen": "2026-10-28",
@@ -16221,7 +16179,7 @@
     },
     {
       "from": "anthropic",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Infrastructure",
       "first_seen": "2026-10-28",
@@ -16533,7 +16491,7 @@
     },
     {
       "from": "appsflyer",
-      "to": "anthropic-ai-pbc-claude",
+      "to": "anthropic",
       "purpose_category": "ai_inference",
       "purpose_text": "Generative AI services (elective, opt in service)",
       "first_seen": "2026-10-28",
@@ -16917,7 +16875,7 @@
     },
     {
       "from": "arctic-wolf",
-      "to": "anthropic-pbc-claude",
+      "to": "anthropic",
       "purpose_category": "other",
       "purpose_text": "AI-enabled functionality; Product Research & Development",
       "first_seen": "2026-10-28",
@@ -17037,7 +16995,7 @@
     },
     {
       "from": "automattic",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Powering AI features",
       "first_seen": "2026-10-28",
@@ -17145,7 +17103,7 @@
     },
     {
       "from": "axonius",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "support",
       "purpose_text": "Product Query AI, Customer Support Enhancement with AI Functionality",
       "first_seen": "2026-10-28",
@@ -17193,7 +17151,7 @@
     },
     {
       "from": "axonius",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "communications",
       "purpose_text": "Customer Support Messaging and Communications, Customer Support Enhancement with AI Functionality",
       "first_seen": "2026-10-28",
@@ -17373,7 +17331,7 @@
     },
     {
       "from": "benchling",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Infrastructure / hosting services and storage; multi-modal large language model managed services (via Google Vertex AI)",
       "first_seen": "2026-10-28",
@@ -17457,7 +17415,7 @@
     },
     {
       "from": "browserstack",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -17781,7 +17739,7 @@
     },
     {
       "from": "calendly",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "analytics",
       "purpose_text": "Infrastructure and analytics",
       "first_seen": "2026-10-28",
@@ -17961,7 +17919,7 @@
     },
     {
       "from": "canva",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Platform Hosting, Infrastructure, Security and Canva AI Services",
       "first_seen": "2026-10-28",
@@ -18249,7 +18207,7 @@
     },
     {
       "from": "carta",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Data analysis and cloud infrastructure",
       "first_seen": "2026-10-28",
@@ -18933,7 +18891,7 @@
     },
     {
       "from": "cato-networks",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "ai_inference",
       "purpose_text": "Cloud and AI services.",
       "first_seen": "2026-10-28",
@@ -18981,7 +18939,7 @@
     },
     {
       "from": "celonis",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Option for hosting of the Celonis Platform Cloud Service",
       "first_seen": "2026-10-28",
@@ -18993,7 +18951,7 @@
     },
     {
       "from": "celonis",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Option for hosting of the Celonis Platform Cloud Service",
       "first_seen": "2026-10-28",
@@ -19125,18 +19083,6 @@
     },
     {
       "from": "celonis",
-      "to": "anthropic-ireland",
-      "purpose_category": "ai_inference",
-      "purpose_text": "AI inferences and AI services",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "live",
-      "seed_sets": [
-        "cloud100_2025"
-      ]
-    },
-    {
-      "from": "celonis",
       "to": "openai",
       "purpose_category": "ai_inference",
       "purpose_text": "AI inferences and AI services",
@@ -19185,7 +19131,7 @@
     },
     {
       "from": "chainguard",
-      "to": "anthropic-claude-ai",
+      "to": "anthropic",
       "purpose_category": "ai_inference",
       "purpose_text": "LLM and AI",
       "first_seen": "2026-10-28",
@@ -19209,7 +19155,7 @@
     },
     {
       "from": "chainguard",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud service provider and AI",
       "first_seen": "2026-10-28",
@@ -19473,7 +19419,7 @@
     },
     {
       "from": "checkr",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "communications",
       "purpose_text": "Productivity Tools and Email",
       "first_seen": "2026-10-28",
@@ -19905,7 +19851,7 @@
     },
     {
       "from": "claroty",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting",
       "first_seen": "2026-10-28",
@@ -19941,7 +19887,7 @@
     },
     {
       "from": "claroty",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting (AD)",
       "first_seen": "2026-10-28",
@@ -20121,7 +20067,7 @@
     },
     {
       "from": "clickhouse",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting and infrastructure provider",
       "first_seen": "2026-10-28",
@@ -20181,7 +20127,7 @@
     },
     {
       "from": "clickhouse",
-      "to": "aws-bedrock",
+      "to": "amazon-bedrock",
       "purpose_category": "ai_inference",
       "purpose_text": "Generative AI services",
       "first_seen": "2026-10-28",
@@ -20937,7 +20883,7 @@
     },
     {
       "from": "clio",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Hosting provider",
       "first_seen": "2026-10-28",
@@ -21237,7 +21183,7 @@
     },
     {
       "from": "clio",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Looker/Address auto-fill/Ads",
       "first_seen": "2026-10-28",
@@ -21693,7 +21639,7 @@
     },
     {
       "from": "collibra",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "analytics",
       "purpose_text": "Log, trace and metrics processing for diagnostics, troubleshooting, auditing, reporting, usage analytics, detecting and alerting on application behavior and infrastructure",
       "first_seen": "2026-10-28",
@@ -21741,7 +21687,7 @@
     },
     {
       "from": "collibra",
-      "to": "openai-ireland",
+      "to": "openai",
       "purpose_category": "support",
       "purpose_text": "Internal service analysis and support",
       "first_seen": "2026-10-28",
@@ -21933,7 +21879,7 @@
     },
     {
       "from": "cribl",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting and infrastructure provider, only if opted-in",
       "first_seen": "2026-10-28",
@@ -22077,7 +22023,7 @@
     },
     {
       "from": "databricks",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Service Provider",
       "first_seen": "2026-10-28",
@@ -22089,7 +22035,7 @@
     },
     {
       "from": "databricks",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Service Provider",
       "first_seen": "2026-10-28",
@@ -22161,7 +22107,7 @@
     },
     {
       "from": "databricks",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "support",
       "purpose_text": "Customer support (in Microsoft Teams).",
       "first_seen": "2026-10-28",
@@ -22221,7 +22167,7 @@
     },
     {
       "from": "dataiku",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Services Provider",
       "first_seen": "2026-10-28",
@@ -22233,7 +22179,7 @@
     },
     {
       "from": "dataiku",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Services Provider",
       "first_seen": "2026-10-28",
@@ -22329,7 +22275,7 @@
     },
     {
       "from": "dataiku",
-      "to": "if-ai-services-is-enabled-openai",
+      "to": "openai",
       "purpose_category": "ai_inference",
       "purpose_text": "AI Services",
       "first_seen": "2026-10-28",
@@ -22341,7 +22287,7 @@
     },
     {
       "from": "dataiku",
-      "to": "if-ai-services-is-enabled-microsoft-azure-openai",
+      "to": "azure-openai",
       "purpose_category": "ai_inference",
       "purpose_text": "AI Services",
       "first_seen": "2026-10-28",
@@ -22365,7 +22311,7 @@
     },
     {
       "from": "dbt-labs",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "security",
       "purpose_text": "Infrastructure Hosting Note: Subprocessor location is dependent on your specific deployment selection.",
       "first_seen": "2026-10-28",
@@ -22377,7 +22323,7 @@
     },
     {
       "from": "dbt-labs",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "security",
       "purpose_text": "Infrastructure Hosting Note: Subprocessor location is dependent on your specific deployment selection.",
       "first_seen": "2026-10-28",
@@ -22617,7 +22563,7 @@
     },
     {
       "from": "fivetran",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Google Cloud hosting environment for Supplier services",
       "first_seen": "2026-10-28",
@@ -22665,7 +22611,7 @@
     },
     {
       "from": "fivetran",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Azure hosting environment for Supplier services",
       "first_seen": "2026-10-28",
@@ -22773,7 +22719,7 @@
     },
     {
       "from": "fivetran",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Development and support use cases and generative artificial intelligence services",
       "first_seen": "2026-10-28",
@@ -22821,7 +22767,7 @@
     },
     {
       "from": "glean",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Cloud Service Provider / LLM Provider",
       "first_seen": "2026-10-28",
@@ -22833,7 +22779,7 @@
     },
     {
       "from": "glean",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "ai_inference",
       "purpose_text": "Cloud Service Provider / LLM Provider",
       "first_seen": "2026-10-28",
@@ -23109,7 +23055,7 @@
     },
     {
       "from": "gong",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Cloud services, language transcription, and application AI functionality",
       "first_seen": "2026-10-28",
@@ -23133,7 +23079,7 @@
     },
     {
       "from": "gong",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud services and application AI functionality",
       "first_seen": "2026-10-28",
@@ -23193,7 +23139,7 @@
     },
     {
       "from": "grafana-labs",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Infrastructure, Cloud Service Provider",
       "first_seen": "2026-10-28",
@@ -23265,7 +23211,7 @@
     },
     {
       "from": "grammarly",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "ai_inference",
       "purpose_text": "Generative AI provider",
       "first_seen": "2026-10-28",
@@ -23349,7 +23295,7 @@
     },
     {
       "from": "grammarly",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Infrastructure provider",
       "first_seen": "2026-10-28",
@@ -23481,7 +23427,7 @@
     },
     {
       "from": "harvey",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "AI provider and cloud services provider",
       "first_seen": "2026-10-28",
@@ -23505,7 +23451,7 @@
     },
     {
       "from": "harvey",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "AI provider",
       "first_seen": "2026-10-28",
@@ -23853,7 +23799,7 @@
     },
     {
       "from": "hibob",
-      "to": "microsoft-corporation-azure-openai",
+      "to": "azure-openai",
       "purpose_category": "ai_inference",
       "purpose_text": "LLM processing & generative AI",
       "first_seen": "2026-10-28",
@@ -23913,7 +23859,7 @@
     },
     {
       "from": "hugging-face",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Hosting/Infrastructure",
       "first_seen": "2026-10-28",
@@ -23961,7 +23907,7 @@
     },
     {
       "from": "hugging-face",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Hosting/Infrastructure",
       "first_seen": "2026-10-28",
@@ -24129,7 +24075,7 @@
     },
     {
       "from": "intercom",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "AI processing",
       "first_seen": "2026-10-28",
@@ -24369,7 +24315,7 @@
     },
     {
       "from": "komodo-health",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Cloud-based productivity and collaboration technology and services",
       "first_seen": "2026-10-28",
@@ -24789,7 +24735,7 @@
     },
     {
       "from": "mercor",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud provider",
       "first_seen": "2026-10-28",
@@ -24957,7 +24903,7 @@
     },
     {
       "from": "miro",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Data Discovery (Guard), AI Functionality",
       "first_seen": "2026-10-28",
@@ -24981,7 +24927,7 @@
     },
     {
       "from": "miro",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Accessibility, OCR functionality, AI Functionality",
       "first_seen": "2026-10-28",
@@ -25041,7 +24987,7 @@
     },
     {
       "from": "navan",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud service provider",
       "first_seen": "2026-10-28",
@@ -25113,7 +25059,7 @@
     },
     {
       "from": "navan",
-      "to": "openai-l-l-c",
+      "to": "openai",
       "purpose_category": "support",
       "purpose_text": "Automation of virtual customer support assistant",
       "first_seen": "2026-10-28",
@@ -25461,7 +25407,7 @@
     },
     {
       "from": "notion",
-      "to": "fireworks",
+      "to": "fireworks-ai",
       "purpose_category": "ai_inference",
       "purpose_text": "Service provider for hosting large language models and embeddings.",
       "first_seen": "2026-10-28",
@@ -25473,7 +25419,7 @@
     },
     {
       "from": "notion",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Service provider for hosting large language models and embeddings and for abuse prevention.",
       "first_seen": "2026-10-28",
@@ -25821,7 +25767,7 @@
     },
     {
       "from": "onetrust",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Azure Hosting Services",
       "first_seen": "2026-10-28",
@@ -25917,7 +25863,7 @@
     },
     {
       "from": "onetrust",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Web Application Open Platform Interface (WOPI) -Document Online Editing",
       "first_seen": "2026-10-28",
@@ -25941,7 +25887,7 @@
     },
     {
       "from": "onetrust",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "ai_inference",
       "purpose_text": "Azure AI Services",
       "first_seen": "2026-10-28",
@@ -25989,7 +25935,7 @@
     },
     {
       "from": "onetrust",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Bot detection and abuse prevention for websites, including web-based forms using Google reCAPTCHA v.2 or v.3",
       "first_seen": "2026-10-28",
@@ -26049,7 +25995,7 @@
     },
     {
       "from": "openai",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud infrastructure",
       "first_seen": "2026-10-28",
@@ -26085,7 +26031,7 @@
     },
     {
       "from": "openai",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud infrastructure",
       "first_seen": "2026-10-28",
@@ -26793,7 +26739,7 @@
     },
     {
       "from": "snyk",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud provider",
       "first_seen": "2026-10-28",
@@ -27129,7 +27075,7 @@
     },
     {
       "from": "stripe",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "support",
       "purpose_text": "Provide AI technology to improve the quality of user support operations",
       "first_seen": "2026-10-28",
@@ -27297,7 +27243,7 @@
     },
     {
       "from": "stripe",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "payments",
       "purpose_text": "Cloud service provider for Stripe Data Pipeline",
       "first_seen": "2026-10-28",
@@ -27309,7 +27255,7 @@
     },
     {
       "from": "stripe",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "payments",
       "purpose_text": "Cloud service provider for Stripe Data Pipeline",
       "first_seen": "2026-10-28",
@@ -27465,7 +27411,7 @@
     },
     {
       "from": "synthesia",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "text-to-speech conversion, speech-to-text conversion, machine translation of scripts to different languages, other content processing",
       "first_seen": "2026-10-28",
@@ -27513,7 +27459,7 @@
     },
     {
       "from": "synthesia",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "ai_inference",
       "purpose_text": "Content moderation, text-to-speech, speech-to-text conversion, and voice cloning.",
       "first_seen": "2026-10-28",
@@ -27849,7 +27795,7 @@
     },
     {
       "from": "tanium",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Artificial intelligence capabilities for Tanium AI features",
       "first_seen": "2026-10-28",
@@ -27861,7 +27807,7 @@
     },
     {
       "from": "tanium",
-      "to": "openai-group-pbc",
+      "to": "openai",
       "purpose_category": "other",
       "purpose_text": "Artificial intelligence capabilities for Tanium AI features",
       "first_seen": "2026-10-28",
@@ -28101,7 +28047,7 @@
     },
     {
       "from": "webflow",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "communications",
       "purpose_text": "G Suite, email, file storage",
       "first_seen": "2026-10-28",
@@ -28449,7 +28395,7 @@
     },
     {
       "from": "workato",
-      "to": "microsoft-openai-via-azure",
+      "to": "azure-openai",
       "purpose_category": "support",
       "purpose_text": "Provision of Agent Studio, Workato Go, Intelligent Document Processing (IDP by Workato) and Agent X Support. Only applicable for customers who opt in to use the applicable AI Features.",
       "first_seen": "2026-10-28",
@@ -28701,7 +28647,7 @@
     },
     {
       "from": "zapier",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud service and artificial intelligence provider",
       "first_seen": "2026-10-28",
@@ -28785,7 +28731,7 @@
     },
     {
       "from": "zapier",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Artificial intelligence provider",
       "first_seen": "2026-10-28",
@@ -28941,7 +28887,7 @@
     },
     {
       "from": "zapier",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Language translations of customer queries",
       "first_seen": "2026-10-28",
@@ -29714,7 +29660,7 @@
     },
     {
       "from": "accenture",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Provision of virtual cloud environment for the temporary hosting of Client Forensic Data for analysis by Accenture",
       "first_seen": "2026-10-28",
@@ -29727,7 +29673,7 @@
     },
     {
       "from": "accenture",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Microsoft Teams may be used as a collaboration tool during an engagement to share engagement details. Such details may contain Client personal data.",
       "first_seen": "2026-10-28",
@@ -29740,7 +29686,7 @@
     },
     {
       "from": "accenture",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "ai_inference",
       "purpose_text": "The Microsoft Azure Open AI service may be used during an engagement as part of regular service delivery. Such capability may necessitate including Client Personal Data in the prompts.",
       "first_seen": "2026-10-28",
@@ -29753,7 +29699,7 @@
     },
     {
       "from": "accenture",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Google\u2019s proprietary foundation models or LLMs may be used during an engagement as part of regular service delivery. Such capability may necessitate including Client Personal Data in the prompts.",
       "first_seen": "2026-10-28",
@@ -29815,7 +29761,7 @@
     },
     {
       "from": "arista-networks",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud Services Platform",
       "first_seen": "2026-10-28",
@@ -29827,7 +29773,7 @@
     },
     {
       "from": "arista-networks",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "security",
       "purpose_text": "Customer Authentication",
       "first_seen": "2026-10-28",
@@ -29971,7 +29917,7 @@
     },
     {
       "from": "arista-networks",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "support",
       "purpose_text": "Support Services",
       "first_seen": "2026-10-28",
@@ -30175,7 +30121,7 @@
     },
     {
       "from": "arista-networks",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "other",
       "purpose_text": "Recruiting Platform",
       "first_seen": "2026-10-28",
@@ -30190,18 +30136,6 @@
       "to": "hireright",
       "purpose_category": "other",
       "purpose_text": "Background Check Provider",
-      "first_seen": "2026-10-28",
-      "last_seen": "2026-10-28",
-      "source": "live",
-      "seed_sets": [
-        "sp100"
-      ]
-    },
-    {
-      "from": "arista-networks",
-      "to": "linkedin",
-      "purpose_category": "other",
-      "purpose_text": "Resume Collection",
       "first_seen": "2026-10-28",
       "last_seen": "2026-10-28",
       "source": "live",
@@ -30599,7 +30533,7 @@
     },
     {
       "from": "ge-aerospace",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "support",
       "purpose_text": "Cloud hosting, secure document storage, file management, and development support",
       "first_seen": "2026-10-28",
@@ -31104,7 +31038,7 @@
     },
     {
       "from": "jpmorgan-chase",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -31247,7 +31181,7 @@
     },
     {
       "from": "jpmorgan-chase",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "unnamed",
       "purpose_text": "",
       "first_seen": "2026-10-28",
@@ -31707,7 +31641,7 @@
     },
     {
       "from": "salesforce",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "support",
       "purpose_text": "Service provider of customer support tools",
       "first_seen": "2026-10-28",
@@ -32417,7 +32351,7 @@
     },
     {
       "from": "verizon",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "other",
       "purpose_text": "Verizon Calling with Microsoft Teams",
       "first_seen": "2026-10-28",
@@ -32443,7 +32377,7 @@
     },
     {
       "from": "verizon",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "security",
       "purpose_text": "Verizon Security Operations Services (VSOS)",
       "first_seen": "2026-10-28",
@@ -32584,7 +32518,7 @@
     },
     {
       "from": "adobe",
-      "to": "microsoft",
+      "to": "microsoft-azure",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting via Microsoft Azure for Adobe Cloud Services, plus Azure OpenAI for certain in-product AI features.",
       "purpose_paraphrased": true,
@@ -32809,7 +32743,7 @@
     },
     {
       "from": "adobe",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "hosting",
       "purpose_text": "Cloud hosting and BigQuery data warehousing for Semrush Enterprise Solutions.",
       "purpose_paraphrased": true,
@@ -33154,7 +33088,7 @@
     },
     {
       "from": "adobe",
-      "to": "google",
+      "to": "google-cloud",
       "purpose_category": "ai_inference",
       "purpose_text": "Gemini and Veo models in Firefly, plus features in Illustrator, Photoshop, Express and Document Cloud.",
       "purpose_paraphrased": true,
@@ -33436,6 +33370,771 @@
         "sp100"
       ],
       "source_url": "https://www.adobe.com/privacy/sub-processors.html"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "accenture-international",
+      "purpose_category": "hosting",
+      "purpose_text": "SAP HANA on Azure (Large Instances) \u2014 Hardware and software installation and operations",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "akamai",
+      "purpose_category": "hosting",
+      "purpose_text": "Any Microsoft Online Service \u2014 Operating Content Delivery Network (CDN) infrastructure to efficiently deliver content; Network Traffic Management",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "databricks",
+      "purpose_category": "hosting",
+      "purpose_text": "Azure Databricks \u2014 Deploying, operating, and troubleshooting Azure Databricks",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "netapp",
+      "purpose_category": "hosting",
+      "purpose_text": "Azure NetApp files \u2014 Deploying, operating, and troubleshooting Azure NetApp files",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "red-hat",
+      "purpose_category": "hosting",
+      "purpose_text": "Azure Red Hat OpenShift \u2014 Deploying, operating, and troubleshooting Azure Red Hat OpenShift",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "redis",
+      "purpose_category": "hosting",
+      "purpose_text": "Azure Managed Redis \u2014 Deploying, operating, and troubleshooting Azure Managed Redis",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "tomtom-north-america",
+      "purpose_category": "hosting",
+      "purpose_text": "Azure Maps \u2014 Web services used by the Azure Maps APIs",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "amazon-web-services",
+      "purpose_category": "other",
+      "purpose_text": "Microsoft Purview \u2014 Multi-Cloud Scanning Connectors for Microsoft Purview Acquisitions that run on AWS are eventually moved to be hosted on Microsoft Azure",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "arkose-labs",
+      "purpose_category": "other",
+      "purpose_text": "Azure Web Application Firewall \u2014 CAPTCHA based activity for Fraud + Abuse Prevention",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "scuba-analytics-inc",
+      "purpose_category": "other",
+      "purpose_text": "Teams, Stream, SharePoint Online, OneDrive for Business \u2014 Customer experience (CX) analytics",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "snowflake-inc",
+      "purpose_category": "other",
+      "purpose_text": "Viva Engage (Formerly known as Yammer) \u2014 Data warehousing",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "anthropic",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Microsoft Online Services \u2014 AI model provider",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "github",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Microsoft Online Services \u2014 AI model provider",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "fireworks-ai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Microsoft Online Services \u2014 Model hosting, inference, and training platform",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "openai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Microsoft Online Services \u2014 AI model provider",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "spacexai",
+      "purpose_category": "ai_inference",
+      "purpose_text": "Microsoft Online Services \u2014 AI model provider",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "accenture-international",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "akvelon",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "allegis-group-holdings",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "allyis",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "apex-systems-llc",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "aptly-technology",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "beyondsoft-consulting-inc",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "blueprint-technologies",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "capgemini-america",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "capgemini-espa-a-s-l",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "centific-technologies",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "cognizant-technology-solutions",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "csi-interfusion",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "dxc-technology-services-llc",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "ernst-young-llp",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "experis",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "hcl-america",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "hi-tech-talents-llc",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "infosys",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "insight-global",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "latentview-analytics-corporation",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "launch-consulting",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "ltimindtree-limited-formerly-known-as-mindtree-limited",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "maq-llc",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "matchpoint-it",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "mu-sigma-business-solutions-llc",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "shanghai-wicresoft-co-ltd",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "sonata-software",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "tata-consultancy-services",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "tek-experts",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "teleion-consulting-llc",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "telus-international-ai",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "valorem",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "wicloud",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
+    },
+    {
+      "from": "microsoft-azure",
+      "to": "wipro",
+      "purpose_category": "support",
+      "purpose_text": "",
+      "purpose_paraphrased": false,
+      "first_seen": "2026-09-10",
+      "last_seen": "2026-09-10",
+      "source": "manual",
+      "seed_sets": [
+        "nasdaq100",
+        "sp100"
+      ],
+      "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)"
     }
   ]
 }

@@ -1,0 +1,318 @@
+{
+  "company": "Microsoft",
+  "source_url": "https://servicetrust.microsoft.com (Service Trust Portal \u2014 gated download)",
+  "fetched_at": "2026-10-28",
+  "observation_date": "2026-09-10",
+  "discovery_method": "manual",
+  "paraphrased": false,
+  "pdf_filename": "microsoft-online-services-subprocessors-2026-09-10.pdf",
+  "note": "Microsoft Online Services Subprocessors PDF, date of issue 2026-09-10. User-downloaded from the Service Trust Portal; the api.servicetrust.microsoft.com direct-download URL requires sign-in. Purpose and location are verbatim from the PDF table. Microsoft's own 'Microsoft Datacenter Entities' section was intentionally excluded (those are Microsoft's own operating entities, not third parties).",
+  "entries": [
+    {
+      "name": "Accenture International Limited",
+      "purpose": "SAP HANA on Azure (Large Instances) \u2014 Hardware and software installation and operations",
+      "location": "In accordance with the customer-specified regionality of SAP HANA on Azure (Large Instances)",
+      "category": "cloud"
+    },
+    {
+      "name": "Akamai Technologies, Inc.",
+      "purpose": "Any Microsoft Online Service \u2014 Operating Content Delivery Network (CDN) infrastructure to efficiently deliver content; Network Traffic Management",
+      "location": "Worldwide",
+      "category": "cloud"
+    },
+    {
+      "name": "Databricks, Inc.",
+      "purpose": "Azure Databricks \u2014 Deploying, operating, and troubleshooting Azure Databricks",
+      "location": "Canada, France, Germany, Netherlands, United Kingdom, United States",
+      "category": "cloud"
+    },
+    {
+      "name": "NetApp, Inc.",
+      "purpose": "Azure NetApp files \u2014 Deploying, operating, and troubleshooting Azure NetApp files",
+      "location": "In accordance with the customer-specified regionality of Azure NetApp files",
+      "category": "cloud"
+    },
+    {
+      "name": "Red Hat, Inc.",
+      "purpose": "Azure Red Hat OpenShift \u2014 Deploying, operating, and troubleshooting Azure Red Hat OpenShift",
+      "location": "Australia, Belgium, Brazil, Canada, Czech Republic, France, Germany, India, Ireland, Israel, Poland, Spain, United States",
+      "category": "cloud"
+    },
+    {
+      "name": "Redis, Inc.",
+      "purpose": "Azure Managed Redis \u2014 Deploying, operating, and troubleshooting Azure Managed Redis",
+      "location": "Bulgaria, Canada, France, India, Ireland, Israel, Netherlands, Singapore, Spain, United Kingdom, United States",
+      "category": "cloud"
+    },
+    {
+      "name": "TomTom North America, Inc.",
+      "purpose": "Azure Maps \u2014 Web services used by the Azure Maps APIs",
+      "location": "Germany, India, Ireland, South Korea, Netherlands, Lebanon, Poland, United States",
+      "category": "cloud"
+    },
+    {
+      "name": "Amazon Web Services",
+      "purpose": "Microsoft Purview \u2014 Multi-Cloud Scanning Connectors for Microsoft Purview Acquisitions that run on AWS are eventually moved to be hosted on Microsoft Azure",
+      "location": "(processing location varies; will depend on location of customers\u2019 AWS storage account)",
+      "category": "ancillary"
+    },
+    {
+      "name": "Arkose Labs, Inc.",
+      "purpose": "Azure Web Application Firewall \u2014 CAPTCHA based activity for Fraud + Abuse Prevention",
+      "location": "Australia, Ireland, Singapore, United States",
+      "category": "ancillary"
+    },
+    {
+      "name": "Scuba Analytics, Inc. *",
+      "purpose": "Teams, Stream, SharePoint Online, OneDrive for Business \u2014 Customer experience (CX) analytics",
+      "location": "United States",
+      "category": "ancillary"
+    },
+    {
+      "name": "Snowflake, Inc. *",
+      "purpose": "Viva Engage (Formerly known as Yammer) \u2014 Data warehousing",
+      "location": "United States",
+      "category": "ancillary"
+    },
+    {
+      "name": "Anthropic, PBC",
+      "purpose": "Microsoft Online Services \u2014 AI model provider",
+      "location": "United States",
+      "category": "ai"
+    },
+    {
+      "name": "GitHub, Inc.",
+      "purpose": "Microsoft Online Services \u2014 AI model provider",
+      "location": "United States",
+      "category": "ai"
+    },
+    {
+      "name": "Fireworks AI, Inc.",
+      "purpose": "Microsoft Online Services \u2014 Model hosting, inference, and training platform",
+      "location": "Canada, Germany, Iceland, Japan, United States",
+      "category": "ai"
+    },
+    {
+      "name": "OpenAI OpCo, LLC",
+      "purpose": "Microsoft Online Services \u2014 AI model provider",
+      "location": "Worldwide",
+      "category": "ai"
+    },
+    {
+      "name": "SpaceXAI, LLC",
+      "purpose": "Microsoft Online Services \u2014 AI model provider",
+      "location": "Belgium, India, Japan, Saudi Arabia, South Korea, Switzerland, United Arab Emirates, United States",
+      "category": "ai"
+    },
+    {
+      "name": "Accenture International Limited",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Akvelon, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Allegis Group Holdings, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Allyis, Inc",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Apex Systems, LLC *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Aptly Technology Corporation",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Beyondsoft Consulting, Inc. *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Blueprint Technologies",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Capgemini America, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Capgemini, Espa\u00f1a, S.L.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Centific Technologies, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Cognizant Technology Solutions",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "CSI Interfusion, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Dxc Technology Services LLC *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Ernst & Young, LLP",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Experis",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Hcl America, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Hi-Tech Talents LLC *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Infosys Limited",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Insight Global, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Latentview Analytics Corporation *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Launch Consulting",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "LTIMindtree Limited (Formerly known as Mindtree Limited)",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Maq LLC *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Matchpoint It Ltd.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Mu Sigma Business Solutions, LLC *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Shanghai Wicresoft Co, Ltd. *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Sonata Software Limited",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Tata Consultancy Services Ltd.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Tek Experts",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Teleion Consulting, LLC *",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Telus International Ai, Inc.",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Valorem, LLC",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Wicloud Corporation",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    },
+    {
+      "name": "Wipro Limited",
+      "purpose": "",
+      "location": "",
+      "category": "contract_staff"
+    }
+  ]
+}
