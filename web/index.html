@@ -73,8 +73,10 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
   font-family: var(--font-label); font-size: 0.78rem; color: var(--fg); letter-spacing: 0.02em;
   text-shadow: 0 0 6px var(--bg), 0 0 3px var(--bg), 0 1px 2px var(--bg-deep);
 }
-.lbl.sel { font-weight: 500; font-size: 0.92rem; }
-.lbl.dest { color: var(--fg-soft); }
+.lbl.sel { font-weight: 600; font-size: 1.0rem; color: #ffffff; text-shadow: 0 0 10px var(--bg), 0 0 5px var(--bg), 0 1px 2px var(--bg-deep); }
+.lbl.dest { color: #ffffff; font-weight: 500; font-size: 0.9rem; text-shadow: 0 0 10px var(--bg), 0 0 5px var(--bg), 0 1px 2px var(--bg-deep); }
+/* While a company is selected, dim every other floating label so the chain pops. */
+body.has-selection .lbl:not(.sel):not(.dest):not(.floor) { opacity: 0.22; pointer-events: none; }
 .lbl.floor { pointer-events: none; cursor: default; color: var(--fg-soft); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transform: translate(-50%, 4px); }
 #tip {
   position: fixed; z-index: 6; pointer-events: none; background: var(--panel); border: 1px solid var(--rule); padding: 8px 10px;
@@ -573,6 +575,7 @@ h1 { margin: 0; font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; te
   function select(id, keepTrail) {
     if (!G) return;
     state.selected = id;
+    document.body.classList.toggle('has-selection', id != null);
     if (G.flow) { G.group.remove(G.flow); G.flow.children.forEach(function (m) { m.geometry.dispose(); }); G.flow = null; }
     if (G.halo) { G.group.remove(G.halo); G.halo.geometry.dispose(); G.halo = null; }
     labels = labels.filter(function (l) { if (!l.base) { l.el.remove(); return false; } return true; });
